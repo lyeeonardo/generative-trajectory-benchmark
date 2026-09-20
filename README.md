@@ -1,6 +1,7 @@
 # Benchmarking Generative Trajectory Models for Active-Inference Control
 
 Official code and result artifacts for the paper by Yulin Li, Mohsen A. Jafari, and Andrea Matta.
+Published as a conference paper at **IWAI 2026**.
 
 [Read the final paper (PDF)](paper/main.pdf)
 
