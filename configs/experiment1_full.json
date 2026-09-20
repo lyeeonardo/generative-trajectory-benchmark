@@ -1,0 +1,230 @@
+{
+  "status": "frozen_before_full_training",
+  "execution_ready": false,
+  "dataset": "datasets/uphill_push_v1",
+  "cache": "datasets/uphill_push_v1/cache",
+  "dataset_readiness": "datasets/READINESS.json",
+  "normalization": "datasets/uphill_push_v1/cache/normalization.json",
+  "splits": {
+    "weights": "train",
+    "checkpoint_selection": "development only",
+    "likelihood_calibration": "calibration only after checkpoint selection",
+    "final_reporting": "one sealed test campaign after all selections, operating points, and calibrations are frozen"
+  },
+  "families": [
+    "diffusion",
+    "autoregressive",
+    "cvae",
+    "flow_matching"
+  ],
+  "display_names": {
+    "diffusion": "Diffusion/DiT",
+    "autoregressive": "Autoregressive Transformer",
+    "cvae": "Joint CVAE",
+    "flow_matching": "Flow Matching"
+  },
+  "seeds": [
+    13
+  ],
+  "fits": 4,
+  "common": {
+    "training_membership": "all",
+    "oracle_tilt": true,
+    "quality_request": "HIGH",
+    "horizon": 6,
+    "primary_behavior_K": 1,
+    "success_criterion": "configs/success_criterion.json",
+    "success_criterion_version": 3,
+    "supervision": {
+      "audit": "datasets/READINESS.json",
+      "high_success_demo_fraction": 1.0,
+      "scenario_cycles": "All nine TRAIN conditions and all four measured phases; route labels and private simulator state are never model inputs."
+    }
+  },
+  "recipes": {
+    "diffusion": {
+      "model": {
+        "method": "diffusion",
+        "width": 512,
+        "layers": 8,
+        "heads": 8,
+        "mixtures": 8,
+        "sampling_steps": 8,
+        "conditioning_mode": "adaptive",
+        "first_action_loss_weight": 10.0,
+        "query_loss_weights": [
+          0.45,
+          0.25,
+          0.2,
+          0.1
+        ]
+      },
+      "training": {
+        "batch_size": 1024,
+        "learning_rate": 0.0001,
+        "warmup_windows": 1342625,
+        "budget_windows": 53705000,
+        "checkpoint_windows": 1342625,
+        "validation_windows": 1342625,
+        "ema_decay": 0.0
+      },
+      "sampling_temperature": 0.25,
+      "guidance_scale": 1.1,
+      "budget_reason": "The frozen large adaptive denoiser reached its best development profile within this 1,000-pass budget."
+    },
+    "autoregressive": {
+      "model": {
+        "method": "autoregressive",
+        "width": 384,
+        "layers": 8,
+        "heads": 8,
+        "mixtures": 16,
+        "sampling_steps": 8,
+        "first_action_loss_weight": 20.0,
+        "query_loss_weights": [
+          0.6,
+          0.15,
+          0.15,
+          0.1
+        ]
+      },
+      "training": {
+        "batch_size": 4096,
+        "learning_rate": 0.0001,
+        "warmup_windows": 1342625,
+        "budget_windows": 53705000,
+        "checkpoint_windows": 1342625,
+        "validation_windows": 1342625,
+        "ema_decay": 0.999
+      },
+      "sampling_temperature": 0.2,
+      "guidance_scale": 1.0,
+      "budget_reason": "Equal-exposure comparison: the autoregressive density model is capped at the Diffusion/DiT budget of 1,000 nominal TRAIN presentations."
+    },
+    "cvae": {
+      "model": {
+        "method": "cvae",
+        "width": 384,
+        "layers": 8,
+        "heads": 8,
+        "posterior_layers": 4,
+        "latent_dim": 32,
+        "kl_weight": 0.05,
+        "kl_warmup_windows": 2000000,
+        "free_nats": 0.0,
+        "first_action_loss_weight": 20.0,
+        "query_loss_weights": [
+          0.6,
+          0.15,
+          0.15,
+          0.1
+        ]
+      },
+      "training": {
+        "batch_size": 2048,
+        "learning_rate": 0.0001,
+        "warmup_windows": 1342625,
+        "budget_windows": 53705000,
+        "checkpoint_windows": 1342625,
+        "validation_windows": 1342625,
+        "ema_decay": 0.99
+      },
+      "sampling_temperature": 1.35,
+      "guidance_scale": 1.0,
+      "budget_reason": "The frozen large CVAE design receives 2.5 times its longest preliminary exposure and 1,000 passes over retained TRAIN windows."
+    },
+    "flow_matching": {
+      "model": {
+        "method": "flow_matching",
+        "width": 384,
+        "layers": 8,
+        "heads": 8,
+        "mixtures": 8,
+        "sampling_steps": 32,
+        "first_action_loss_weight": 20.0,
+        "query_loss_weights": [
+          0.6,
+          0.15,
+          0.15,
+          0.1
+        ]
+      },
+      "training": {
+        "batch_size": 2048,
+        "learning_rate": 0.0001,
+        "warmup_windows": 1342625,
+        "budget_windows": 53705000,
+        "checkpoint_windows": 1342625,
+        "validation_windows": 1342625,
+        "ema_decay": 0.99
+      },
+      "sampling_temperature": 0.75,
+      "guidance_scale": 1.0,
+      "budget_reason": "The frozen large vector-field design receives five times its longest single preliminary fit and 1,000 passes over retained TRAIN windows."
+    }
+  },
+  "checkpoint_selection": {
+    "split": "development",
+    "minimum_budget_fraction": 0.2,
+    "rank": [
+      "prediction_qualified descending",
+      "raw_action_usefulness descending",
+      "one_step_nll ascending",
+      "fixed_prediction_rmse ascending",
+      "windows ascending for exact ties"
+    ],
+    "test_influence": false,
+    "maximum_windows_inclusive": 53705000
+  },
+  "evaluation": {
+    "cases": "datasets/evaluation/test_cases.json",
+    "behavior_episodes_per_fit_per_arm": 90,
+    "behavior_arms": [
+      "every_step",
+      "agreement_reuse",
+      "wrong_tilt_every_step"
+    ],
+    "capability_snapshots_per_fit": 54,
+    "fixed_action_branches_per_fit": 864,
+    "prediction_samples": 32,
+    "raw_proposals_per_snapshot_per_quality": 32,
+    "qualities": [
+      "HIGH",
+      "NULL",
+      "LOW"
+    ],
+    "scaling_horizons": [
+      1,
+      3,
+      6
+    ],
+    "scaling_K": [
+      1,
+      8,
+      16,
+      32
+    ],
+    "wrong_tilt_policy": "one of the other two lateral labels, deterministically balanced by layout and evaluation seed",
+    "test_repetition": "One sealed campaign per selected seed-13 fit contains the same nine fixed physical cases crossed with ten prespecified proposal RNG seeds: 90 paired episodes per arm and family. Each proposal RNG seed is a repeated locked trial across all nine fixed cases; interrupted work resumes committed records with the same identities.",
+    "uncertainty": {
+      "training_scope": "One predeclared full fit per family (seed 13); no retraining-variation confidence interval is claimed.",
+      "primary_behavior": "Report a deterministic 20,000-draw percentile block bootstrap over the ten locked proposal-trial seeds. Each resampled trial retains all nine fixed physical cases, so cases remain fixed.",
+      "paired_behavior": "For reuse-versus-every-step and wrong-versus-correct tilt, preserve matched case and proposal RNG seed; bootstrap paired row-wise differences by locked proposal-trial seed while retaining all nine cases in each sampled block.",
+      "single_arm_behavior": "Report the fixed-case repeated-trial bootstrap as the primary 95% interval and the exact episode-level binomial interval as a supplemental sensitivity summary.",
+      "prediction_and_proposals": "Report the complete fixed snapshot, branch, and raw proposal panels for seed 13. Do not create a retraining confidence interval from candidates, overlapping windows, or predictive samples.",
+      "scope": "Intervals quantify proposal-sampling trial variation for the seed-13 implementations conditional on the same nine fixed physical conditions; they do not quantify retraining variation or generalization to unseen environments."
+    }
+  },
+  "qualification_policy": "All four families run and remain in tables and figures regardless of preliminary or development qualification.",
+  "weak_model_policy": "No architecture, optimizer, budget, operating-point, or checkpoint-rank tuning after this freeze.",
+  "power_limit_w": 450,
+  "precision": "FP32 parameters and loss with TF32 training matrix products; synchronized FP32 evaluation with TF32 disabled",
+  "output": "outputs/e1_full",
+  "results": "results/paper",
+  "training_budget_policy": {
+    "reference_family": "diffusion",
+    "maximum_sampled_windows_per_fit": 53705000,
+    "rule": "No comparison model may receive more sampled training windows than Diffusion/DiT. Every full E1 fit receives exactly 53,705,000 sampled windows (1,000 nominal TRAIN presentations).",
+    "amended_before_calibration_or_test": true
+  }
+}

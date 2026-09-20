@@ -1,0 +1,36 @@
+# Active evaluation protocol
+
+Success means two consecutive safe steps inside the unchanged goal region at ball speed below 0.15 m/s. Stop immediately at success; collision, fall/boundary and timeout rules are unchanged. All reported cost, prediction-error and timing measurements end at this stopping point. Historical raw traces and dataset collection labels remain preserved. The former secondary endpoint is no longer an active metric.
+
+Keep all four seed-13 checkpoints and existing locked-test trials; no retraining or dataset regeneration. Repair saved-trace reporting only. Distinguish raw joint observations, fixed-action re-predictions of proposal actions, and independent fixed-action prediction-bank measurements. Report complete raw proposal pools and retain the failure to recover both certified local modes. E1 compares frozen implementations and operating points, not universal model-family superiority.
+
+# Experiment 1 — Proposal-world-model capability comparison
+
+Experiment 1 compares one checkpoint per training fit from four joint proposal world models: Diffusion/DiT, autoregressive Transformer, joint CVAE, and flow matching. All four families are included in the full run regardless of preliminary qualification. A weak model remains a measured negative result; its architecture, optimizer, budget, sampling controls, and selection rule are not tuned after the full-run freeze.
+
+## Frozen data and information
+
+Every fit uses the retained `datasets/uphill_push_v1` TRAIN partition, TRAIN-only normalization, the same nine physical conditions, the same public five-observation/four-action history, goal and obstacle geometry, oracle tilt, and explicit HIGH/NULL/LOW query labels. Route side, parent identity, scenario identity, and private simulator state are excluded. Development selects checkpoints, CAL fits the declared Gaussian likelihood width after selection, and TEST is opened in one sealed campaign only after all four selections and calibrations are frozen.
+
+The task has lateral tilt in {−15°, 0°, +15°}, known longitudinal tilt 20°, obstacle x in {−0.20, 0, +0.20} m, fixed start and goal, 0.05 s control steps, 100-step episodes, and H=6. Success requires two consecutive safe in-goal steps below 0.15 m/s; execution ends immediately.
+
+## Full training allocation
+
+Run seed 13 once for each family: four full-data fits. Every fit receives exactly 53,705,000 sampled windows, equal to 1,000 nominal presentations per retained TRAIN window. This is a strict exposure cap: no comparison model may receive more sampled training windows than Diffusion/DiT. The cap was amended before calibration, checkpoint selection, or TEST access; an interrupted autoregressive overrun is retained only as excluded audit evidence and is restarted within the cap. The exact architectures, losses, batch sizes, optimizer settings, inference temperatures, Diffusion guidance, and budget reasons are in `configs/experiment1_full.json`.
+
+For every fit, retain checkpoints at the frozen cadence and consider only checkpoints from 20% through 100% of the 53,705,000-window budget, inclusive. Rank with development data only: prediction qualification, raw action usefulness, normalized one-step likelihood, controlled-prediction RMSE, then earlier exposure for exact ties. Complete the full training budget even if an earlier checkpoint is selected. Fit the observation likelihood on CAL after selection. No TEST result can change a checkpoint or operating point.
+
+## Locked TEST measurements
+
+1. **Controlled transition prediction.** On 54 frozen snapshots × 16 imposed action sequences, commit predictions before reading truth. Evaluate H=1,3,6 with 32 samples and report physical RMSE/MAE, scaled energy score, interval coverage/width, normalized likelihood, event Brier scores, causal-prefix consistency, and H1/H6 consistency. This directly tests whether the same proposal model can act as a good-enough learned transition model without online MuJoCo prediction.
+2. **Raw joint proposals and useful modes.** For HIGH, NULL, and LOW requests, retain all 32 action/observation trajectories per snapshot. Physically execute every raw action sequence offline. Report useful fraction, unsafe fraction, cost, progress, joint-trajectory prediction error, and certified left/right local mode coverage without filtering the proposal pool.
+3. **One-candidate control.** Use oracle tilt, K=1, H=6, HIGH request, execute the first action, then replan. There is no candidate selection or AIF information objective. Cross the same nine fixed physical cases with ten prespecified proposal RNG seeds, giving 90 episodes per fit, and report success, collision, fall, timeout, cost, and on-policy next-state error.
+4. **Observation-gated reuse.** On the same cases and seeds, execute later actions from the committed H6 trajectory while actual observations remain within the frozen tolerance, at most six actions. Compare success, failures, generated plans, reused-action fraction, and model-plus-checker time with replan-every-step.
+5. **Correct versus wrong tilt.** Repeat the every-step K=1 control arm while changing only the supplied lateral-tilt label to a deterministic balanced wrong label. The physical tilt, scene, checkpoint, RNG schedule, and evaluation case remain fixed. Combine this with fixed-action likelihood under each tilt to measure conditioning sensitivity. This is an E1 capability intervention, not belief inference.
+6. **Speed and scaling.** Measure proposal and imposed-action prediction at H in {1,3,6} and K in {1,8,16,32}, including warmups, synchronized latency, backbone evaluations, peak memory, checkpoint size, parameters, full training runtime, GPU utilization, and energy from sampled power telemetry when available.
+
+The capability interface certificate also verifies imposed-action fidelity, goal/quality invariance for physical prediction, future-action causality, and arbitrary known-coordinate completion. Physical satisfaction of requested future-observation constraints remains untested and is not an empirical claim.
+
+## Claim scope
+
+The experiment can compare measured proposal usefulness, useful multimodality, action/observation joint generation, controlled next-state prediction, tilt-conditioning sensitivity, computation, scaling, and the safety and performance trade-offs of trajectory reuse for these implementations and budgets. One-candidate control reports whether proposals are directly usable; it is not a full AIF controller comparison. Report the seed-13 result for every family. For task outcomes, use a deterministic 20,000-draw block bootstrap over the ten locked proposal-trial seeds, retaining all nine fixed cases inside each resampled trial. Apply the same block bootstrap to paired reuse and tilt-label differences; show exact episode-level binomial intervals only as a supplemental sensitivity summary. These intervals quantify proposal-trial variation for the seed-13 implementations conditional on the nine fixed conditions. They do not quantify retraining variation or generalization to unseen environments. Failed qualification, failed prediction gates, unsafe proposals, control failures, and null conditioning effects remain in the CSV and figures.

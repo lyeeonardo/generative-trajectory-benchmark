@@ -1,0 +1,20 @@
+{
+  "adverse_branches": 30,
+  "branches": 864,
+  "collision_branches": 30,
+  "event_head_missed_adverse": 30,
+  "event_head_threshold": 0.5,
+  "event_rng_seed": 9051,
+  "fall_branches": 0,
+  "feasible_adverse": 8,
+  "feasible_safe": 684,
+  "infeasible_adverse": 22,
+  "infeasible_safe": 150,
+  "predictive_samples": 32,
+  "scope": "Frozen fixed-action bank at oracle tilt; complete prediction-sampling plus geometry feasibility, risk threshold 0.1; not a closed-loop safety guarantee",
+  "script_sha256": "435a0524185efd07f10466fc4faa03aeb98391bf475bcd279e0ca536573365de",
+  "sources": {
+    "datasets/evaluation/truth/test_fixed16.npz": "6bde9807833f7c018709637ee56b6307f783411aca952cc1ae82962a77a28e86",
+    "outputs/e1_full/fits/autoregressive/seed_13/test/capabilities/fixed_H6.npz": "5b8c9060b31c0ec06c92497bdf243c669bc5f1d459de8504899dad5e33f734f8"
+  }
+}

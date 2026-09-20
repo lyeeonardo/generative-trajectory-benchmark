@@ -1,0 +1,6 @@
+family,success,feasible_percent,proposal_ms,plan_ms
+BC-MDN,11/18,82.4,0.75,346
+CVAE,17/18,92.1,0.39,352
+Diffusion,18/18,100.0,50.05,411
+Flow,14/18,83.9,3.86,354
+Autoregressive,14/18,82.1,14.03,360

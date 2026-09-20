@@ -1,0 +1,5 @@
+common_config: configs/paper/id_n_sweep.yaml
+output_dir: outputs/paper/heldout_start_goal
+split: test
+scene_ids: [110, 113, 128, 129, 132, 152]
+K: 128

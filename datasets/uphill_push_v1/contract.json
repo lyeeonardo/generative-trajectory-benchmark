@@ -1,0 +1,105 @@
+{
+  "dt": 0.05,
+  "goal": [
+    0,
+    0.84
+  ],
+  "goal_radius": 0.12,
+  "lateral_degrees": [
+    -15,
+    0,
+    15
+  ],
+  "longitudinal_degrees": 20,
+  "max_steps": 100,
+  "obstacle_radius": 0.1,
+  "obstacle_x": [
+    -0.2,
+    0.0,
+    0.2
+  ],
+  "obstacle_y": 0,
+  "reference_seed_parameters": [
+    {
+      "clear": 0.31815084790941867,
+      "duration": 2.924249703905985,
+      "feed": 0.11349564749649325,
+      "gap": 0.07237557111434052,
+      "gravity": 0.5458564218449523,
+      "kd": 4.798403976181543,
+      "kp": 8.784780773602595,
+      "rodgain": 17.247058495897306,
+      "yawgain": 6.273983059052199
+    },
+    {
+      "clear": 0.3956175411195602,
+      "duration": 3.00426136233304,
+      "feed": 0.038462687237330845,
+      "gap": 0.06925154915141907,
+      "gravity": 1.039728834162731,
+      "kd": 5.8073716540701845,
+      "kp": 17.0695639651559,
+      "rodgain": 17.709459747830003,
+      "yawgain": 11.17821747872857
+    },
+    {
+      "clear": 0.33966041651921747,
+      "duration": 3.42699354771644,
+      "feed": 0.09735632309634255,
+      "gap": 0.07112813064701715,
+      "gravity": 1.0137871065187847,
+      "kd": 5.392808177040141,
+      "kp": 19.431536020789544,
+      "rodgain": 19.089150028754236,
+      "yawgain": 14.817955326284887
+    },
+    {
+      "clear": 0.2671846163351147,
+      "duration": 3.9719046975015644,
+      "feed": 0.11643585977895039,
+      "gap": 0.07088515356636237,
+      "gravity": 1.3703197474334372,
+      "kd": 3.818513670423001,
+      "kp": 28.367540138142008,
+      "rodgain": 25.340716107118162,
+      "yawgain": 14.384818394321098
+    },
+    {
+      "clear": 0.398443201708678,
+      "duration": 2.9854089393399956,
+      "feed": 0.066015084249285,
+      "gap": 0.07412921956527868,
+      "gravity": 1.1935840461762566,
+      "kd": 5.294277209247439,
+      "kp": 14.914263710183956,
+      "rodgain": 13.707477757088432,
+      "yawgain": 8.302530024662065
+    }
+  ],
+  "seed": 20260915,
+  "settle_speed": 0.1,
+  "settle_steps": 5,
+  "sources": {
+    "aif/operational_cost.py": "b7e272d0a502230c8244904fe9430cbf61379c6add1a1b75809b16b14546eb3c",
+    "data/preparation.py": "9bc1715733aae02e0dd1137be19f249001b36958259ac5b6525aec3518336961",
+    "datasets/training/collection_config.json": "c86034149bee550c0e7b2bd3d47139c6eebf0c4340484a2b63aecfbdeede9cc8",
+    "envs/mujoco_tilted_board.py": "c97e7afeadc490b97c5d57bc393e8092b36feee37721d11efbbf4f8e3e17dfb5",
+    "experiments/task_design/build_dataset.py": "50ed784f13b96f8279e86549f6360e36c7617aaa999727eee781d9d6d4a15c49",
+    "experiments/task_design/reference.py": "b8c21fd810c35804d9addb30bf4cb4eef53d6e2d74bd02012a93dc3ec80a3adc",
+    "experiments/task_design/render.py": "65c7f13cb0f0e79b96b543b6bc0225217f9bb14a03496a8311bbfdc9fd5af474",
+    "experiments/task_design/task.py": "52f4158fc450496c86fdfc65cd234da4096603acd7b528b03b99d594ea0e0175",
+    "mujoco_task/config.py": "c77b32c0b911b63c3fa1e3b90b552e1609111dd7de5748fc0c4414c4111f6c9c",
+    "mujoco_task/sim/scene.py": "4efa889772228b290fa37094868c10ec70aad576d1efb85c78d09d24f7f7e854"
+  },
+  "split_successes_per_condition_per_route": {
+    "development": 2,
+    "test": 2,
+    "train": 8
+  },
+  "split_unit": "independently sampled reference rollout and all its descendants; same nine physical conditions in every split",
+  "start": [
+    0,
+    -0.65
+  ],
+  "task": "uphill_push_avoid_settle_v1"
+}

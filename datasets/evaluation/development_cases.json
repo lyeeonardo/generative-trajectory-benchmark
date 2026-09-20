@@ -1,0 +1,292 @@
+{
+  "H": 6,
+  "K": 1,
+  "cases": [
+    {
+      "base_layout_id": 0,
+      "case_id": "condition_00",
+      "condition_id": 0,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 20261000,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "condition_01",
+      "condition_id": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 20261001,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "condition_02",
+      "condition_id": 2,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 20261002,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "condition_03",
+      "condition_id": 3,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 20261003,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "condition_04",
+      "condition_id": 4,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 20261004,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "condition_05",
+      "condition_id": 5,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 20261005,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "condition_06",
+      "condition_id": 6,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 20261006,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "condition_07",
+      "condition_id": 7,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 20261007,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "condition_08",
+      "condition_id": 8,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 20261008,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    }
+  ],
+  "episodes_per_fit": 9,
+  "evaluation_rng_seeds": [
+    71
+  ],
+  "policy": "first action then replan",
+  "role": "development",
+  "status": "FROZEN"
+}

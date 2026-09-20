@@ -1,0 +1,74 @@
+{
+  "status": "final_paper_experiment2",
+  "title": "Flat 10 steps then positive 15 degree tilt for 20 steps",
+  "initial_lateral_tilt_degrees": 0,
+  "switched_lateral_tilt_degrees": 15,
+  "longitudinal_tilt_degrees": 20,
+  "hypothesis_lateral_tilts_degrees": [
+    -15,
+    0,
+    15
+  ],
+  "obstacle_x_m": [
+    -0.2,
+    0.0,
+    0.2
+  ],
+  "switch_steps": [
+    10
+  ],
+  "include_matched_no_switch": true,
+  "source_splits": [
+    "test"
+  ],
+  "source_routes": [
+    -1,
+    1
+  ],
+  "source_episodes_per_route": 2,
+  "action_protocol": "Replay each held-out flat-tilt action sequence unchanged under every matched schedule",
+  "switch_protocol": "Before executing action at the declared step, rotate the complete physical state into the new board frame without advancing time or changing public state/history",
+  "terminal_protocol": "Continue through goal success; stop on collision, fall/boundary, source exhaustion, or 30 transitions",
+  "prediction_samples_per_hypothesis": 16,
+  "prediction_horizon": 1,
+  "common_prediction_draws_across_hypotheses": true,
+  "transition_family": "Three-state symmetric time-homogeneous Markov law; one shared off-diagonal probability",
+  "transition_probability_grid": [
+    0.0001,
+    0.0003,
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1
+  ],
+  "transition_selection": "Development-selected off-diagonal probability 0.03, frozen before the final replay",
+  "posterior_regularization": 0,
+  "test_policy": "Final E2 on fixed held-out source cases; identical actions and observations across models",
+  "figure_relative_steps": [
+    -10,
+    15
+  ],
+  "confidence_threshold": 0.9,
+  "confidence_intervals": "20000-draw percentile bootstrap over the 12 source-episode blocks; retain matched no-switch trials; disclose available blocks at each step",
+  "models": [
+    "diffusion",
+    "autoregressive",
+    "cvae",
+    "flow_matching"
+  ],
+  "training_seed": 13,
+  "new_training": false,
+  "physical_rollouts_per_split": 24,
+  "model_specific_physical_rollouts": false,
+  "output": "outputs/e2_switching_plus15",
+  "transition_hazard_definition": "h = 2 * off_diagonal_probability; diagonal = 1-h, each alternative = h/2",
+  "context_update": "predictive_prior = T @ posterior; next_posterior proportional to untempered learned likelihood * predictive_prior",
+  "likelihood_exponent": 1.0,
+  "maximum_transitions": 30,
+  "figure_steps": [
+    0,
+    30
+  ],
+  "fixed_total_hazard": 0.06
+}

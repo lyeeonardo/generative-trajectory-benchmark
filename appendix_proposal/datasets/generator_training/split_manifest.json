@@ -1,0 +1,90 @@
+{
+  "output_root": "datasets/generator_training",
+  "physics_backend": "mujoco_rigid",
+  "scene_id_modulus": 1000000,
+  "seed": 0,
+  "source_base_scene_ids": 5215,
+  "source_episodes": 54725,
+  "source_root": "datasets/specialist_policy_approved_v1/all",
+  "source_steps": 1441169,
+  "splits": {
+    "test": {
+      "archive_root": "datasets/generator_training/test",
+      "base_scene_id_max": 5189,
+      "base_scene_id_min": 3,
+      "base_scene_ids": 521,
+      "collision": 0,
+      "episodes": 5519,
+      "setting_episode_counts": {
+        "0": 482,
+        "1": 463,
+        "10": 458,
+        "11": 432,
+        "2": 483,
+        "3": 475,
+        "4": 459,
+        "5": 450,
+        "6": 433,
+        "7": 459,
+        "8": 480,
+        "9": 445
+      },
+      "steps": 144007,
+      "success": 5519,
+      "timeout": 0
+    },
+    "train": {
+      "archive_root": "datasets/generator_training/train",
+      "base_scene_id_max": 5215,
+      "base_scene_id_min": 0,
+      "base_scene_ids": 4172,
+      "collision": 0,
+      "episodes": 43665,
+      "setting_episode_counts": {
+        "0": 3801,
+        "1": 3720,
+        "10": 3576,
+        "11": 3480,
+        "2": 3865,
+        "3": 3792,
+        "4": 3569,
+        "5": 3463,
+        "6": 3488,
+        "7": 3541,
+        "8": 3717,
+        "9": 3653
+      },
+      "steps": 1147398,
+      "success": 43665,
+      "timeout": 0
+    },
+    "val": {
+      "archive_root": "datasets/generator_training/val",
+      "base_scene_id_max": 5213,
+      "base_scene_id_min": 8,
+      "base_scene_ids": 522,
+      "collision": 0,
+      "episodes": 5541,
+      "setting_episode_counts": {
+        "0": 480,
+        "1": 473,
+        "10": 456,
+        "11": 445,
+        "2": 492,
+        "3": 470,
+        "4": 437,
+        "5": 446,
+        "6": 449,
+        "7": 458,
+        "8": 477,
+        "9": 458
+      },
+      "steps": 149764,
+      "success": 5541,
+      "timeout": 0
+    }
+  },
+  "test_ratio": 0.09999999999999995,
+  "train_ratio": 0.8,
+  "val_ratio": 0.1
+}

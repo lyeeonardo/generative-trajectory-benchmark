@@ -1,0 +1,16 @@
+{
+  "attempts": 2,
+  "case_id": 6,
+  "files": {
+    "attempts.json": "a9247903737918623ddd30ab287bcc5c9ba06f86a692be7da63b92239bebf57c",
+    "episode_00.json": "522e87c817401e72b05b1465a03a60ddf27d8fd637196d05fc6fd65c972db208",
+    "episode_00.npz": "cc56dd77f0e4ce841cef038b8fd70cb9ef406e1d7ea3b94bf21ec7b8beebc50f",
+    "episode_01.json": "a9f9d2beee9fb895f98709b7bfe9c76cbae8cf42cd54f1c9cff6ec9aa45e6b40",
+    "episode_01.npz": "e47026203c3699473dac42ce3369e6107f05707ab237d35d7c4897ad8c4fede8"
+  },
+  "lateral_degrees": -15,
+  "obstacle_x": 0.2,
+  "side": -1,
+  "split": "development",
+  "successes": 2
+}

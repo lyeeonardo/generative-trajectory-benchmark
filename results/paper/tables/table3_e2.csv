@@ -1,0 +1,5 @@
+model,delay_median,delay_min,delay_max,identified_by_six,correct_observation_30
+Diffusion,3,2,4,12/12,5/12
+Autoregressive,5,5,8,10/12,7/12
+CVAE,4,3,10,10/12,0/12
+Flow matching,4,3,4,12/12,0/12

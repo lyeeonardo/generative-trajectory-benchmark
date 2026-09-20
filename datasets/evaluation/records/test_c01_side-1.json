@@ -1,0 +1,19 @@
+{
+  "anchors": [
+    0,
+    23,
+    64
+  ],
+  "case_id": "test_c01_side-1",
+  "nominal_strata": [
+    "initial",
+    "obstacle_approach",
+    "late_goal_approach"
+  ],
+  "private_sha256": "f61c05190cc6c7d7eb1de07d5d4cfc7eeac3c081cb9aeee0604c3acf32e419ab",
+  "public_sha256": "f34f5f35c98a192d425371d106ff0dbb3c699eac2f52ece8fbe0e2f2ce1ea848",
+  "role": "test",
+  "selected_rollin_success": true,
+  "source_episode_id": 10200,
+  "source_episode_sha256": "c3489b7259beae48bab853fc9817a4a838391e2ccfb5519aede29907c2265726"
+}

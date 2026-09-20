@@ -1,0 +1,5 @@
+model,direct_success,reuse_success,h6_rmse_mm,direct_ms_per_action,reuse_ms_per_action
+Diffusion,81/90,68/90,14.295,57.123,9.794
+Autoregressive,2/90,2/90,65.809,48.735,12.982
+Joint CVAE,49/90,61/90,15.264,5.643,1.236
+Flow matching,43/90,34/90,24.776,199.571,37.037

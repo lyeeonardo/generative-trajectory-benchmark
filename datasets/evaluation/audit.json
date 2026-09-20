@@ -1,0 +1,10 @@
+{
+  "cases": 54,
+  "dataset_manifest_sha256": "4fdbd230ee5552a4164fc24bf5881386a8f3ca55c347e318106a52610f7ced2e",
+  "environment_source_sha256": "c9c2c12268a3cb25d7b114f24801b08954aceccd2471798c2308a13cd0961a10",
+  "fixed_action_branches": 2592,
+  "scope": "Public contexts and private restore states come from retained successful episodes; fixed plans execute under the uphill settling environment.",
+  "snapshots": 162,
+  "status": "PASS",
+  "truth_steps": 15410
+}

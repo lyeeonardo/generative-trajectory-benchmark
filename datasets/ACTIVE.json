@@ -1,0 +1,11 @@
+{
+  "dataset_id": "uphill_push_v1",
+  "path": "datasets/uphill_push_v1",
+  "status": "VERIFIED",
+  "purpose": "Single canonical dataset shared by Diffusion, Flow Matching, Autoregressive, and CVAE.",
+  "manifest_sha256": "4fdbd230ee5552a4164fc24bf5881386a8f3ca55c347e318106a52610f7ced2e",
+  "readiness_receipt": "datasets/READINESS.json",
+  "readiness_sha256": "10b9c3de01b1bb2465e6fc84668a381c4a2803264629e8f9e4f90fe0f73ce80f",
+  "verified_scope": "All reference episodes and ALL generated intervention branches replayed; all retained rows linked exactly to source windows; split, normalization and stopping coverage verified.",
+  "source": "Retained canonical dataset after repository reset"
+}

@@ -1,0 +1,15 @@
+{
+  "artifacts": {
+    "calibration": "outputs/equal_wall_clock_cpu/calibration.csv",
+    "calibration_measurements": "outputs/equal_wall_clock_cpu/calibration_measurements.csv",
+    "evaluation_runs": "outputs/equal_wall_clock_cpu/evaluation_runs.csv",
+    "experiment_record": "outputs/equal_wall_clock_cpu/experiment_record.md",
+    "per_budget_summary": "outputs/equal_wall_clock_cpu/per_budget_summary.csv",
+    "per_episode": "outputs/equal_wall_clock_cpu/per_episode.csv",
+    "per_step": "outputs/equal_wall_clock_cpu/per_step.csv"
+  },
+  "calibration_rows": 60,
+  "evaluation_runs": 60,
+  "output_root": "outputs/equal_wall_clock_cpu",
+  "summary_rows": 60
+}

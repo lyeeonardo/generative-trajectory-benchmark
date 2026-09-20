@@ -1,0 +1,28 @@
+{
+  "attempts": 14,
+  "case_id": 6,
+  "files": {
+    "attempts.json": "8077af6266a6295b8e1e3efc31c39213961b420505dfae38c4c50afc685bab81",
+    "episode_00.json": "d1aed5e884c5e43e61a271fc00c4c2753d1b7d0da13a2a912c2b545ab8d1bf15",
+    "episode_00.npz": "4bea4e06cb09bb27baa8dc5641c70e6925d5254e86a5687ec7cfab55205b29a4",
+    "episode_01.json": "a2a1f9adfd3c865f46318cedeac2aae019c88673a71e05cc1a8c0fa9e567549d",
+    "episode_01.npz": "c86d2dc9500191c7e3eed1415651d0a629b0b69a489649ba1645cb2a874be300",
+    "episode_02.json": "1e03649100f6279333b9ee38892692392ebfe7a6e74f8df5a7a97e7f5f0f3304",
+    "episode_02.npz": "4aed99c0a2f48a18d833c518fc1b20a898e269b03aca76aafe889da9997e18eb",
+    "episode_03.json": "3c75e9934056270bd6bd1f889341ab356eab2b41816243fadea521aa0c3387d4",
+    "episode_03.npz": "6d7fe247ff2582d04d2486d0773d7155a63e65927fba50fd9a39d35de299fb69",
+    "episode_04.json": "a170c9911dfb22d14bff160be357db8607611e89e6d8bd445df97c199a4d4544",
+    "episode_04.npz": "b50f86bcd5bdf0c6cf199cd7c8f26f9efd5ff7480bb6074646aa9d74ec92eacd",
+    "episode_05.json": "276b761e1cb37ecc0ec2c58df299d5fa5005c390c625aacafd22c3cca336ea44",
+    "episode_05.npz": "207a46817f4d07a6530dc2a12dcc14e88ad2031bea56324c2541a6c3e683f516",
+    "episode_06.json": "7b710b790fe4074eff22ea735582cef560f314ad959b352c8ece3a77465424ce",
+    "episode_06.npz": "198f0d40bf431541c405adf836131109e31ee5837cc044eae495a6742296bae4",
+    "episode_07.json": "285a1476b20b99e0732768cde27f8b3a1949c6feb888233cd02d9690a6d14eed",
+    "episode_07.npz": "bb08c08da16cb367cea11eec40e847cf74e55b6037fde54c9caf581b68f1809c"
+  },
+  "lateral_degrees": -15,
+  "obstacle_x": 0.2,
+  "side": -1,
+  "split": "train",
+  "successes": 8
+}

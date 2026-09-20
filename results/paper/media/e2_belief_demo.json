@@ -1,0 +1,14 @@
+{
+  "selection_rule": "Among all switched model/trial pairs ending in the correct +15\u00b0 class, maximize mean p(+15\u00b0) over observations 16\u201330; then prefer shorter threshold delay and larger final probability.",
+  "trial_id": "test_c1_side-1_episode10201_switch_10",
+  "model": "autoregressive",
+  "model_label": "Autoregressive Transformer",
+  "source_episode_id": 10201,
+  "mean_p_plus15_observations_16_30": 0.979319645320979,
+  "threshold_0_9_delay_after_switch": 5,
+  "final_p_plus15": 0.997053924603021,
+  "switch_step": 10,
+  "frames": 31,
+  "frame_duration_ms": 170,
+  "output": "results/paper/media/e2_belief_demo.gif"
+}

@@ -1,0 +1,139 @@
+{
+  "generator": "assemble_mujoco_approved_dataset.py",
+  "archive_scope": "approved_aggregate",
+  "physics_backend": "mujoco_rigid",
+  "approval_policy": "12 setting-level success archives; failed attempts preserved only in sidecar diagnostics",
+  "source_roots": {
+    "full": "datasets/specialist_policy_full",
+    "retry": "datasets/specialist_policy_retry_30_0"
+  },
+  "num_settings": 12,
+  "setting_episode_counts": [
+    {
+      "setting_name": "long_+00p0_lat_+00p0",
+      "source_kind": "full",
+      "num_successes": 4763,
+      "num_steps": 139502,
+      "original_scene_id_min": 0,
+      "original_scene_id_max": 5215,
+      "aggregate_scene_id_min": 0,
+      "aggregate_scene_id_max": 5215
+    },
+    {
+      "setting_name": "long_+00p0_lat_+10p0",
+      "source_kind": "full",
+      "num_successes": 4656,
+      "num_steps": 129385,
+      "original_scene_id_min": 0,
+      "original_scene_id_max": 5215,
+      "aggregate_scene_id_min": 1000000,
+      "aggregate_scene_id_max": 1005215
+    },
+    {
+      "setting_name": "long_+00p0_lat_-10p0",
+      "source_kind": "full",
+      "num_successes": 4840,
+      "num_steps": 140306,
+      "original_scene_id_min": 0,
+      "original_scene_id_max": 5215,
+      "aggregate_scene_id_min": 2000000,
+      "aggregate_scene_id_max": 2005215
+    },
+    {
+      "setting_name": "long_+10p0_lat_+00p0",
+      "source_kind": "full",
+      "num_successes": 4737,
+      "num_steps": 119228,
+      "original_scene_id_min": 0,
+      "original_scene_id_max": 5215,
+      "aggregate_scene_id_min": 3000000,
+      "aggregate_scene_id_max": 3005215
+    },
+    {
+      "setting_name": "long_+10p0_lat_+10p0",
+      "source_kind": "full",
+      "num_successes": 4465,
+      "num_steps": 130228,
+      "original_scene_id_min": 0,
+      "original_scene_id_max": 5215,
+      "aggregate_scene_id_min": 4000000,
+      "aggregate_scene_id_max": 4005215
+    },
+    {
+      "setting_name": "long_+10p0_lat_-10p0",
+      "source_kind": "full",
+      "num_successes": 4359,
+      "num_steps": 121024,
+      "original_scene_id_min": 0,
+      "original_scene_id_max": 5215,
+      "aggregate_scene_id_min": 5000000,
+      "aggregate_scene_id_max": 5005215
+    },
+    {
+      "setting_name": "long_+20p0_lat_+00p0",
+      "source_kind": "full",
+      "num_successes": 4370,
+      "num_steps": 111279,
+      "original_scene_id_min": 0,
+      "original_scene_id_max": 5215,
+      "aggregate_scene_id_min": 6000000,
+      "aggregate_scene_id_max": 6005215
+    },
+    {
+      "setting_name": "long_+20p0_lat_+10p0",
+      "source_kind": "full",
+      "num_successes": 4458,
+      "num_steps": 108721,
+      "original_scene_id_min": 0,
+      "original_scene_id_max": 5215,
+      "aggregate_scene_id_min": 7000000,
+      "aggregate_scene_id_max": 7005215
+    },
+    {
+      "setting_name": "long_+20p0_lat_-10p0",
+      "source_kind": "full",
+      "num_successes": 4674,
+      "num_steps": 118839,
+      "original_scene_id_min": 0,
+      "original_scene_id_max": 5215,
+      "aggregate_scene_id_min": 8000000,
+      "aggregate_scene_id_max": 8005215
+    },
+    {
+      "setting_name": "long_+30p0_lat_+00p0",
+      "source_kind": "retry",
+      "num_successes": 4556,
+      "num_steps": 109487,
+      "original_scene_id_min": 0,
+      "original_scene_id_max": 5215,
+      "aggregate_scene_id_min": 9000000,
+      "aggregate_scene_id_max": 9005215
+    },
+    {
+      "setting_name": "long_+30p0_lat_+10p0",
+      "source_kind": "full",
+      "num_successes": 4490,
+      "num_steps": 107246,
+      "original_scene_id_min": 0,
+      "original_scene_id_max": 5215,
+      "aggregate_scene_id_min": 10000000,
+      "aggregate_scene_id_max": 10005215
+    },
+    {
+      "setting_name": "long_+30p0_lat_-10p0",
+      "source_kind": "full",
+      "num_successes": 4357,
+      "num_steps": 105924,
+      "original_scene_id_min": 0,
+      "original_scene_id_max": 5215,
+      "aggregate_scene_id_min": 11000000,
+      "aggregate_scene_id_max": 11005215
+    }
+  ],
+  "source_archive": "datasets/specialist_policy_approved_v1/all",
+  "split_root": "datasets/generator_training",
+  "split": "train",
+  "split_seed": 0,
+  "scene_id_modulus": 1000000,
+  "base_scene_disjoint_split": true
+}

@@ -1,0 +1,77 @@
+{
+  "development": {
+    "completion_rows": 4041,
+    "episodes": 36,
+    "exact_duplicates_removed": 794,
+    "failure_windows": 82,
+    "proposal_rows": 7449,
+    "raw_rows": 13982,
+    "rows": 13188,
+    "scenario_rows": {
+      "0": 1473,
+      "1": 1508,
+      "2": 1501,
+      "3": 1438,
+      "4": 1437,
+      "5": 1435,
+      "6": 1486,
+      "7": 1460,
+      "8": 1450
+    },
+    "source_counts": {
+      "0": 4192,
+      "1": 3257,
+      "2": 5739
+    }
+  },
+  "test": {
+    "completion_rows": 4042,
+    "episodes": 36,
+    "exact_duplicates_removed": 794,
+    "failure_windows": 74,
+    "proposal_rows": 7456,
+    "raw_rows": 14006,
+    "rows": 13212,
+    "scenario_rows": {
+      "0": 1502,
+      "1": 1460,
+      "2": 1516,
+      "3": 1420,
+      "4": 1478,
+      "5": 1419,
+      "6": 1459,
+      "7": 1552,
+      "8": 1406
+    },
+    "source_counts": {
+      "0": 4204,
+      "1": 3255,
+      "2": 5753
+    }
+  },
+  "train": {
+    "completion_rows": 16357,
+    "episodes": 144,
+    "exact_duplicates_removed": 3263,
+    "failure_windows": 345,
+    "proposal_rows": 30297,
+    "raw_rows": 56968,
+    "rows": 53705,
+    "scenario_rows": {
+      "0": 5906,
+      "1": 6105,
+      "2": 5956,
+      "3": 5980,
+      "4": 5879,
+      "5": 5879,
+      "6": 6097,
+      "7": 5991,
+      "8": 5912
+    },
+    "source_counts": {
+      "0": 17050,
+      "1": 13249,
+      "2": 23406
+    }
+  }
+}

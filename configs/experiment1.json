@@ -1,0 +1,114 @@
+{
+  "status": "ready_for_locked_test_execution",
+  "execution_ready": true,
+  "dataset": "datasets/uphill_push_v1",
+  "environment": "environment.task.UphillTask",
+  "horizon": 6,
+  "tilts_degrees": [
+    [
+      -15,
+      20
+    ],
+    [
+      0,
+      20
+    ],
+    [
+      15,
+      20
+    ]
+  ],
+  "obstacle_x": [
+    -0.2,
+    0,
+    0.2
+  ],
+  "route_label_is_model_input": false,
+  "normalization": "datasets/uphill_push_v1/cache/normalization.json",
+  "test_use": "One sealed reporting campaign after all selections, operating points, and likelihood calibrations are frozen",
+  "experiment": 1,
+  "title": "Controlled prediction",
+  "horizons": [
+    1,
+    3,
+    6
+  ],
+  "test_snapshots": 54,
+  "test_branches": 864,
+  "prediction_samples": 32,
+  "primary_metrics": [
+    "position_velocity_rod_RMSE_MAE",
+    "energy_score",
+    "coverage_and_width",
+    "event_Brier",
+    "causal_prefix_discrepancy",
+    "H1_H6_discrepancy"
+  ],
+  "plan": "docs/experiment1.md",
+  "prediction_qualification": {
+    "H1_ball_position_rmse_max": 0.02,
+    "H1_ball_velocity_rmse_max": 0.3,
+    "H1_yaw_rmse_max": 0.2,
+    "H6_ball_position_rmse_max": 0.06,
+    "H6_ball_velocity_rmse_max": 0.6,
+    "H6_yaw_rmse_max": 0.5,
+    "maximum_mean_std_over_kinematic_rmse": 3.0,
+    "maximum_position_rmse_over_kinematic": 1.05,
+    "minimum_each_channel_95_coverage": 0.8,
+    "physical_error_scale_floor": [
+      0.02,
+      0.02,
+      0.1,
+      0.1,
+      0.01,
+      0.01,
+      0.1
+    ]
+  },
+  "development_likelihood_calibration": "parent-separated development snapshots only; final calibration remains locked",
+  "development_execution_ready": true,
+  "success_criterion": {
+    "contract": "configs/success_criterion.json",
+    "definition": "2 consecutive safe steps inside the unchanged goal region with ball speed below 0.15 m/s; stop at success"
+  },
+  "behavior_test_allocation": {
+    "fixed_physical_cases": 9,
+    "proposal_rng_seeds": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "episodes_per_fit_per_arm": 90,
+    "training_fits_per_family": 1,
+    "episodes_per_family_per_arm": 90,
+    "arms": [
+      "every_step",
+      "agreement_reuse",
+      "wrong_tilt_every_step"
+    ]
+  },
+  "uncertainty": {
+    "training_fit": "One predeclared fit per family (seed 13); no retraining-variation interval.",
+    "episode_proportion": "Primary: 20,000-draw block bootstrap over ten locked proposal-trial seeds with all nine fixed cases retained per trial; supplemental: Clopper-Pearson exact episode interval.",
+    "paired_effect": "Deterministic paired block bootstrap over the same ten locked proposal-trial seeds; retain all nine case-wise differences inside each resampled trial.",
+    "scope": "Proposal-trial variation for seed 13 conditional on nine fixed physical conditions."
+  },
+  "full_contract": "configs/experiment1_full.json",
+  "full_freeze": "outputs/e1_full/freeze.json",
+  "final_families": [
+    "diffusion",
+    "autoregressive",
+    "cvae",
+    "flow_matching"
+  ],
+  "final_seeds": [
+    13
+  ]
+}

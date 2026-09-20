@@ -1,0 +1,184 @@
+{
+  "finished_at_unix": 1780671939.4789844,
+  "models_requested": [
+    "bc_mdn_aif",
+    "cvae_aif",
+    "transformer_aif",
+    "diffusion_policy_aif",
+    "flow_matching_aif"
+  ],
+  "results": {
+    "bc_mdn_aif": {
+      "best_checkpoint_path": "outputs/generators/bc_mdn_aif/checkpoints/best.pt",
+      "config_hash": "a7c26dd64aaea431",
+      "config_hash_path": "outputs/generators/bc_mdn_aif/metrics/config_hash.json",
+      "config_path": "configs/generator/full_bc_mdn.yaml",
+      "dataset": {
+        "failure_conditioned": true,
+        "failure_sidecar_paths": [
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+00p0/settings/long_+00p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+10p0/settings/long_+00p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_-10p0/settings/long_+00p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+00p0/settings/long_+10p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+10p0/settings/long_+10p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_-10p0/settings/long_+10p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+00p0/settings/long_+20p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+10p0/settings/long_+20p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_-10p0/settings/long_+20p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+00p0/settings/long_+30p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+10p0/settings/long_+30p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_-10p0/settings/long_+30p0_lat_-10p0/failure_trajectories.npz"
+        ],
+        "train_archive_root": "datasets/generator_training/train",
+        "train_windows": 1165177,
+        "val_archive_root": "datasets/generator_training/val",
+        "val_windows": 149764
+      },
+      "elapsed_sec": 106.8882269859314,
+      "final_checkpoint_path": "outputs/generators/bc_mdn_aif/checkpoints/final.pt",
+      "normalization_hash": "8daa75a244b76bca",
+      "normalization_path": "outputs/generators/bc_mdn_aif/normalization.json",
+      "sample_diagnostics_path": "outputs/generators/bc_mdn_aif/plots/sample_diagnostics.json",
+      "status": "complete",
+      "training_result_path": "outputs/generators/bc_mdn_aif/metrics/training_result.json"
+    },
+    "cvae_aif": {
+      "best_checkpoint_path": "outputs/generators/cvae_aif/checkpoints/best.pt",
+      "config_hash": "8f5e1e43377e7131",
+      "config_hash_path": "outputs/generators/cvae_aif/metrics/config_hash.json",
+      "config_path": "configs/generator/full_cvae.yaml",
+      "dataset": {
+        "failure_conditioned": true,
+        "failure_sidecar_paths": [
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+00p0/settings/long_+00p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+10p0/settings/long_+00p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_-10p0/settings/long_+00p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+00p0/settings/long_+10p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+10p0/settings/long_+10p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_-10p0/settings/long_+10p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+00p0/settings/long_+20p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+10p0/settings/long_+20p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_-10p0/settings/long_+20p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+00p0/settings/long_+30p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+10p0/settings/long_+30p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_-10p0/settings/long_+30p0_lat_-10p0/failure_trajectories.npz"
+        ],
+        "train_archive_root": "datasets/generator_training/train",
+        "train_windows": 1165177,
+        "val_archive_root": "datasets/generator_training/val",
+        "val_windows": 149764
+      },
+      "elapsed_sec": 148.59353804588318,
+      "final_checkpoint_path": "outputs/generators/cvae_aif/checkpoints/final.pt",
+      "normalization_hash": "8daa75a244b76bca",
+      "normalization_path": "outputs/generators/cvae_aif/normalization.json",
+      "sample_diagnostics_path": "outputs/generators/cvae_aif/plots/sample_diagnostics.json",
+      "status": "complete",
+      "training_result_path": "outputs/generators/cvae_aif/metrics/training_result.json"
+    },
+    "diffusion_policy_aif": {
+      "best_checkpoint_path": "outputs/generators/diffusion_policy_aif/checkpoints/best.pt",
+      "config_hash": "8cbe434a84b83319",
+      "config_hash_path": "outputs/generators/diffusion_policy_aif/metrics/config_hash.json",
+      "config_path": "configs/generator/full_diffusion_transformer.yaml",
+      "dataset": {
+        "failure_conditioned": true,
+        "failure_sidecar_paths": [
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+00p0/settings/long_+00p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+10p0/settings/long_+00p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_-10p0/settings/long_+00p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+00p0/settings/long_+10p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+10p0/settings/long_+10p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_-10p0/settings/long_+10p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+00p0/settings/long_+20p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+10p0/settings/long_+20p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_-10p0/settings/long_+20p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+00p0/settings/long_+30p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+10p0/settings/long_+30p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_-10p0/settings/long_+30p0_lat_-10p0/failure_trajectories.npz"
+        ],
+        "train_archive_root": "datasets/generator_training/train",
+        "train_windows": 1165177,
+        "val_archive_root": "datasets/generator_training/val",
+        "val_windows": 149764
+      },
+      "elapsed_sec": 1224.5624165534973,
+      "final_checkpoint_path": "outputs/generators/diffusion_policy_aif/checkpoints/final.pt",
+      "normalization_hash": "8daa75a244b76bca",
+      "normalization_path": "outputs/generators/diffusion_policy_aif/normalization.json",
+      "sample_diagnostics_path": "outputs/generators/diffusion_policy_aif/plots/sample_diagnostics.json",
+      "status": "complete",
+      "training_result_path": "outputs/generators/diffusion_policy_aif/metrics/training_result.json"
+    },
+    "flow_matching_aif": {
+      "best_checkpoint_path": "outputs/generators/flow_matching_aif/checkpoints/best.pt",
+      "config_hash": "1d2a8d9c5c24f6a9",
+      "config_hash_path": "outputs/generators/flow_matching_aif/metrics/config_hash.json",
+      "config_path": "configs/generator/full_flow_matching.yaml",
+      "dataset": {
+        "failure_conditioned": true,
+        "failure_sidecar_paths": [
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+00p0/settings/long_+00p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+10p0/settings/long_+00p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_-10p0/settings/long_+00p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+00p0/settings/long_+10p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+10p0/settings/long_+10p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_-10p0/settings/long_+10p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+00p0/settings/long_+20p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+10p0/settings/long_+20p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_-10p0/settings/long_+20p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+00p0/settings/long_+30p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+10p0/settings/long_+30p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_-10p0/settings/long_+30p0_lat_-10p0/failure_trajectories.npz"
+        ],
+        "train_archive_root": "datasets/generator_training/train",
+        "train_windows": 1165177,
+        "val_archive_root": "datasets/generator_training/val",
+        "val_windows": 149764
+      },
+      "elapsed_sec": 183.18886804580688,
+      "final_checkpoint_path": "outputs/generators/flow_matching_aif/checkpoints/final.pt",
+      "normalization_hash": "8daa75a244b76bca",
+      "normalization_path": "outputs/generators/flow_matching_aif/normalization.json",
+      "sample_diagnostics_path": "outputs/generators/flow_matching_aif/plots/sample_diagnostics.json",
+      "status": "complete",
+      "training_result_path": "outputs/generators/flow_matching_aif/metrics/training_result.json"
+    },
+    "transformer_aif": {
+      "best_checkpoint_path": "outputs/generators/transformer_aif/checkpoints/best.pt",
+      "config_hash": "45046889891c7a75",
+      "config_hash_path": "outputs/generators/transformer_aif/metrics/config_hash.json",
+      "config_path": "configs/generator/full_transformer.yaml",
+      "dataset": {
+        "failure_conditioned": true,
+        "failure_sidecar_paths": [
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+00p0/settings/long_+00p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+10p0/settings/long_+00p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_-10p0/settings/long_+00p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+00p0/settings/long_+10p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+10p0/settings/long_+10p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_-10p0/settings/long_+10p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+00p0/settings/long_+20p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+10p0/settings/long_+20p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_-10p0/settings/long_+20p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+00p0/settings/long_+30p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+10p0/settings/long_+30p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_-10p0/settings/long_+30p0_lat_-10p0/failure_trajectories.npz"
+        ],
+        "train_archive_root": "datasets/generator_training/train",
+        "train_windows": 1165177,
+        "val_archive_root": "datasets/generator_training/val",
+        "val_windows": 149764
+      },
+      "elapsed_sec": 961.6308987140656,
+      "final_checkpoint_path": "outputs/generators/transformer_aif/checkpoints/final.pt",
+      "normalization_hash": "8daa75a244b76bca",
+      "normalization_path": "outputs/generators/transformer_aif/normalization.json",
+      "sample_diagnostics_path": "outputs/generators/transformer_aif/plots/sample_diagnostics.json",
+      "status": "complete",
+      "training_result_path": "outputs/generators/transformer_aif/metrics/training_result.json"
+    }
+  },
+  "started_at_unix": 1780669314.5850742,
+  "status": "complete"
+}

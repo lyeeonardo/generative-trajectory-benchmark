@@ -1,0 +1,10 @@
+{
+  "case_id": 0,
+  "episode_id": 2100,
+  "max_restore_error": 0.0,
+  "physics_steps": 1784,
+  "reference_sha256": "faadf467731477e9046a3db21074206a462fcda0bca8b68ebd3ba5878e9ff24f",
+  "rows": 391,
+  "sha256": "ae4e9d293e9563d52fed34105703d9742230197aec53eb65a8d666e6ba8f0961",
+  "split": "development"
+}

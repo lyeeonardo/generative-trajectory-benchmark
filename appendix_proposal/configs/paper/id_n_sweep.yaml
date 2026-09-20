@@ -1,0 +1,40 @@
+models: [cem_aif, bc_mdn_aif, cvae_aif, transformer_aif, diffusion_policy_aif, flow_matching_aif]
+preset: run
+split: test
+benchmark_mode: equal_k
+output_dir: outputs/paper/id_n_sweep
+dataset_root: datasets/generator_training
+scene_ids: [0, 1, 2, 3, 4, 5]
+seeds: [0]
+K: 128
+H: 8
+gamma_t: 3.0
+max_steps: 100
+save_visuals: false
+use_generator_context: true
+outcome_conditioning: true
+control_outcome_label: success
+physics_backend: mujoco_rigid
+physics_params:
+  rod_workspace_margin: 1.2
+  max_ball_speed: 4.0
+checkpoint_paths:
+  bc_mdn_aif: outputs/generators/bc_mdn_aif/checkpoints/best.pt
+  cvae_aif: outputs/generators/cvae_aif/checkpoints/best.pt
+  transformer_aif: outputs/generators/transformer_aif/checkpoints/best.pt
+  diffusion_policy_aif: outputs/generators/diffusion_policy_aif/checkpoints/best.pt
+  flow_matching_aif: outputs/generators/flow_matching_aif/checkpoints/final.pt
+model_configs:
+  bc_mdn_aif:
+    device: cuda
+  cvae_aif:
+    device: cuda
+  transformer_aif:
+    device: cuda
+  diffusion_policy_aif:
+    device: cuda
+    sample_steps: 32
+  flow_matching_aif:
+    device: cuda
+    ode_steps: 16
+    solver: heun

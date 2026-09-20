@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iwai26-mujoco-rod-push"
+version = "0.1.0"
+description = "Generative trajectory world-model benchmarks for active-inference control."
+requires-python = ">=3.11"
+dependencies = [
+  "imageio==2.37.0",
+  "matplotlib==3.10.3",
+  "mujoco==3.6.0",
+  "numpy==2.1.2",
+  "pillow==11.0.0",
+  "torch==2.7.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+include = ["scripts*", "aif*", "data", "envs*", "evaluation*", "generators*", "mujoco_task*", "training*"]
+exclude = ["appendix_proposal*", "datasets*", "tests*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+norecursedirs = ["appendix_proposal", "datasets", "checkpoints", "results", "outputs", ".venv"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true

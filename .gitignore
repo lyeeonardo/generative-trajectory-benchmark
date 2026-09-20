@@ -1,0 +1,14 @@
+# Python tools and local environments
+__pycache__/
+.pytest_cache/
+.venv/
+*.py[cod]
+*.egg-info/
+
+# Fresh main-paper runs are local; compact final artifacts live in results/paper.
+/outputs/
+
+# Appendix checkpoints/manifests are retained, but new benchmark runs are local.
+/appendix_proposal/outputs/paper/
+/appendix_proposal/outputs/paper_ready/
+/appendix_proposal/outputs/equal_wall_clock_cpu/

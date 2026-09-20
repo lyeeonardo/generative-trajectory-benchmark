@@ -1,0 +1,567 @@
+{
+  "artifact_manifest": "outputs/generators/paper_step4_training_manifest.json",
+  "artifacts": {
+    "bc_mdn_aif": {
+      "best_checkpoint": {
+        "checkpoint_config": {
+          "action_dim": 3,
+          "context_dim": 51,
+          "dropout": 0.05,
+          "hidden_dim": 256,
+          "horizon": 8,
+          "layer_norm": true,
+          "max_log_std": 1.0,
+          "min_log_std": -4.0,
+          "num_components": 8,
+          "variant": "mdn"
+        },
+        "has_config": true,
+        "has_normalizer": true,
+        "parameter_count": 180872,
+        "sha256_16": "3cbe7dc7874af239",
+        "size_bytes": 728981,
+        "state_tensor_count": 10
+      },
+      "best_checkpoint_path": "outputs/generators/bc_mdn_aif/checkpoints/best.pt",
+      "config_hash": "a7c26dd64aaea431",
+      "config_hash_path": "outputs/generators/bc_mdn_aif/metrics/config_hash.json",
+      "config_path": "configs/generator/full_bc_mdn.yaml",
+      "configured_candidate": "best",
+      "configured_checkpoint_path": "outputs/generators/bc_mdn_aif/checkpoints/best.pt",
+      "dataset": {
+        "failure_conditioned": true,
+        "failure_sidecar_paths": [
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+00p0/settings/long_+00p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+10p0/settings/long_+00p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_-10p0/settings/long_+00p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+00p0/settings/long_+10p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+10p0/settings/long_+10p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_-10p0/settings/long_+10p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+00p0/settings/long_+20p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+10p0/settings/long_+20p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_-10p0/settings/long_+20p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+00p0/settings/long_+30p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+10p0/settings/long_+30p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_-10p0/settings/long_+30p0_lat_-10p0/failure_trajectories.npz"
+        ],
+        "train_archive_root": "datasets/generator_training/train",
+        "train_windows": 1165177,
+        "val_archive_root": "datasets/generator_training/val",
+        "val_windows": 149764
+      },
+      "final_checkpoint": {
+        "checkpoint_config": {
+          "action_dim": 3,
+          "context_dim": 51,
+          "dropout": 0.05,
+          "hidden_dim": 256,
+          "horizon": 8,
+          "layer_norm": true,
+          "max_log_std": 1.0,
+          "min_log_std": -4.0,
+          "num_components": 8,
+          "variant": "mdn"
+        },
+        "has_config": true,
+        "has_normalizer": true,
+        "parameter_count": 180872,
+        "sha256_16": "03106aa2c01004c1",
+        "size_bytes": 728997,
+        "state_tensor_count": 10
+      },
+      "final_checkpoint_path": "outputs/generators/bc_mdn_aif/checkpoints/final.pt",
+      "normalization_hash": "8daa75a244b76bca",
+      "normalization_path": "outputs/generators/bc_mdn_aif/normalization.json",
+      "proposal_validation": {
+        "action_max": [
+          0.05978363752365112,
+          0.2589872479438782,
+          0.6936092376708984
+        ],
+        "action_min": [
+          -0.3979811668395996,
+          -0.20751744508743286,
+          -1.4265460968017578
+        ],
+        "context_dim": 51,
+        "diagnostics": {
+          "component_indices": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "component_usage": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 4,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          "mixture_components": 8,
+          "proposal_time": 0.00113261301885359,
+          "sample_time_sec": 0.00113261301885359,
+          "variant": "mdn"
+        },
+        "queried_outcome": "success",
+        "sample_time_sec": 0.00113261301885359,
+        "shape": [
+          4,
+          8,
+          3
+        ]
+      },
+      "sample_diagnostics_path": "outputs/generators/bc_mdn_aif/plots/sample_diagnostics.json",
+      "training_result_path": "outputs/generators/bc_mdn_aif/metrics/training_result.json"
+    },
+    "cvae_aif": {
+      "best_checkpoint": {
+        "checkpoint_config": {
+          "action_dim": 3,
+          "beta_kl": 0.005,
+          "context_dim": 51,
+          "hidden_dim": 256,
+          "horizon": 8,
+          "latent_dim": 32,
+          "recon_weight": 1.0,
+          "sample_noise_std": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "has_config": true,
+        "has_normalizer": true,
+        "parameter_count": 195160,
+        "sha256_16": "7be544138feeb949",
+        "size_bytes": 786697,
+        "state_tensor_count": 12
+      },
+      "best_checkpoint_path": "outputs/generators/cvae_aif/checkpoints/best.pt",
+      "config_hash": "8f5e1e43377e7131",
+      "config_hash_path": "outputs/generators/cvae_aif/metrics/config_hash.json",
+      "config_path": "configs/generator/full_cvae.yaml",
+      "configured_candidate": "best",
+      "configured_checkpoint_path": "outputs/generators/cvae_aif/checkpoints/best.pt",
+      "dataset": {
+        "failure_conditioned": true,
+        "failure_sidecar_paths": [
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+00p0/settings/long_+00p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+10p0/settings/long_+00p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_-10p0/settings/long_+00p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+00p0/settings/long_+10p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+10p0/settings/long_+10p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_-10p0/settings/long_+10p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+00p0/settings/long_+20p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+10p0/settings/long_+20p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_-10p0/settings/long_+20p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+00p0/settings/long_+30p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+10p0/settings/long_+30p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_-10p0/settings/long_+30p0_lat_-10p0/failure_trajectories.npz"
+        ],
+        "train_archive_root": "datasets/generator_training/train",
+        "train_windows": 1165177,
+        "val_archive_root": "datasets/generator_training/val",
+        "val_windows": 149764
+      },
+      "final_checkpoint": {
+        "checkpoint_config": {
+          "action_dim": 3,
+          "beta_kl": 0.005,
+          "context_dim": 51,
+          "hidden_dim": 256,
+          "horizon": 8,
+          "latent_dim": 32,
+          "recon_weight": 1.0,
+          "sample_noise_std": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "has_config": true,
+        "has_normalizer": true,
+        "parameter_count": 195160,
+        "sha256_16": "0c0498feac6ef7f9",
+        "size_bytes": 786715,
+        "state_tensor_count": 12
+      },
+      "final_checkpoint_path": "outputs/generators/cvae_aif/checkpoints/final.pt",
+      "normalization_hash": "8daa75a244b76bca",
+      "normalization_path": "outputs/generators/cvae_aif/normalization.json",
+      "proposal_validation": {
+        "action_max": [
+          0.7998939156532288,
+          0.800000011920929,
+          3.99924373626709
+        ],
+        "action_min": [
+          -0.7999868988990784,
+          0.800000011920929,
+          -3.932096242904663
+        ],
+        "context_dim": 51,
+        "diagnostics": {
+          "proposal_time": 0.00021018797997385263,
+          "sample_time_sec": 0.00021018797997385263
+        },
+        "queried_outcome": "success",
+        "sample_time_sec": 0.00021018797997385263,
+        "shape": [
+          4,
+          8,
+          3
+        ]
+      },
+      "sample_diagnostics_path": "outputs/generators/cvae_aif/plots/sample_diagnostics.json",
+      "training_result_path": "outputs/generators/cvae_aif/metrics/training_result.json"
+    },
+    "diffusion_policy_aif": {
+      "best_checkpoint": {
+        "checkpoint_config": {
+          "action_dim": 3,
+          "backbone": "transformer",
+          "beta_end": 0.02,
+          "beta_start": 0.0001,
+          "context_dim": 51,
+          "context_dropout": 0.05,
+          "diffusion_steps": 64,
+          "dropout": 0.0,
+          "hidden_dim": 512,
+          "horizon": 8,
+          "num_heads": 8,
+          "num_layers": 4,
+          "prediction_type": "epsilon",
+          "sample_steps": 16
+        },
+        "has_config": true,
+        "has_normalizer": true,
+        "parameter_count": 12652739,
+        "sha256_16": "3ec3d581feafcc72",
+        "size_bytes": 50631721,
+        "state_tensor_count": 60
+      },
+      "best_checkpoint_path": "outputs/generators/diffusion_policy_aif/checkpoints/best.pt",
+      "config_hash": "8cbe434a84b83319",
+      "config_hash_path": "outputs/generators/diffusion_policy_aif/metrics/config_hash.json",
+      "config_path": "configs/generator/full_diffusion_transformer.yaml",
+      "configured_candidate": "best",
+      "configured_checkpoint_path": "outputs/generators/diffusion_policy_aif/checkpoints/best.pt",
+      "dataset": {
+        "failure_conditioned": true,
+        "failure_sidecar_paths": [
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+00p0/settings/long_+00p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+10p0/settings/long_+00p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_-10p0/settings/long_+00p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+00p0/settings/long_+10p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+10p0/settings/long_+10p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_-10p0/settings/long_+10p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+00p0/settings/long_+20p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+10p0/settings/long_+20p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_-10p0/settings/long_+20p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+00p0/settings/long_+30p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+10p0/settings/long_+30p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_-10p0/settings/long_+30p0_lat_-10p0/failure_trajectories.npz"
+        ],
+        "train_archive_root": "datasets/generator_training/train",
+        "train_windows": 1165177,
+        "val_archive_root": "datasets/generator_training/val",
+        "val_windows": 149764
+      },
+      "final_checkpoint": {
+        "checkpoint_config": {
+          "action_dim": 3,
+          "backbone": "transformer",
+          "beta_end": 0.02,
+          "beta_start": 0.0001,
+          "context_dim": 51,
+          "context_dropout": 0.05,
+          "diffusion_steps": 64,
+          "dropout": 0.0,
+          "hidden_dim": 512,
+          "horizon": 8,
+          "num_heads": 8,
+          "num_layers": 4,
+          "prediction_type": "epsilon",
+          "sample_steps": 16
+        },
+        "has_config": true,
+        "has_normalizer": true,
+        "parameter_count": 12652739,
+        "sha256_16": "8f51fd52f93a9bd6",
+        "size_bytes": 50631787,
+        "state_tensor_count": 60
+      },
+      "final_checkpoint_path": "outputs/generators/diffusion_policy_aif/checkpoints/final.pt",
+      "normalization_hash": "8daa75a244b76bca",
+      "normalization_path": "outputs/generators/diffusion_policy_aif/normalization.json",
+      "proposal_validation": {
+        "action_max": [
+          0.800000011920929,
+          0.800000011920929,
+          4.0
+        ],
+        "action_min": [
+          -0.800000011920929,
+          -0.800000011920929,
+          -4.0
+        ],
+        "context_dim": 51,
+        "diagnostics": {
+          "backbone": "transformer",
+          "denoising_steps": 16,
+          "diffusion_steps": 64,
+          "proposal_time": 0.044537106005009264,
+          "sample_time_sec": 0.044537106005009264
+        },
+        "queried_outcome": "success",
+        "sample_time_sec": 0.044537106005009264,
+        "shape": [
+          4,
+          8,
+          3
+        ]
+      },
+      "sample_diagnostics_path": "outputs/generators/diffusion_policy_aif/plots/sample_diagnostics.json",
+      "training_result_path": "outputs/generators/diffusion_policy_aif/metrics/training_result.json"
+    },
+    "flow_matching_aif": {
+      "best_checkpoint": {
+        "checkpoint_config": {
+          "action_dim": 3,
+          "action_squash": "clip",
+          "context_dim": 51,
+          "context_dropout": 0.05,
+          "hidden_dim": 512,
+          "horizon": 8,
+          "num_layers": 4,
+          "ode_steps": 16,
+          "path_type": "linear",
+          "solver": "heun"
+        },
+        "has_config": true,
+        "has_normalizer": true,
+        "parameter_count": 847384,
+        "sha256_16": "33b4514a3faf4421",
+        "size_bytes": 3395221,
+        "state_tensor_count": 10
+      },
+      "best_checkpoint_path": "outputs/generators/flow_matching_aif/checkpoints/best.pt",
+      "config_hash": "1d2a8d9c5c24f6a9",
+      "config_hash_path": "outputs/generators/flow_matching_aif/metrics/config_hash.json",
+      "config_path": "configs/generator/full_flow_matching.yaml",
+      "configured_candidate": "final",
+      "configured_checkpoint_path": "outputs/generators/flow_matching_aif/checkpoints/final.pt",
+      "dataset": {
+        "failure_conditioned": true,
+        "failure_sidecar_paths": [
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+00p0/settings/long_+00p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+10p0/settings/long_+00p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_-10p0/settings/long_+00p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+00p0/settings/long_+10p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+10p0/settings/long_+10p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_-10p0/settings/long_+10p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+00p0/settings/long_+20p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+10p0/settings/long_+20p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_-10p0/settings/long_+20p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+00p0/settings/long_+30p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+10p0/settings/long_+30p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_-10p0/settings/long_+30p0_lat_-10p0/failure_trajectories.npz"
+        ],
+        "train_archive_root": "datasets/generator_training/train",
+        "train_windows": 1165177,
+        "val_archive_root": "datasets/generator_training/val",
+        "val_windows": 149764
+      },
+      "final_checkpoint": {
+        "checkpoint_config": {
+          "action_dim": 3,
+          "action_squash": "clip",
+          "context_dim": 51,
+          "context_dropout": 0.05,
+          "hidden_dim": 512,
+          "horizon": 8,
+          "num_layers": 4,
+          "ode_steps": 16,
+          "path_type": "linear",
+          "solver": "heun"
+        },
+        "has_config": true,
+        "has_normalizer": true,
+        "parameter_count": 847384,
+        "sha256_16": "2cef16921071db24",
+        "size_bytes": 3395237,
+        "state_tensor_count": 10
+      },
+      "final_checkpoint_path": "outputs/generators/flow_matching_aif/checkpoints/final.pt",
+      "normalization_hash": "8daa75a244b76bca",
+      "normalization_path": "outputs/generators/flow_matching_aif/normalization.json",
+      "proposal_validation": {
+        "action_max": [
+          0.800000011920929,
+          0.800000011920929,
+          -0.33550500869750977
+        ],
+        "action_min": [
+          -0.800000011920929,
+          -0.800000011920929,
+          -4.0
+        ],
+        "context_dim": 51,
+        "diagnostics": {
+          "action_squash": "clip",
+          "log_prob_available": false,
+          "ode_steps": 16,
+          "path_type": "linear",
+          "proposal_time": 0.003577505995053798,
+          "sample_diversity": 0.18479005992412567,
+          "sample_time_sec": 0.003577505995053798,
+          "solver": "heun"
+        },
+        "queried_outcome": "success",
+        "sample_time_sec": 0.003577505995053798,
+        "shape": [
+          4,
+          8,
+          3
+        ]
+      },
+      "sample_diagnostics_path": "outputs/generators/flow_matching_aif/plots/sample_diagnostics.json",
+      "training_result_path": "outputs/generators/flow_matching_aif/metrics/training_result.json"
+    },
+    "transformer_aif": {
+      "best_checkpoint": {
+        "checkpoint_config": {
+          "action_dim": 3,
+          "action_squash_eps": 1e-05,
+          "context_dim": 51,
+          "dropout": 0.05,
+          "hidden_dim": 512,
+          "horizon": 8,
+          "max_log_std": 2.0,
+          "min_log_std": -5.0,
+          "num_components": 8,
+          "num_heads": 8,
+          "num_layers": 4,
+          "temperature": 1.0,
+          "variant": "gmm"
+        },
+        "has_config": true,
+        "has_normalizer": true,
+        "parameter_count": 12933688,
+        "sha256_16": "2ca1687c158f71bc",
+        "size_bytes": 51754299,
+        "state_tensor_count": 57
+      },
+      "best_checkpoint_path": "outputs/generators/transformer_aif/checkpoints/best.pt",
+      "config_hash": "45046889891c7a75",
+      "config_hash_path": "outputs/generators/transformer_aif/metrics/config_hash.json",
+      "config_path": "configs/generator/full_transformer.yaml",
+      "configured_candidate": "best",
+      "configured_checkpoint_path": "outputs/generators/transformer_aif/checkpoints/best.pt",
+      "dataset": {
+        "failure_conditioned": true,
+        "failure_sidecar_paths": [
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+00p0/settings/long_+00p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_+10p0/settings/long_+00p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+00p0_lat_-10p0/settings/long_+00p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+00p0/settings/long_+10p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_+10p0/settings/long_+10p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+10p0_lat_-10p0/settings/long_+10p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+00p0/settings/long_+20p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_+10p0/settings/long_+20p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+20p0_lat_-10p0/settings/long_+20p0_lat_-10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+00p0/settings/long_+30p0_lat_+00p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_+10p0/settings/long_+30p0_lat_+10p0/failure_trajectories.npz",
+          "datasets/specialist_policy_approved_v1/runs/long_+30p0_lat_-10p0/settings/long_+30p0_lat_-10p0/failure_trajectories.npz"
+        ],
+        "train_archive_root": "datasets/generator_training/train",
+        "train_windows": 1165177,
+        "val_archive_root": "datasets/generator_training/val",
+        "val_windows": 149764
+      },
+      "final_checkpoint": {
+        "checkpoint_config": {
+          "action_dim": 3,
+          "action_squash_eps": 1e-05,
+          "context_dim": 51,
+          "dropout": 0.05,
+          "hidden_dim": 512,
+          "horizon": 8,
+          "max_log_std": 2.0,
+          "min_log_std": -5.0,
+          "num_components": 8,
+          "num_heads": 8,
+          "num_layers": 4,
+          "temperature": 1.0,
+          "variant": "gmm"
+        },
+        "has_config": true,
+        "has_normalizer": true,
+        "parameter_count": 12933688,
+        "sha256_16": "fae43a8822001535",
+        "size_bytes": 51754362,
+        "state_tensor_count": 57
+      },
+      "final_checkpoint_path": "outputs/generators/transformer_aif/checkpoints/final.pt",
+      "normalization_hash": "8daa75a244b76bca",
+      "normalization_path": "outputs/generators/transformer_aif/normalization.json",
+      "proposal_validation": {
+        "action_max": [
+          0.7908583283424377,
+          0.713888943195343,
+          -0.9877874851226807
+        ],
+        "action_min": [
+          0.7180766463279724,
+          -0.6999759674072266,
+          -3.999729633331299
+        ],
+        "context_dim": 51,
+        "diagnostics": {
+          "component_usage": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 18,
+            "4": 0,
+            "5": 14,
+            "6": 0,
+            "7": 0
+          },
+          "conditioning": "context_plus_previous_actions",
+          "log_prob_available": true,
+          "num_heads": 8,
+          "num_layers": 4,
+          "proposal_time": 0.02656058600405231,
+          "sample_time_sec": 0.02656058600405231,
+          "temperature": 1.0,
+          "variant": "gmm"
+        },
+        "queried_outcome": "success",
+        "sample_time_sec": 0.02656058600405231,
+        "shape": [
+          4,
+          8,
+          3
+        ]
+      },
+      "sample_diagnostics_path": "outputs/generators/transformer_aif/plots/sample_diagnostics.json",
+      "training_result_path": "outputs/generators/transformer_aif/metrics/training_result.json"
+    }
+  },
+  "closed_loop_selection": null,
+  "errors": [],
+  "models": [
+    "bc_mdn_aif",
+    "cvae_aif",
+    "transformer_aif",
+    "diffusion_policy_aif",
+    "flow_matching_aif"
+  ],
+  "paper_config": "configs/paper/id_n_sweep.yaml",
+  "status": "passed"
+}

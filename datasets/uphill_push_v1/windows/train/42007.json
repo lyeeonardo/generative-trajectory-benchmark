@@ -1,0 +1,10 @@
+{
+  "case_id": 4,
+  "episode_id": 42007,
+  "max_restore_error": 0.0,
+  "physics_steps": 1784,
+  "reference_sha256": "af4a454303884365f4088a092c5feaa4fa8435d384484cf0c98282ead60e3d9a",
+  "rows": 391,
+  "sha256": "320c3d0e2c1c511bb6eeb283704df164cfc2b351228b7e45f965f0dd5dc804a8",
+  "split": "train"
+}

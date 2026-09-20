@@ -1,0 +1,40 @@
+{
+  "attempt": 4,
+  "case_id": 4,
+  "episode_id": 42003,
+  "lateral_degrees": 0,
+  "longitudinal_degrees": 20,
+  "obstacle_x": 0.0,
+  "parameters": {
+    "clear": 0.3997937064182896,
+    "duration": 3.013488257484039,
+    "feed": 0.06755085574871991,
+    "gap": 0.07375926330562643,
+    "gravity": 1.2032665694550548,
+    "kd": 5.363122354035885,
+    "kp": 14.386257832929386,
+    "rodgain": 13.645410935984723,
+    "yawgain": 8.527455803471847
+  },
+  "scene": {
+    "goal": [
+      0.0,
+      0.8399999737739563
+    ],
+    "lateral_tilt": 0.0,
+    "longitudinal_tilt": 0.3490658503988659,
+    "obstacle_center": [
+      0.0,
+      0.0
+    ],
+    "obstacle_radius": 0.1,
+    "seed": 0,
+    "start": [
+      0.0,
+      -0.6499999761581421
+    ]
+  },
+  "side": 1,
+  "split": "train",
+  "steps": 84
+}

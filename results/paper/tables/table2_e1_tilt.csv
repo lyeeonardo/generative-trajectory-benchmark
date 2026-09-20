@@ -1,0 +1,5 @@
+model,accuracy_percent,log_loss,ece
+Diffusion,98.96,0.540,0.062
+Autoregressive,79.28,0.959,0.127
+Joint CVAE,99.07,0.434,0.057
+Flow matching,99.07,0.474,0.069

@@ -1,0 +1,140 @@
+[
+  {
+    "attempt": 0,
+    "measured_side": 1,
+    "parameters": {
+      "clear": 0.32092751479445397,
+      "duration": 2.934350958085123,
+      "feed": 0.11560930012761508,
+      "gap": 0.07230470084001886,
+      "gravity": 0.5283854091141206,
+      "kd": 4.892299932059911,
+      "kp": 8.094656521667131,
+      "rodgain": 16.930434098694935,
+      "yawgain": 6.123801661834545
+    },
+    "steps": 90,
+    "success": false,
+    "terminal_events": [
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "attempt": 1,
+    "measured_side": 1,
+    "parameters": {
+      "clear": 0.3930257051744179,
+      "duration": 3.0242062140852646,
+      "feed": 0.039391676425699136,
+      "gap": 0.0694185840028432,
+      "gravity": 1.045606950468314,
+      "kd": 5.77308260080047,
+      "kp": 17.694569752852882,
+      "rodgain": 17.887129288251167,
+      "yawgain": 11.000266398299802
+    },
+    "steps": 89,
+    "success": true,
+    "terminal_events": [
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "attempt": 2,
+    "measured_side": 1,
+    "parameters": {
+      "clear": 0.3392585026359309,
+      "duration": 3.425029663620284,
+      "feed": 0.1013679016427621,
+      "gap": 0.07106085985721149,
+      "gravity": 1.0228839285956097,
+      "kd": 5.38632519652172,
+      "kp": 19.233924120119916,
+      "rodgain": 19.195600345874055,
+      "yawgain": 14.842506758015055
+    },
+    "steps": 100,
+    "success": false,
+    "terminal_events": [
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "attempt": 3,
+    "measured_side": 1,
+    "parameters": {
+      "clear": 0.267797853032161,
+      "duration": 3.9418887687273005,
+      "feed": 0.11766134598327094,
+      "gap": 0.07094350459327163,
+      "gravity": 1.3913116194238018,
+      "kd": 3.7348223759421177,
+      "kp": 28.504779846811882,
+      "rodgain": 25.64999528449452,
+      "yawgain": 14.380250386731031
+    },
+    "steps": 100,
+    "success": false,
+    "terminal_events": [
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "attempt": 4,
+    "measured_side": 1,
+    "parameters": {
+      "clear": 0.3996715636391466,
+      "duration": 2.9805562935746646,
+      "feed": 0.06700219813969976,
+      "gap": 0.07389306645954608,
+      "gravity": 1.177990070016796,
+      "kd": 5.277730896657891,
+      "kp": 14.462139024899692,
+      "rodgain": 13.69152188868955,
+      "yawgain": 8.326545965666025
+    },
+    "steps": 100,
+    "success": false,
+    "terminal_events": [
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "attempt": 5,
+    "measured_side": 1,
+    "parameters": {
+      "clear": 0.4,
+      "duration": 3.0919485024140667,
+      "feed": 0.05278446905644492,
+      "gap": 0.07559379111345506,
+      "gravity": 0.9326766055779696,
+      "kd": 5.77842232439413,
+      "kp": 16.6607316221165,
+      "rodgain": 17.03342752143434,
+      "yawgain": 7.749171627345611
+    },
+    "steps": 89,
+    "success": true,
+    "terminal_events": [
+      true,
+      false,
+      false,
+      false
+    ]
+  }
+]

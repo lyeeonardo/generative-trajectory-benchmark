@@ -1,0 +1,2019 @@
+{
+  "artifacts": {
+    "development_cases.json": "1d37325652a77c5857029fd606db45391a7fd9557ba3ce4c48673726f009f93d",
+    "private/calibration_c00_side+1.json": "cc3667e5e7f2aa40cba7c4bb71902e3a5fe6fdaabd1ae3068bc748bdac86861a",
+    "private/calibration_c00_side-1.json": "4ed61918ca8bd81528cfc829773724f575c527c7cd04af8335cb8c679ae3c3dd",
+    "private/calibration_c01_side+1.json": "6f87db54bbe517c0201d0510622b47834dca77ad7b2b917c2b15c2807a5b8eef",
+    "private/calibration_c01_side-1.json": "e87b9cda0046395104ab6320db8ee78e2752ced978f41f8dd4abaf86ed3fe3e5",
+    "private/calibration_c02_side+1.json": "81d099c80492c6a5f6574673ea60736e18631af0f516a21865405ede51b541ed",
+    "private/calibration_c02_side-1.json": "78aa968c38a61db7a9b2dc487b84c6dcd05b3be8b9101ce719265bb983329f27",
+    "private/calibration_c03_side+1.json": "51ae83f0c56e359cbe57c7e075caec604bbbe102012eb355e3a26ad36aa97b08",
+    "private/calibration_c03_side-1.json": "91a222c1f6e946f94839f67f7e0dae2ba98ab95d195d4ed5e3ea914b9b348683",
+    "private/calibration_c04_side+1.json": "49a0c2291d915c37dfd6da6ebec570155286cde59ea0fc428acd30be01022c17",
+    "private/calibration_c04_side-1.json": "531f438314c7ea48202b58068a8d360fa51706f01feb130eb75029db83d958f1",
+    "private/calibration_c05_side+1.json": "177c1b79665ae188433dfd85886525d4b1b1f97f1f6f4127535212331a24d4f0",
+    "private/calibration_c05_side-1.json": "e59e3d1c10018685feb57fc6b8164c7f7214001438406e3417acc95baeb538a3",
+    "private/calibration_c06_side+1.json": "0a1780298edcec03a899aeac34075d960c0e92556986ef225b36795fa6c4cea8",
+    "private/calibration_c06_side-1.json": "c14458f7755d7ea51329eef49169cc133608f65f7ec4c7438ef57b8ddcf32346",
+    "private/calibration_c07_side+1.json": "479ef9cb0154ab9e216fdd60a3fd49eda37543c42b1b474595ee2f155ff6686e",
+    "private/calibration_c07_side-1.json": "d61309c3445c36fa3f81de5e6f0f8b5b894454c0c068b56293fc03b9caa5f385",
+    "private/calibration_c08_side+1.json": "9d8673b59586ae79ca2e95d8e55c0ec3ecfb3819ee82472c348a483a45da21c3",
+    "private/calibration_c08_side-1.json": "6a0b10a3ad4795baa13bdc0aa41c5f44393c7c63a75f888e09f8b1d9b82c50e5",
+    "private/development_c00_side+1.json": "f9c2629e6b47780b843191398f7a305e4c03a223ca1fe418e0a319f913f3595a",
+    "private/development_c00_side-1.json": "7ba1ef776a10091c7d0f94d5ff33e8313e1f8db382815cbf52cfdcf8ea204b98",
+    "private/development_c01_side+1.json": "0430bddea9cdc846e5975611add1c81ba0413faba262c2879bced4e13543e64c",
+    "private/development_c01_side-1.json": "abbaf569f74d4ebed1cb6ea9a36750495e6f6ed2bf00c937945ec55b3b802308",
+    "private/development_c02_side+1.json": "a07e7acaeb6950d1d9334ba54adf8211a93fbcc614cc5437119fbb5131e89526",
+    "private/development_c02_side-1.json": "8b56e5a7fd32ae69ef2b657bf3cb4c23102bd5d94c6f1e581e398425eef32cee",
+    "private/development_c03_side+1.json": "0b17d273a0bd6b4e0267841d5e030443a39dc3a58773e32eb47d5a32e0da35ca",
+    "private/development_c03_side-1.json": "623a15c1707de4cf0455d880003c53bf3599c9be010fcd5ea67249c4459a6fd2",
+    "private/development_c04_side+1.json": "a874cb2fe06343d43d05f582863ee36e1489e3a8790d3da388a24440f110b438",
+    "private/development_c04_side-1.json": "35eae07888380883d8c9c04c255a56347fd94dea66504074d7bca1965efad0b0",
+    "private/development_c05_side+1.json": "e4ad52e9756ed3757cf524e7a33aedb95c3d5d1d1eb93c4758587b36da688fd4",
+    "private/development_c05_side-1.json": "88ede85c736bdf3254eea5bf5048f5cf8c573306192f0561f9cd7552d9e2dfd1",
+    "private/development_c06_side+1.json": "5cc711dfd4a31549de6641410e53f0d1719129b7f73e05a9f95e11e2fae4627b",
+    "private/development_c06_side-1.json": "a219f2d41534fcb8629f12ec07fc54b4ab7ed1950fbfd5dd90297a5a68a11c15",
+    "private/development_c07_side+1.json": "f014ea04fc19ac42a34c2de178679b59d6750662079bef6cea70465bb830465d",
+    "private/development_c07_side-1.json": "835953fafd98ea104ec06c1f818e661ffff387649404aedca183bfc9314f6b6b",
+    "private/development_c08_side+1.json": "60913e261405b4bb15556a5aac33f5ebf08bd5a3042f2ab6048282bc75a0fc93",
+    "private/development_c08_side-1.json": "dd0459148d377e7017c7b12de3b211ef2746d9d0e2cea17c7b76a19a370f6a52",
+    "private/test_c00_side+1.json": "f8fb89cfcf7df28a897c9197a7b8e0c8b5cbeffd24bc193ea6556c0587bd01f1",
+    "private/test_c00_side-1.json": "484dff62f264c0426bdb12a3976ea889880807f1920f2828195f7684e56db0d6",
+    "private/test_c01_side+1.json": "dedaef92803164a9216daf12962b7101ed8883f6baf64a4fa855a0ce5d816750",
+    "private/test_c01_side-1.json": "f61c05190cc6c7d7eb1de07d5d4cfc7eeac3c081cb9aeee0604c3acf32e419ab",
+    "private/test_c02_side+1.json": "baf7b722022de51aba066e7aa974a1e925ce808dbeddfc0aa55423ee9d224eed",
+    "private/test_c02_side-1.json": "de450c4f9670b4a4557ca0613260eea42aab70815846ecced30f280078e6f8ee",
+    "private/test_c03_side+1.json": "7024f576faa949b121c71159a936f8df7de900558b606c99e4434cd23cc2d0a8",
+    "private/test_c03_side-1.json": "e64dcebf387c07b3fa6e6173584a32e2d1a0f377735b7d487473e329fdebcfc0",
+    "private/test_c04_side+1.json": "ea0f7b63144d47d747f529b56871b838544f4e9e3e74a6cdd1e592f0d5f0db9a",
+    "private/test_c04_side-1.json": "7f66c2cefcff2780ba0c9cbe73da313299009ff55e19f097faacf4c5a9858d4a",
+    "private/test_c05_side+1.json": "cbcba8cc210acf6eb543b73c1770ce2fc528b77b6c02725e6745daba56b2ba4d",
+    "private/test_c05_side-1.json": "f8e930f8f504ad6136b688559ff3a901c4b67c43618ee5e473f575b16bdf6fd4",
+    "private/test_c06_side+1.json": "f7a735873a35cf7161f4301d5476de8d761a9926a7c4d7762f2812760867ff6e",
+    "private/test_c06_side-1.json": "703394ab8956d0fa31e47662ab81a8026c5872f5eb5c0d8a3c2b95b66ecc646b",
+    "private/test_c07_side+1.json": "df0c1cdfaad3f693a5c32f4e24e51bcf8832e78c89c304a0da5dede6fe104cd0",
+    "private/test_c07_side-1.json": "7ac10d1dbe56682aec68a94e629e9a423d0115ab6dbef03b7dd5fc83c9e9925e",
+    "private/test_c08_side+1.json": "a571c1e22b9aaa5982f7400ab337d721f7a3a22845ba363445916fbc67662fe5",
+    "private/test_c08_side-1.json": "06b1bae7178bbc77033945ab845e99f48c3a834e90718bb07defb663c5281cd9",
+    "public/calibration_c00_side+1.npz": "53141744f284195d58a03d883571f759af5d3b756edda90034308b2c2cd3a447",
+    "public/calibration_c00_side-1.npz": "a70d591016b3d33a241714bd168be3405b97ddbc6a4eb4343cce59eea60a437a",
+    "public/calibration_c01_side+1.npz": "c06144ac5fcc71bc74d2ab404e00afddee9f8e6e3bde59bb2634f82bcbe3ec03",
+    "public/calibration_c01_side-1.npz": "43d80867df6446a6dd253f4040aaeb85b60e714eac55f073a9c5ce2cdf0303af",
+    "public/calibration_c02_side+1.npz": "59a41c58263827e2de792d458488236df4e38d335c5ed7c528896c6da51e244f",
+    "public/calibration_c02_side-1.npz": "41aa7caf68f2038f1f8aad643baa248ea3c999e483fe8e2a41e9b68f7e389659",
+    "public/calibration_c03_side+1.npz": "4760626cfdfc7f30cb4cdd08463e99fd19129dda2fb1067581a21a345cba7e7c",
+    "public/calibration_c03_side-1.npz": "194de699f547c9ea43ce6f40e184cf7b32850ee3c4c23012973fae036b3e88f7",
+    "public/calibration_c04_side+1.npz": "d914457696be579ef5fbf6f2c6ee68552d960b462a115d3a01b9cacd74567efe",
+    "public/calibration_c04_side-1.npz": "fbd8a1802e5022c8f479cadb87439bc9bdac193a91371fb57390da44bb9adc1e",
+    "public/calibration_c05_side+1.npz": "f1ba16feaed46a6dc6756f48c41fe3a8cd2339941f4069a8504438ff57176c1f",
+    "public/calibration_c05_side-1.npz": "944006950f865d3422fd970cb67367a61f1d3ca7486d7af3c7c736ee20cc8d23",
+    "public/calibration_c06_side+1.npz": "9585279537ea927009e73a2352359ae4a70adff76aa33b2e4869cea76040c255",
+    "public/calibration_c06_side-1.npz": "73b576e65ffdfa15947224b7404735d7a6c8b037f9821b1435b828f87ad49345",
+    "public/calibration_c07_side+1.npz": "fc279b2e59c6919f730807770f8305566fe9b06bd9595fdc6426b99dd1a691f1",
+    "public/calibration_c07_side-1.npz": "adb40df85facbee3fec825c818597cb7191e556ff1e860fc9207af54ad278d4f",
+    "public/calibration_c08_side+1.npz": "b31ec6ebc79bd12fc7285f5704d3b4b1eb30aa70ae2c9fae13593e4239eea65a",
+    "public/calibration_c08_side-1.npz": "fc690a9fe43b575e88ba539dbbd26342f0bd0dfc0dc4f76235ced2607b0366e0",
+    "public/development_c00_side+1.npz": "09df641bdd0a1b7ef80d2496b7dcff789090f3218bb646b7d7542a8270f217a8",
+    "public/development_c00_side-1.npz": "98dcd2ce8b1f8d66a7a1fe7c5dc0d498349fdb84bd67b86317e8354c2f8baccb",
+    "public/development_c01_side+1.npz": "5c2254f1f61a2deb733f41e1b9ff8d37c60f668502640d2995f148a167abd47a",
+    "public/development_c01_side-1.npz": "e88d05a240fffa955e0fb3975a684bb5d52bf74a0c0161261bce7f73657533c4",
+    "public/development_c02_side+1.npz": "3d4516919b6e48cc36df8263160beecda47bee9786ca57243d71a799267d96d7",
+    "public/development_c02_side-1.npz": "c37f4caf23a91248ff35c40b43a03f698f61301f830f7f4d229666f036e8f01f",
+    "public/development_c03_side+1.npz": "319070213c407a95cc59650132a4ca146d148f91f955a3b61412d955db76fd90",
+    "public/development_c03_side-1.npz": "afecead6a7658179be71c43a3fa40b71980526f72e50f92370a98ce2e962b3a7",
+    "public/development_c04_side+1.npz": "2e1eeb103022aae2dda745baa4ff425eca660d4ef0a2ac76b9f52cb3d8e35900",
+    "public/development_c04_side-1.npz": "0486c5f01e0fb8638915da5d9a6060c976d81cf264fe18fa8c05268dd4ca6a77",
+    "public/development_c05_side+1.npz": "dd5b5264e4aac7cea8ef54744e32b614acbd9171effec27ddd098cbeeedd83fc",
+    "public/development_c05_side-1.npz": "65caab2c29528e53b44d7429a54f3348b7d2182a53b2efe40a5e47d88d45fda4",
+    "public/development_c06_side+1.npz": "b6d488017776cf9c31f56a9efdc4e874984462c20378c4e2e0ee951ddc5482d9",
+    "public/development_c06_side-1.npz": "41d3944e28d6b1726f5b5cb259003e4d227827f7d5de3a3c1c4bfadff68b1d7d",
+    "public/development_c07_side+1.npz": "1424e585445b2a634a3d949bc501711663d0e62d10c01ba1ae63776506aa8869",
+    "public/development_c07_side-1.npz": "720444b8efa584404c0ce5c6f2480ab938ca83c527b381a0e19966ff5d80e7fd",
+    "public/development_c08_side+1.npz": "db5cd640efd9669bbaa7a8f854d41b87849d65818edbf458b4a723db8ea897ee",
+    "public/development_c08_side-1.npz": "8ce01f38f1ea2832270b413eedcdc78589d30c297f6cf1d28e1af03c28233bf0",
+    "public/test_c00_side+1.npz": "bb292b43f6e7496c48d86ffa15e868bad22a069b2aecddf4dadf408187ea7c87",
+    "public/test_c00_side-1.npz": "2f89e9807296e8c3ebeb8d038dc25f256280c31a16ce8b3013439c80e10a37d4",
+    "public/test_c01_side+1.npz": "b98973908dec5de02c1859b9e4f917bc1bb50524c5236d0d6077b4722c2d0aba",
+    "public/test_c01_side-1.npz": "f1897c84fb6519237aecf1787251bc569fb5fd9e70a5b152d84a7649f1d428ea",
+    "public/test_c02_side+1.npz": "0f4cea09644094732bc2d59f30044eaa41a5aac09b9c86b1518ad993a3c2a6e4",
+    "public/test_c02_side-1.npz": "156cd6306aa84b2193be7f5443b23ac0fcb7237933787edf99856cd65ba34c01",
+    "public/test_c03_side+1.npz": "71e74f5cd8461921f53209bda71f5495c38d59c0cd49fed4fbdbb0d29a81deda",
+    "public/test_c03_side-1.npz": "028f5e13ce16c1bfc81ea5b6bd4bc1fd4e6dec1a9bb8ea94f80f348164db4538",
+    "public/test_c04_side+1.npz": "d572d874b3d86c05781f06eb56023e2883b2a7d8a268750049cbee8f79458b87",
+    "public/test_c04_side-1.npz": "952a42339d9974c8bb59e165caf522dd62adae837cf4d55e599f3322722646ac",
+    "public/test_c05_side+1.npz": "d6c19eea4e463e3205ad8f04fc0bb0bc19bc436e13d9d71f3f041d43f1ec3fe9",
+    "public/test_c05_side-1.npz": "facb3a53157b0a7e42f3b06f2269d01e1d1a5bf630ac1ddb7f9b7d12a09a279d",
+    "public/test_c06_side+1.npz": "1d1a4a62f959c358c0d4b57e8e2b8a8351c476510f05afc6e652cbd27641a389",
+    "public/test_c06_side-1.npz": "f2aeec9618cc51582ad63e8a45bd1a0b5ff6db4a3f4a09975e937aa039a07fae",
+    "public/test_c07_side+1.npz": "35ec1ebf57a3dca4a30b83210af43a37dd028b229c9f7adcd0d451f043bb845a",
+    "public/test_c07_side-1.npz": "23e3630c5e8d2ed49eac9530d129faea4ff231dd03dee361c5ff23c76e956846",
+    "public/test_c08_side+1.npz": "3a4a2d4d498fd62e50b905aa2a960bcc6e17697a2f384e09d64b6fd619079a64",
+    "public/test_c08_side-1.npz": "7f9ff502dd118e2a305c540b6c9c3de6ce4599fcaf7d56c90a0f9040bc9ec9f7",
+    "records/calibration_c00_side+1.json": "8f003ccf6c6b6a5e7d4a7496d66bb1d3ee23ee998bafc898ae6c1e0864e8c38d",
+    "records/calibration_c00_side-1.json": "a4f1860c1cc28a834bf7db4ebbe78150f6aa8f4598e3827fe0f04d3e46ca35ba",
+    "records/calibration_c01_side+1.json": "69c4e713fff2c4c2e31dcfbd81c6b8c917d99a80d921d87bf72b6546f03bf06d",
+    "records/calibration_c01_side-1.json": "644363d6549cf19fba88a9a70df50ab6037f04a6367b4b662b3875270c565aa8",
+    "records/calibration_c02_side+1.json": "b6ee9a411cf006918867ea846c1c5de80d982eb401dc46d918797c9375e9786c",
+    "records/calibration_c02_side-1.json": "23dba3c58d0a093be44f006aee5b7bdac752beeb7c2bbcab1e5315cd2e713e68",
+    "records/calibration_c03_side+1.json": "c448e65981fca394fa23c88fa266aadf36140f8a7b119fffab0af981638b08c5",
+    "records/calibration_c03_side-1.json": "e341df656d63ec06e433c309c9467c09132bf72e01fbf0cf354a77c742ef0beb",
+    "records/calibration_c04_side+1.json": "ddfebf79bdde8fe652cbe1843f85ce855638418ac28b610febdeafca655a9a68",
+    "records/calibration_c04_side-1.json": "f46fe031966c209ba05445405303c746187c1c1cf2b752a40e95f9dc3499b0d9",
+    "records/calibration_c05_side+1.json": "a2d5b63da55fbe472e239fe5cf82d5daca88d1199e4e5face73098cda1836b3c",
+    "records/calibration_c05_side-1.json": "545cecf93cbb53225743f102b3c56440ed8432c12c83cf3615cec7d647c9d13c",
+    "records/calibration_c06_side+1.json": "0772e91f6cfa4affe2b4ed90a45e3012930525ff1a69c4deda90ab3ae313f05f",
+    "records/calibration_c06_side-1.json": "5ab2510a9760a555b4aa9e65613e6bf81fe61579844837d2c66fb5fb3f5a43ef",
+    "records/calibration_c07_side+1.json": "c070b0c5efaae955749207109871347ca42c0713148ae948602f4e348a168051",
+    "records/calibration_c07_side-1.json": "256a262d5e95f6ebfddb33e65e4980023fe06a5ed2e6b4899e32023b57595a61",
+    "records/calibration_c08_side+1.json": "231d25f859f25a73d815beb2793ec22ab15d68468e64d83fb7ba3f57fc46a8f0",
+    "records/calibration_c08_side-1.json": "a22f983c7f443f19da6b117eda90a1a76d495b2254361a3fad79cf4e35a53844",
+    "records/development_c00_side+1.json": "88a34d270c5e82607062b9a6f68cebde998c6eb430c172efeaa214af736a6ed8",
+    "records/development_c00_side-1.json": "8cb7fff709156e4b0c1737359cd5d3a89b7cc7faccc4eeb40a812b139927134d",
+    "records/development_c01_side+1.json": "8c1f399c572357d2bd354261025f5741be2dd945526812c9e148aace81942882",
+    "records/development_c01_side-1.json": "07680e9b852e805b635db94e7e73939c7a327f72b612b81c35404135206ad9fe",
+    "records/development_c02_side+1.json": "f904c36ac62cb25f88c93cf61fea472547d56b4920cc596db9758dd435e12b9d",
+    "records/development_c02_side-1.json": "c051f32bf48704cd538f9ee349986743528c23eeee71adb8b04df0556c00fdda",
+    "records/development_c03_side+1.json": "a53e7e325337bf57e68dbf286a6b468c2c2784bf48aacffe81fa68c10d30a8bd",
+    "records/development_c03_side-1.json": "f38a8839a150d2ff5ddc73a4fe0826d439a04f42b0fd3b59d25a771a3f185dd0",
+    "records/development_c04_side+1.json": "2d2eada154ee475cccf7f4792a8bfc0d7cf2d7206eab391b4d6aed1bf3e762dc",
+    "records/development_c04_side-1.json": "0cacb18a8356afca73681ee1030c99f7bc6b742dcfa089fe940f6703c0ebf24f",
+    "records/development_c05_side+1.json": "bd2760657238a79234f28708e40c7ad861e13fae4b7cfa21da0274004a8bda78",
+    "records/development_c05_side-1.json": "a4fc34ebcd5c2480f039ff2c56f8687e7ee05661dee6fc516e055feb798e10b5",
+    "records/development_c06_side+1.json": "c346c25b00fa0224056d7d6237bd6373c943cc0006d5fa3dfbc280aedb82e08d",
+    "records/development_c06_side-1.json": "2812ff497c67fbbdb1011d0e8779323dfa52c4857c8c683ac0be663773fdfbbd",
+    "records/development_c07_side+1.json": "9485f5bd497a16c3fe093723f185778ff4c64f4799fe83f3c034b98388c84e44",
+    "records/development_c07_side-1.json": "57d29eb32a3acd370131d6e32342d7206acdf877c46693150959f4bb8a2dd8c5",
+    "records/development_c08_side+1.json": "0d009b5f23dc43df4342fd53ccf93d395aca388d28641453dea0f96b1bc3cc32",
+    "records/development_c08_side-1.json": "f8b04952a371fd92fe18e3b7075bd0f3c9cb410e3a4cb672a86613467b097250",
+    "records/test_c00_side+1.json": "ab09ae3efc3a196062eabe69c9c1248227f4a824016309188f249c2b012613b9",
+    "records/test_c00_side-1.json": "ab31194ed01215754e5277a617b6e36e5a87b107d493df2c4432c3034ada4e3a",
+    "records/test_c01_side+1.json": "132816dd85b03968e291e49763efeae7d28b6939882fd73a96301d4f1445bd4d",
+    "records/test_c01_side-1.json": "4635d0ba11a3a5a65314e88ee94d9a3d876c1e1f4f3d9246b2192c9b9398884b",
+    "records/test_c02_side+1.json": "70a3ca328ebbc3326620a14e45d34fa9455e6fdf5dcc0599b2cac14d487abada",
+    "records/test_c02_side-1.json": "99b37d83da11da64bbf874a1be56d7dd8e3e04f9df455c82a09c99e323b395eb",
+    "records/test_c03_side+1.json": "da5c839828a419f3697c4d3bf1cb446c6b21ebea0b8271db7913aeb541a590da",
+    "records/test_c03_side-1.json": "582771391075e2aa7dbe3fa5f1f5e178a62e6e8acc5fd5f45cfb3388776a7839",
+    "records/test_c04_side+1.json": "4401dcc06adf2481e95c3ccc4d89a34930b26dd23863c57e5327d68bc1608e9e",
+    "records/test_c04_side-1.json": "05ba477c6199b314f92bbd1ae67fcf170852da3d33936501397c06a3cae15d87",
+    "records/test_c05_side+1.json": "53b91aec4b95a67ed085a14ab9bc7431b8ab88c44f0cfe79ce54341802a12de1",
+    "records/test_c05_side-1.json": "47bb33a931393f55557c6d029cc30f8202f81b5ade299dcfa50b799c69e168de",
+    "records/test_c06_side+1.json": "8ddf1a5655c5419e6c3864d591a1f0d6f9e9f407c9c9606ea2ee7b5a73920ab6",
+    "records/test_c06_side-1.json": "eed55be9a1beb8e5a052d4ab8e5f06acd1ce7a639b8a8aec4db02d822798d920",
+    "records/test_c07_side+1.json": "30adcecf5437a7399123dcca7b40979c664d109f28f3fc04eca68b3a8f8e6371",
+    "records/test_c07_side-1.json": "a4172df76a6cf09fe60da724f27ded59379fd3ec69067e73ecd88a05b3e9d503",
+    "records/test_c08_side+1.json": "b0f497b7b1e7d256a8ca524a526ca40520757c6994bf6282da1523579897eb92",
+    "records/test_c08_side-1.json": "dd2e79f57222c26f34d22d44d996e432d342652eb201164314998bec98fde7c0",
+    "test_cases.json": "e1a552dfdfb02d8f284eea173c38abc6e9098e053621e79d7dd019cb3de03456",
+    "truth/calibration_fixed16.npz": "db685e42131eaf2b8935a563072dc7f003aa61906ec2911bc14b284570fce6f9",
+    "truth/development_fixed16.npz": "d9a34e01ed14f6f7d47c77f9442dc8fe2fc3871e7106d201312431ad8f891e56",
+    "truth/test_fixed16.npz": "6bde9807833f7c018709637ee56b6307f783411aca952cc1ae82962a77a28e86"
+  },
+  "cases": [
+    {
+      "base_layout_id": 0,
+      "case_id": "development_c00_side-1",
+      "condition_id": 0,
+      "role": "development",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 100,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "development_c00_side+1",
+      "condition_id": 0,
+      "role": "development",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 2100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 2100,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "development_c01_side-1",
+      "condition_id": 1,
+      "role": "development",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 10100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 10100,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "development_c01_side+1",
+      "condition_id": 1,
+      "role": "development",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 12100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 12100,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "development_c02_side-1",
+      "condition_id": 2,
+      "role": "development",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 20100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 20100,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "development_c02_side+1",
+      "condition_id": 2,
+      "role": "development",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 22100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 22100,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "development_c03_side-1",
+      "condition_id": 3,
+      "role": "development",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 30100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 30100,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "development_c03_side+1",
+      "condition_id": 3,
+      "role": "development",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 32100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 32100,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "development_c04_side-1",
+      "condition_id": 4,
+      "role": "development",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 40100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 40100,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "development_c04_side+1",
+      "condition_id": 4,
+      "role": "development",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 42100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 42100,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "development_c05_side-1",
+      "condition_id": 5,
+      "role": "development",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 50100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 50100,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "development_c05_side+1",
+      "condition_id": 5,
+      "role": "development",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 52100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 52100,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "development_c06_side-1",
+      "condition_id": 6,
+      "role": "development",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 60100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 60100,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "development_c06_side+1",
+      "condition_id": 6,
+      "role": "development",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 62100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 62100,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "development_c07_side-1",
+      "condition_id": 7,
+      "role": "development",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 70100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 70100,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "development_c07_side+1",
+      "condition_id": 7,
+      "role": "development",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 72100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 72100,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "development_c08_side-1",
+      "condition_id": 8,
+      "role": "development",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 80100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 80100,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "development_c08_side+1",
+      "condition_id": 8,
+      "role": "development",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 82100,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 82100,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "calibration_c00_side-1",
+      "condition_id": 0,
+      "role": "calibration",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 101,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "calibration_c00_side+1",
+      "condition_id": 0,
+      "role": "calibration",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 2101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 2101,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "calibration_c01_side-1",
+      "condition_id": 1,
+      "role": "calibration",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 10101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 10101,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "calibration_c01_side+1",
+      "condition_id": 1,
+      "role": "calibration",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 12101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 12101,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "calibration_c02_side-1",
+      "condition_id": 2,
+      "role": "calibration",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 20101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 20101,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "calibration_c02_side+1",
+      "condition_id": 2,
+      "role": "calibration",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 22101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 22101,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "calibration_c03_side-1",
+      "condition_id": 3,
+      "role": "calibration",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 30101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 30101,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "calibration_c03_side+1",
+      "condition_id": 3,
+      "role": "calibration",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 32101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 32101,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "calibration_c04_side-1",
+      "condition_id": 4,
+      "role": "calibration",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 40101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 40101,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "calibration_c04_side+1",
+      "condition_id": 4,
+      "role": "calibration",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 42101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 42101,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "calibration_c05_side-1",
+      "condition_id": 5,
+      "role": "calibration",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 50101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 50101,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "calibration_c05_side+1",
+      "condition_id": 5,
+      "role": "calibration",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 52101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 52101,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "calibration_c06_side-1",
+      "condition_id": 6,
+      "role": "calibration",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 60101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 60101,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "calibration_c06_side+1",
+      "condition_id": 6,
+      "role": "calibration",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 62101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 62101,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "calibration_c07_side-1",
+      "condition_id": 7,
+      "role": "calibration",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 70101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 70101,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "calibration_c07_side+1",
+      "condition_id": 7,
+      "role": "calibration",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 72101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 72101,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "calibration_c08_side-1",
+      "condition_id": 8,
+      "role": "calibration",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 80101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 80101,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "calibration_c08_side+1",
+      "condition_id": 8,
+      "role": "calibration",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 82101,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 82101,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "test_c00_side-1",
+      "condition_id": 0,
+      "role": "test",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 200,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "test_c00_side+1",
+      "condition_id": 0,
+      "role": "test",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 2200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 2200,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "test_c01_side-1",
+      "condition_id": 1,
+      "role": "test",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 10200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 10200,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "test_c01_side+1",
+      "condition_id": 1,
+      "role": "test",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 12200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 12200,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "test_c02_side-1",
+      "condition_id": 2,
+      "role": "test",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 20200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 20200,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 0,
+      "case_id": "test_c02_side+1",
+      "condition_id": 2,
+      "role": "test",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          -0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 22200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 22200,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "test_c03_side-1",
+      "condition_id": 3,
+      "role": "test",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 30200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 30200,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "test_c03_side+1",
+      "condition_id": 3,
+      "role": "test",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 32200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 32200,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "test_c04_side-1",
+      "condition_id": 4,
+      "role": "test",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 40200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 40200,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "test_c04_side+1",
+      "condition_id": 4,
+      "role": "test",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 42200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 42200,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "test_c05_side-1",
+      "condition_id": 5,
+      "role": "test",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 50200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 50200,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 1,
+      "case_id": "test_c05_side+1",
+      "condition_id": 5,
+      "role": "test",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.0,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 52200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 52200,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "test_c06_side-1",
+      "condition_id": 6,
+      "role": "test",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 60200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 60200,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "test_c06_side+1",
+      "condition_id": 6,
+      "role": "test",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": -0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 62200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 62200,
+      "tilt_degrees": [
+        -15,
+        20
+      ],
+      "tilt_radians": [
+        -0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "test_c07_side-1",
+      "condition_id": 7,
+      "role": "test",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 70200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 70200,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "test_c07_side+1",
+      "condition_id": 7,
+      "role": "test",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.0,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 72200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 72200,
+      "tilt_degrees": [
+        0,
+        20
+      ],
+      "tilt_radians": [
+        0.0,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "test_c08_side-1",
+      "condition_id": 8,
+      "role": "test",
+      "route_side": -1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 80200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 80200,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    },
+    {
+      "base_layout_id": 2,
+      "case_id": "test_c08_side+1",
+      "condition_id": 8,
+      "role": "test",
+      "route_side": 1,
+      "scene": {
+        "goal": [
+          0.0,
+          0.8399999737739563
+        ],
+        "lateral_tilt": 0.2617993877991494,
+        "longitudinal_tilt": 0.3490658503988659,
+        "obstacle_center": [
+          0.20000000298023224,
+          0.0
+        ],
+        "obstacle_radius": 0.1,
+        "seed": 82200,
+        "start": [
+          0.0,
+          -0.6499999761581421
+        ]
+      },
+      "source_episode_id": 82200,
+      "tilt_degrees": [
+        15,
+        20
+      ],
+      "tilt_radians": [
+        0.2617993877991494,
+        0.3490658503988659
+      ]
+    }
+  ],
+  "dataset_manifest_sha256": "4fdbd230ee5552a4164fc24bf5881386a8f3ca55c347e318106a52610f7ced2e",
+  "environment_source_sha256": "c9c2c12268a3cb25d7b114f24801b08954aceccd2471798c2308a13cd0961a10",
+  "fixed_action_branches_per_snapshot": 16,
+  "roles": {
+    "calibration": 18,
+    "development": 18,
+    "test": 18
+  },
+  "snapshots_per_case": 3,
+  "status": "COMPLETE"
+}

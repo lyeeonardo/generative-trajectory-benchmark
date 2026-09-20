@@ -1,0 +1,118 @@
+{
+  "calibration": {
+    "completion_rows": 2040,
+    "episodes": 18,
+    "failure_windows": 43,
+    "intervention_rows": 2901,
+    "proposal_rows": 3765,
+    "quality_H6": {
+      "0": 5103,
+      "1": 788,
+      "2": 775
+    },
+    "rows": 6666,
+    "scenario_rows": {
+      "0": 721,
+      "1": 740,
+      "2": 796,
+      "3": 720,
+      "4": 765,
+      "5": 717,
+      "6": 767,
+      "7": 707,
+      "8": 733
+    },
+    "source_counts": {
+      "0": 2120,
+      "1": 1645,
+      "2": 2901
+    }
+  },
+  "development": {
+    "completion_rows": 2001,
+    "episodes": 18,
+    "failure_windows": 39,
+    "intervention_rows": 2838,
+    "proposal_rows": 3684,
+    "quality_H6": {
+      "0": 4989,
+      "1": 788,
+      "2": 745
+    },
+    "rows": 6522,
+    "scenario_rows": {
+      "0": 752,
+      "1": 768,
+      "2": 705,
+      "3": 718,
+      "4": 672,
+      "5": 718,
+      "6": 719,
+      "7": 753,
+      "8": 717
+    },
+    "source_counts": {
+      "0": 2072,
+      "1": 1612,
+      "2": 2838
+    }
+  },
+  "test": {
+    "completion_rows": 4042,
+    "episodes": 36,
+    "failure_windows": 74,
+    "intervention_rows": 5753,
+    "proposal_rows": 7456,
+    "quality_H6": {
+      "0": 10113,
+      "1": 1591,
+      "2": 1508
+    },
+    "rows": 13212,
+    "scenario_rows": {
+      "0": 1502,
+      "1": 1460,
+      "2": 1516,
+      "3": 1420,
+      "4": 1478,
+      "5": 1419,
+      "6": 1459,
+      "7": 1552,
+      "8": 1406
+    },
+    "source_counts": {
+      "0": 4204,
+      "1": 3255,
+      "2": 5753
+    }
+  },
+  "train": {
+    "completion_rows": 16357,
+    "episodes": 144,
+    "failure_windows": 345,
+    "intervention_rows": 23406,
+    "proposal_rows": 30297,
+    "quality_H6": {
+      "0": 41159,
+      "1": 6414,
+      "2": 6132
+    },
+    "rows": 53705,
+    "scenario_rows": {
+      "0": 5906,
+      "1": 6105,
+      "2": 5956,
+      "3": 5980,
+      "4": 5879,
+      "5": 5879,
+      "6": 6097,
+      "7": 5991,
+      "8": 5912
+    },
+    "source_counts": {
+      "0": 17050,
+      "1": 13249,
+      "2": 23406
+    }
+  }
+}

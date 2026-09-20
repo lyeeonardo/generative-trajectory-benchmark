@@ -1,0 +1,75 @@
+{
+  "results": {
+    "autoregressive": {
+      "agreement_reuse": {
+        "episodes": 90,
+        "successes": 2,
+        "trace_files": 8020
+      },
+      "every_step": {
+        "episodes": 90,
+        "successes": 2,
+        "trace_files": 7452
+      },
+      "wrong_tilt_every_step": {
+        "episodes": 90,
+        "successes": 0,
+        "trace_files": 6978
+      }
+    },
+    "cvae": {
+      "agreement_reuse": {
+        "episodes": 90,
+        "successes": 61,
+        "trace_files": 12470
+      },
+      "every_step": {
+        "episodes": 90,
+        "successes": 49,
+        "trace_files": 10396
+      },
+      "wrong_tilt_every_step": {
+        "episodes": 90,
+        "successes": 1,
+        "trace_files": 8414
+      }
+    },
+    "diffusion": {
+      "agreement_reuse": {
+        "episodes": 90,
+        "successes": 68,
+        "trace_files": 13124
+      },
+      "every_step": {
+        "episodes": 90,
+        "successes": 81,
+        "trace_files": 13778
+      },
+      "wrong_tilt_every_step": {
+        "episodes": 90,
+        "successes": 9,
+        "trace_files": 8626
+      }
+    },
+    "flow_matching": {
+      "agreement_reuse": {
+        "episodes": 90,
+        "successes": 34,
+        "trace_files": 9212
+      },
+      "every_step": {
+        "episodes": 90,
+        "successes": 43,
+        "trace_files": 11816
+      },
+      "wrong_tilt_every_step": {
+        "episodes": 90,
+        "successes": 9,
+        "trace_files": 7820
+      }
+    }
+  },
+  "scope": "All 1080 saved control traces; all raw proposal outputs; no new simulation or model queries",
+  "script_sha256": "435a0524185efd07f10466fc4faa03aeb98391bf475bcd279e0ca536573365de",
+  "status": "PASS"
+}

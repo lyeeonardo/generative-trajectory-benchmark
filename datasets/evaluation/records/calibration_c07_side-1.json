@@ -1,0 +1,19 @@
+{
+  "anchors": [
+    0,
+    29,
+    59
+  ],
+  "case_id": "calibration_c07_side-1",
+  "nominal_strata": [
+    "initial",
+    "obstacle_approach",
+    "late_goal_approach"
+  ],
+  "private_sha256": "d61309c3445c36fa3f81de5e6f0f8b5b894454c0c068b56293fc03b9caa5f385",
+  "public_sha256": "d266d42c7367c41fa785967dee1fc5fd597f8c8f92ac36ac933c35a34c5b8c03",
+  "role": "calibration",
+  "selected_rollin_success": true,
+  "source_episode_id": 70101,
+  "source_episode_sha256": "2ee3796274b6330b2f24187dabcbf3afe52acbba1f7688ed9e5506539e14fce9"
+}

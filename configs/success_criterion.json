@@ -1,0 +1,25 @@
+{
+  "contract": "success",
+  "version": 3,
+  "goal_region": {
+    "center": [
+      0.0,
+      0.84
+    ],
+    "radius_m": 0.12,
+    "changed": false
+  },
+  "success": {
+    "consecutive_safe_steps": 2,
+    "ball_speed_strictly_below_m_s": 0.15
+  },
+  "safety": {
+    "collision": "unchanged; terminates immediately",
+    "fall": "unchanged; terminates immediately",
+    "boundary": "unchanged; represented by the existing fall_out rule and terminates immediately",
+    "timeout_steps": 100
+  },
+  "stopping_rule": "Stop immediately at success, collision, fall/boundary, or timeout. Safety takes precedence over success; success takes precedence over timeout.",
+  "dataset_policy": "The immutable dataset is not regenerated. Its stored terminal labels and settle_count use the original 5-step/0.10-m/s collection criterion and retain that provenance.",
+  "scope": "All active experiment evaluations and predictive control; immutable historical collection labels retain their collection provenance."
+}

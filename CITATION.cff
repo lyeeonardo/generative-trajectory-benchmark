@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "Benchmarking Generative Trajectory Models for Active-Inference Control"
+type: software
+version: 0.1.0
+date-released: 2026-09-19
+repository-code: "https://github.com/lyeeonardo/generative-trajectory-benchmark"
+authors:
+  - family-names: Li
+    given-names: Yulin
+    orcid: "https://orcid.org/0009-0001-0135-4332"
+  - family-names: Jafari
+    given-names: Mohsen A.
+    orcid: "https://orcid.org/0000-0003-4776-0632"
+  - family-names: Matta
+    given-names: Andrea
+    orcid: "https://orcid.org/0000-0003-3902-2007"

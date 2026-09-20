@@ -1,0 +1,71 @@
+{
+  "task": "uphill_push_avoid_settle_v1",
+  "simulator": {
+    "dt": 0.05,
+    "max_steps": 100,
+    "workspace_x": [
+      -0.8,
+      0.8
+    ],
+    "workspace_y": [
+      -1.0,
+      1.0
+    ],
+    "ball_radius": 0.04,
+    "obstacle_radius": 0.1,
+    "goal_radius": 0.12,
+    "rod_radius": 0.03,
+    "action_max_speed": 0.8,
+    "action_max_omega": 4.0,
+    "gravity_lateral_gain": 1.55,
+    "gravity_longitudinal_gain": 1.25,
+    "ball_damping": 0.22,
+    "ball_velocity_noise_std": 0.004,
+    "contact_push_gain": 7.5,
+    "contact_carry_gain": 1.0,
+    "controller_position_gain": 4.5,
+    "controller_feedforward_gain": 0.75,
+    "controller_yaw_gain": 5.0,
+    "push_offset": 0.018,
+    "success_speed_threshold": 1.5,
+    "timeout_distance_penalty": 2.0
+  },
+  "physics": {
+    "max_ball_speed": 4.0,
+    "push_offset": 0.0,
+    "rod_workspace_margin": 1.2
+  },
+  "success": {
+    "criterion_version": 2,
+    "contract": "configs/success_criterion.json",
+    "goal_radius": 0.12,
+    "primary": {
+      "settle_speed": 0.15,
+      "settle_steps": 2
+    },
+    "strict_secondary": {
+      "settle_speed": 0.1,
+      "settle_steps": 5
+    },
+    "goal_entry_reported_separately": true
+  },
+  "tilts_degrees": [
+    [
+      -15,
+      20
+    ],
+    [
+      0,
+      20
+    ],
+    [
+      15,
+      20
+    ]
+  ],
+  "obstacle_x": [
+    -0.2,
+    0,
+    0.2
+  ]
+}

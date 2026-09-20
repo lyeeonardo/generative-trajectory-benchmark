@@ -1,0 +1,6265 @@
+{
+  "H": 6,
+  "K": 1,
+  "cached_step_fraction": 0.0,
+  "candidate_ranking": false,
+  "checker_seconds": 0.1219209695700556,
+  "checkpoint_sha256": "05fe5ec0452ac4c8f6652cff2cce658f4fd8be1906039d6766d3e72336cd66ee",
+  "display_name": "Flow Matching",
+  "environment_seconds": 2.366438339173328,
+  "episodes": [
+    {
+      "accepted_observations": 21,
+      "actual_cost_components": [
+        22.858323356156845,
+        1.538868926990207,
+        2.074301648738194,
+        0.0,
+        150.0,
+        0.0,
+        0.00027833151427342673,
+        0.03786749778255276,
+        0.19796927143483076,
+        0.0
+      ],
+      "actual_operational_cost": 176.70760903261692,
+      "base_layout_id": 0,
+      "case_id": "condition_00",
+      "checked_observations": 37,
+      "checker_seconds": 0.0012717891368083656,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        6,
+        14,
+        7,
+        1
+      ],
+      "environment_seconds": 0.02324696403229609,
+      "evaluation_rng_seed": 101,
+      "executed_plan_age_counts": [
+        37,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9048602796797371,
+      "first_goal_entry_step": null,
+      "generation_seconds": 7.408671845914796,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.2003217239980586,
+      "model_checker_seconds_per_action": 0.2002687468932866,
+      "repredicted_executed_observation_rmse": [
+        0.009587196633219719,
+        0.011159772053360939,
+        0.14278553426265717,
+        0.21372850239276886,
+        0.006464710459113121,
+        0.008510483428835869,
+        0.027184125036001205
+      ],
+      "sampled_plans": 37,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_00_rng101/episode_summary.json",
+      "steps": 37,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 23,
+      "actual_cost_components": [
+        23.686014557457785,
+        1.6232186185776696,
+        2.4191729826135857,
+        0.0,
+        150.0,
+        0.0,
+        0.00023904840966960204,
+        0.05328403689694277,
+        0.20981049539484847,
+        0.0
+      ],
+      "actual_operational_cost": 177.99173973935052,
+      "base_layout_id": 0,
+      "case_id": "condition_00",
+      "checked_observations": 34,
+      "checker_seconds": 0.0012120069586671889,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        6,
+        8,
+        9,
+        0
+      ],
+      "environment_seconds": 0.021760393283329904,
+      "evaluation_rng_seed": 102,
+      "executed_plan_age_counts": [
+        34,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9738345464548155,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.810410476871766,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.2003082124865614,
+      "model_checker_seconds_per_action": 0.20034183775971862,
+      "repredicted_executed_observation_rmse": [
+        0.012440480291843414,
+        0.009634783491492271,
+        0.14914312958717346,
+        0.2068207859992981,
+        0.009033331647515297,
+        0.010631036013364792,
+        0.024913612753152847
+      ],
+      "sampled_plans": 34,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_00_rng102/episode_summary.json",
+      "steps": 34,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 25,
+      "actual_cost_components": [
+        23.446664145855397,
+        1.5820797708712875,
+        2.319443644445923,
+        0.0,
+        150.0,
+        0.0,
+        0.00029712154210130847,
+        0.04717805193245903,
+        0.2225544333205788,
+        0.0
+      ],
+      "actual_operational_cost": 177.61821716796774,
+      "base_layout_id": 0,
+      "case_id": "condition_00",
+      "checked_observations": 40,
+      "checker_seconds": 0.0012685648980550468,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        9,
+        10,
+        11,
+        1
+      ],
+      "environment_seconds": 0.024330833053682,
+      "evaluation_rng_seed": 103,
+      "executed_plan_age_counts": [
+        40,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.953888678821283,
+      "first_goal_entry_step": null,
+      "generation_seconds": 8.028462557122111,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.2007023794867564,
+      "model_checker_seconds_per_action": 0.20074327805050415,
+      "repredicted_executed_observation_rmse": [
+        0.013278751634061337,
+        0.011851532384753227,
+        0.1845351755619049,
+        0.23685027658939362,
+        0.00965962279587984,
+        0.00860180426388979,
+        0.026948431506752968
+      ],
+      "sampled_plans": 40,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_00_rng103/episode_summary.json",
+      "steps": 40,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 23,
+      "actual_cost_components": [
+        23.700898312014637,
+        1.6180637497949022,
+        2.4253745470122734,
+        0.0,
+        150.0,
+        0.0,
+        0.00028596555857602116,
+        0.03626483663902582,
+        0.16952117712198578,
+        0.0
+      ],
+      "actual_operational_cost": 177.9504085881414,
+      "base_layout_id": 0,
+      "case_id": "condition_00",
+      "checked_observations": 34,
+      "checker_seconds": 0.0010727220796979964,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        6,
+        7,
+        8,
+        0
+      ],
+      "environment_seconds": 0.020273442030884326,
+      "evaluation_rng_seed": 104,
+      "executed_plan_age_counts": [
+        34,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.975074859334553,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.8143123142072,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20047781450557522,
+      "model_checker_seconds_per_action": 0.2004525010672617,
+      "repredicted_executed_observation_rmse": [
+        0.012484110891819,
+        0.010551761835813522,
+        0.16983483731746674,
+        0.17534978687763214,
+        0.006195795256644487,
+        0.0079171909019351,
+        0.014401625841856003
+      ],
+      "sampled_plans": 34,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_00_rng104/episode_summary.json",
+      "steps": 34,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 22,
+      "actual_cost_components": [
+        23.317805701545346,
+        1.558529397264104,
+        2.2657526259834015,
+        0.0,
+        150.0,
+        0.0,
+        9.871221839264949e-05,
+        0.05710749815187419,
+        0.2286306237644175,
+        0.0
+      ],
+      "actual_operational_cost": 177.42792455892751,
+      "base_layout_id": 0,
+      "case_id": "condition_00",
+      "checked_observations": 39,
+      "checker_seconds": 0.0012026781332679093,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        9,
+        12,
+        8,
+        0
+      ],
+      "environment_seconds": 0.023631338961422443,
+      "evaluation_rng_seed": 105,
+      "executed_plan_age_counts": [
+        39,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9431504751287787,
+      "first_goal_entry_step": null,
+      "generation_seconds": 7.801671480876394,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.2001553179579787,
+      "model_checker_seconds_per_action": 0.2000736963848631,
+      "repredicted_executed_observation_rmse": [
+        0.009841324761509895,
+        0.01231927890330553,
+        0.1730092465877533,
+        0.1903362274169922,
+        0.005174819380044937,
+        0.009579651989042759,
+        0.026074476540088654
+      ],
+      "sampled_plans": 39,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_00_rng105/episode_summary.json",
+      "steps": 39,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 24,
+      "actual_cost_components": [
+        23.593506290345385,
+        1.652342405460496,
+        2.3806278713167517,
+        0.0,
+        150.0,
+        0.0,
+        7.718139573853477e-05,
+        0.0409750314929514,
+        0.15797408339343658,
+        0.0
+      ],
+      "actual_operational_cost": 177.82550286340478,
+      "base_layout_id": 0,
+      "case_id": "condition_00",
+      "checked_observations": 34,
+      "checker_seconds": 0.001182100153528154,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        6,
+        6,
+        7,
+        0
+      ],
+      "environment_seconds": 0.02189624321181327,
+      "evaluation_rng_seed": 106,
+      "executed_plan_age_counts": [
+        34,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9661255241954487,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.795989838719834,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.1999232639791444,
+      "model_checker_seconds_per_action": 0.19991682173156947,
+      "repredicted_executed_observation_rmse": [
+        0.017379214987158775,
+        0.009712365455925465,
+        0.22076080739498138,
+        0.15626487135887146,
+        0.007827152498066425,
+        0.0084224883466959,
+        0.022090716287493706
+      ],
+      "sampled_plans": 34,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_00_rng106/episode_summary.json",
+      "steps": 34,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 18,
+      "actual_cost_components": [
+        23.63789399157254,
+        1.5615264217261933,
+        2.3991227468280663,
+        0.0,
+        150.0,
+        0.0,
+        0.000756562165356493,
+        0.04403802276723609,
+        0.15892676399210368,
+        0.0
+      ],
+      "actual_operational_cost": 177.8022645090515,
+      "base_layout_id": 0,
+      "case_id": "condition_00",
+      "checked_observations": 34,
+      "checker_seconds": 0.0010732021182775497,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        7,
+        13,
+        13,
+        1
+      ],
+      "environment_seconds": 0.02085430087754503,
+      "evaluation_rng_seed": 107,
+      "executed_plan_age_counts": [
+        34,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9698244992977116,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.793998084031045,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19990612048422918,
+      "model_checker_seconds_per_action": 0.19985503782792127,
+      "repredicted_executed_observation_rmse": [
+        0.01167536061257124,
+        0.012753291986882687,
+        0.15098431706428528,
+        0.22876796126365662,
+        0.008340527303516865,
+        0.009649107232689857,
+        0.034640394151210785
+      ],
+      "sampled_plans": 34,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_00_rng107/episode_summary.json",
+      "steps": 34,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 24,
+      "actual_cost_components": [
+        23.246349343242812,
+        1.6403993784078519,
+        2.235979143357346,
+        0.0,
+        150.0,
+        0.0,
+        6.731398160618776e-05,
+        0.04449729944279179,
+        0.17061214600759272,
+        0.0
+      ],
+      "actual_operational_cost": 177.33790462444,
+      "base_layout_id": 0,
+      "case_id": "condition_00",
+      "checked_observations": 31,
+      "checker_seconds": 0.0010500121279619634,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        4,
+        6,
+        3,
+        0
+      ],
+      "environment_seconds": 0.019476721005048603,
+      "evaluation_rng_seed": 108,
+      "executed_plan_age_counts": [
+        31,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9371957786035676,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.1964258010848425,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19995024998206645,
+      "model_checker_seconds_per_action": 0.1999185746197679,
+      "repredicted_executed_observation_rmse": [
+        0.01114221103489399,
+        0.009083494544029236,
+        0.20006631314754486,
+        0.16593967378139496,
+        0.004446552600711584,
+        0.0053812842816114426,
+        0.014421163126826286
+      ],
+      "sampled_plans": 31,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_00_rng108/episode_summary.json",
+      "steps": 31,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 25,
+      "actual_cost_components": [
+        23.837277338794756,
+        1.572939156076347,
+        2.4821991415039903,
+        0.0,
+        150.0,
+        0.0,
+        1.3222719329720489e-05,
+        0.023791749070282336,
+        0.14104095042786946,
+        0.0
+      ],
+      "actual_operational_cost": 178.0572615585926,
+      "base_layout_id": 0,
+      "case_id": "condition_00",
+      "checked_observations": 39,
+      "checker_seconds": 0.001334975881036371,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        6,
+        10,
+        7,
+        0
+      ],
+      "environment_seconds": 0.024663603922817856,
+      "evaluation_rng_seed": 109,
+      "executed_plan_age_counts": [
+        39,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9864397782328964,
+      "first_goal_entry_step": null,
+      "generation_seconds": 7.798158903140575,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19999707903480157,
+      "model_checker_seconds_per_action": 0.19998702253901568,
+      "repredicted_executed_observation_rmse": [
+        0.009033058770000935,
+        0.011167394928634167,
+        0.1215733215212822,
+        0.19823306798934937,
+        0.007513774558901787,
+        0.007603054866194725,
+        0.02359526976943016
+      ],
+      "sampled_plans": 39,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_00_rng109/episode_summary.json",
+      "steps": 39,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 13,
+      "actual_cost_components": [
+        22.93236954472812,
+        1.5953816966718,
+        2.1051542273095594,
+        0.0,
+        150.0,
+        0.0,
+        0.00014869983418573331,
+        0.06541697420559758,
+        0.19963185274974396,
+        0.0
+      ],
+      "actual_operational_cost": 176.89810299549902,
+      "base_layout_id": 0,
+      "case_id": "condition_00",
+      "checked_observations": 26,
+      "checker_seconds": 0.0007185410358943045,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        5,
+        10,
+        8,
+        0
+      ],
+      "environment_seconds": 0.014968740870244801,
+      "evaluation_rng_seed": 110,
+      "executed_plan_age_counts": [
+        26,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9110307953940102,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.195979438023642,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19983397450414486,
+      "model_checker_seconds_per_action": 0.19987299919459753,
+      "repredicted_executed_observation_rmse": [
+        0.011470547877252102,
+        0.011724312789738178,
+        0.26966962218284607,
+        0.20645736157894135,
+        0.005586832296103239,
+        0.00833509024232626,
+        0.01998778060078621
+      ],
+      "sampled_plans": 26,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_00_rng110/episode_summary.json",
+      "steps": 26,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 32,
+      "actual_cost_components": [
+        16.946872653610537,
+        1.3854796888723042,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        0.00020653288577022913,
+        0.034614334041001754,
+        0.13388072175442087,
+        0.0
+      ],
+      "actual_operational_cost": 168.50105393116402,
+      "base_layout_id": 0,
+      "case_id": "condition_01",
+      "checked_observations": 32,
+      "checker_seconds": 0.000826252915430814,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.01722614892059937,
+      "evaluation_rng_seed": 101,
+      "executed_plan_age_counts": [
+        32,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.412239387800878,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.376991942233872,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19932656298624352,
+      "model_checker_seconds_per_action": 0.1993068185984157,
+      "repredicted_executed_observation_rmse": [
+        0.0015376232331618667,
+        0.0012728286674246192,
+        0.03979480639100075,
+        0.019694067537784576,
+        0.0009292434551753104,
+        0.000819469103589654,
+        0.00450294092297554
+      ],
+      "sampled_plans": 32,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_01_rng101/episode_summary.json",
+      "steps": 32,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 98,
+      "actual_cost_components": [
+        0.4481556984922297,
+        0.6538907523055492,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.007560703836708531,
+        0.054169772065163144,
+        0.0
+      ],
+      "actual_operational_cost": 1.1637769266996503,
+      "base_layout_id": 0,
+      "case_id": "condition_01",
+      "checked_observations": 98,
+      "checker_seconds": 0.002836815780028701,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.05608674424001947,
+      "evaluation_rng_seed": 102,
+      "executed_plan_age_counts": [
+        98,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.03734630820768581,
+      "first_goal_entry_step": 82,
+      "generation_seconds": 19.583674743771553,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.19965250050881878,
+      "model_checker_seconds_per_action": 0.19986236285256717,
+      "repredicted_executed_observation_rmse": [
+        0.0011683950433507562,
+        0.0009665621328167617,
+        0.01616872474551201,
+        0.014903771691024303,
+        0.0007950846920721233,
+        0.0008284398354589939,
+        0.003138509811833501
+      ],
+      "sampled_plans": 98,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_01_rng102/episode_summary.json",
+      "steps": 98,
+      "steps_to_success": 98,
+      "success": true,
+      "success_criterion_version": 2,
+      "success_step": 98,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "success",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 37,
+      "actual_cost_components": [
+        15.010434323569953,
+        1.3384611260117003,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        6.714851167881993e-06,
+        0.029217775116716634,
+        0.1000651837374002,
+        0.0
+      ],
+      "actual_operational_cost": 166.47818512328692,
+      "base_layout_id": 0,
+      "case_id": "condition_01",
+      "checked_observations": 37,
+      "checker_seconds": 0.0011740968911908567,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.02265106502454728,
+      "evaluation_rng_seed": 103,
+      "executed_plan_age_counts": [
+        37,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.2508695269641628,
+      "first_goal_entry_step": null,
+      "generation_seconds": 7.42696337623056,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20076689700363204,
+      "model_checker_seconds_per_action": 0.20076047224653382,
+      "repredicted_executed_observation_rmse": [
+        0.0009855666430667043,
+        0.0008039871463552117,
+        0.019107956439256668,
+        0.01765046827495098,
+        0.0007888022228144109,
+        0.0009790299227461219,
+        0.0030830889008939266
+      ],
+      "sampled_plans": 37,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_01_rng103/episode_summary.json",
+      "steps": 37,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 78,
+      "actual_cost_components": [
+        0.7643437375931746,
+        0.7711068678640398,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01758705170586586,
+        0.07317081846717916,
+        0.0
+      ],
+      "actual_operational_cost": 1.6262084756302595,
+      "base_layout_id": 0,
+      "case_id": "condition_01",
+      "checked_observations": 78,
+      "checker_seconds": 0.002641552418936044,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.04893923318013549,
+      "evaluation_rng_seed": 104,
+      "executed_plan_age_counts": [
+        78,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.06369531146609789,
+      "first_goal_entry_step": 71,
+      "generation_seconds": 15.637423728068825,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.20052993850549683,
+      "model_checker_seconds_per_action": 0.20051365744215077,
+      "repredicted_executed_observation_rmse": [
+        0.0012615943560376763,
+        0.0009397146641276777,
+        0.017008498311042786,
+        0.013392869383096695,
+        0.0007014308939687908,
+        0.0008562163566239178,
+        0.003144175512716174
+      ],
+      "sampled_plans": 78,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_01_rng104/episode_summary.json",
+      "steps": 78,
+      "steps_to_success": 78,
+      "success": true,
+      "success_criterion_version": 2,
+      "success_step": 78,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "success",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 28,
+      "actual_cost_components": [
+        18.43151645311914,
+        1.4337919890358324,
+        0.2297987724724837,
+        0.0,
+        150.0,
+        0.0,
+        0.0003157489155900881,
+        0.030140571604280693,
+        0.1450056855112782,
+        0.0
+      ],
+      "actual_operational_cost": 170.27056922065861,
+      "base_layout_id": 0,
+      "case_id": "condition_01",
+      "checked_observations": 29,
+      "checker_seconds": 0.00094515091041103,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "environment_seconds": 0.018410039134323597,
+      "evaluation_rng_seed": 105,
+      "executed_plan_age_counts": [
+        29,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.5359597044265951,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.812650961917825,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20042204298079014,
+      "model_checker_seconds_per_action": 0.20046883147683572,
+      "repredicted_executed_observation_rmse": [
+        0.001921800896525383,
+        0.0012100448366254568,
+        0.04745762422680855,
+        0.020341239869594574,
+        0.0013027215609326959,
+        0.0015761833637952805,
+        0.004676620475947857
+      ],
+      "sampled_plans": 29,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_01_rng105/episode_summary.json",
+      "steps": 29,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 28,
+      "actual_cost_components": [
+        17.74198370482637,
+        1.393796776239752,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        0.0011918171712295964,
+        0.038892520310759335,
+        0.16414885196894308,
+        0.0
+      ],
+      "actual_operational_cost": 169.34001367051707,
+      "base_layout_id": 0,
+      "case_id": "condition_01",
+      "checked_observations": 29,
+      "checker_seconds": 0.0008757901377975941,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "environment_seconds": 0.017156080051790923,
+      "evaluation_rng_seed": 106,
+      "executed_plan_age_counts": [
+        29,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.4784986420688642,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.805681854893919,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.2001746050082147,
+      "model_checker_seconds_per_action": 0.20022612569074885,
+      "repredicted_executed_observation_rmse": [
+        0.006310604978352785,
+        0.003616718575358391,
+        0.22372539341449738,
+        0.08419881016016006,
+        0.0010276727844029665,
+        0.0013992988970130682,
+        0.004389755893498659
+      ],
+      "sampled_plans": 29,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_01_rng106/episode_summary.json",
+      "steps": 29,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 30,
+      "actual_cost_components": [
+        16.005152410076825,
+        1.3516264090765229,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        8.253006007013592e-05,
+        0.02319010792633719,
+        0.16150255395268753,
+        0.0
+      ],
+      "actual_operational_cost": 167.54155401109244,
+      "base_layout_id": 0,
+      "case_id": "condition_01",
+      "checked_observations": 30,
+      "checker_seconds": 0.0009041161392815411,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.01806658523855731,
+      "evaluation_rng_seed": 107,
+      "executed_plan_age_counts": [
+        30,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.3337627008397352,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.982115602120757,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.1995325280004181,
+      "model_checker_seconds_per_action": 0.19943399060866795,
+      "repredicted_executed_observation_rmse": [
+        0.0016673404024913907,
+        0.001657306682318449,
+        0.024771854281425476,
+        0.025486420840024948,
+        0.0012418089900165796,
+        0.0010637495433911681,
+        0.004366166424006224
+      ],
+      "sampled_plans": 30,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_01_rng107/episode_summary.json",
+      "steps": 30,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 33,
+      "actual_cost_components": [
+        15.539394822909493,
+        1.358817942306005,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        8.37293830417789e-05,
+        0.029826126495680613,
+        0.14233148866411177,
+        0.0
+      ],
+      "actual_operational_cost": 167.07045410975832,
+      "base_layout_id": 0,
+      "case_id": "condition_01",
+      "checked_observations": 33,
+      "checker_seconds": 0.0010802607866935432,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.020462239161133766,
+      "evaluation_rng_seed": 108,
+      "executed_plan_age_counts": [
+        33,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.294949568575791,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.586592771287542,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.1996999550028704,
+      "model_checker_seconds_per_action": 0.19962645551740107,
+      "repredicted_executed_observation_rmse": [
+        0.0014328248798847198,
+        0.001630880986340344,
+        0.025567680597305298,
+        0.01994338259100914,
+        0.0008608886273577809,
+        0.0009511576499789953,
+        0.003922384697943926
+      ],
+      "sampled_plans": 33,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_01_rng108/episode_summary.json",
+      "steps": 33,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 100,
+      "actual_cost_components": [
+        1.9442626867264607,
+        0.7480315041512746,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.014343108038964865,
+        0.18942027147514628,
+        25.0
+      ],
+      "actual_operational_cost": 27.896057570391847,
+      "base_layout_id": 0,
+      "case_id": "condition_01",
+      "checked_observations": 100,
+      "checker_seconds": 0.002786844503134489,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.05711388203781098,
+      "evaluation_rng_seed": 109,
+      "executed_plan_age_counts": [
+        100,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.1620218905605384,
+      "first_goal_entry_step": 92,
+      "generation_seconds": 19.976530623971485,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.19964269699994475,
+      "model_checker_seconds_per_action": 0.1997931746847462,
+      "repredicted_executed_observation_rmse": [
+        0.0014510400360450149,
+        0.001366805867291987,
+        0.023995613679289818,
+        0.031358905136585236,
+        0.0008934711804613471,
+        0.001030219136737287,
+        0.004305266309529543
+      ],
+      "sampled_plans": 100,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_01_rng109/episode_summary.json",
+      "steps": 100,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "timeout",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 34,
+      "actual_cost_components": [
+        14.582261651465792,
+        1.2856296259918063,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        0.00016443570647853018,
+        0.013698243057184149,
+        0.12371895165132214,
+        0.0
+      ],
+      "actual_operational_cost": 166.0054729078726,
+      "base_layout_id": 0,
+      "case_id": "condition_01",
+      "checked_observations": 34,
+      "checker_seconds": 0.0011242189211770892,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.021734129113610834,
+      "evaluation_rng_seed": 110,
+      "executed_plan_age_counts": [
+        34,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.2151884709554828,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.816164282034151,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.2004424525075592,
+      "model_checker_seconds_per_action": 0.20050848532221555,
+      "repredicted_executed_observation_rmse": [
+        0.0012934677070006728,
+        0.0018368804594501853,
+        0.024088582023978233,
+        0.03729628026485443,
+        0.0010773299727588892,
+        0.0009587733075022697,
+        0.002942880382761359
+      ],
+      "sampled_plans": 34,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_01_rng110/episode_summary.json",
+      "steps": 34,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 15,
+      "actual_cost_components": [
+        23.40972310856361,
+        1.548258556485671,
+        2.304051545574346,
+        0.0,
+        150.0,
+        0.0,
+        0.0011603051250272773,
+        0.03322834791342446,
+        0.21857898672906842,
+        0.0
+      ],
+      "actual_operational_cost": 177.51500085039115,
+      "base_layout_id": 0,
+      "case_id": "condition_02",
+      "checked_observations": 26,
+      "checker_seconds": 0.0007918080664239824,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        6,
+        10,
+        8,
+        1
+      ],
+      "environment_seconds": 0.015651134948711842,
+      "evaluation_rng_seed": 101,
+      "executed_plan_age_counts": [
+        26,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9508102590469676,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.206298395001795,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20036709448322654,
+      "model_checker_seconds_per_action": 0.20027270011800843,
+      "repredicted_executed_observation_rmse": [
+        0.011639042757451534,
+        0.01236910279840231,
+        0.1843968778848648,
+        0.2337113618850708,
+        0.007385155186057091,
+        0.010986083187162876,
+        0.03691849485039711
+      ],
+      "sampled_plans": 26,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_02_rng101/episode_summary.json",
+      "steps": 26,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 20,
+      "actual_cost_components": [
+        24.555019108197044,
+        1.4162517398309151,
+        2.7812582120882756,
+        0.0,
+        150.0,
+        0.0,
+        0.0009781076628431224,
+        0.03036028325515259,
+        0.1456850036533512,
+        0.0
+      ],
+      "actual_operational_cost": 178.92955245468758,
+      "base_layout_id": 0,
+      "case_id": "condition_02",
+      "checked_observations": 39,
+      "checker_seconds": 0.0012272478779777884,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        11,
+        16,
+        15,
+        1
+      ],
+      "environment_seconds": 0.0239677750505507,
+      "evaluation_rng_seed": 102,
+      "executed_plan_age_counts": [
+        39,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 2.0462515923497535,
+      "first_goal_entry_step": null,
+      "generation_seconds": 7.81531662424095,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20038100599776953,
+      "model_checker_seconds_per_action": 0.20042420184920326,
+      "repredicted_executed_observation_rmse": [
+        0.014085538685321808,
+        0.012473571114242077,
+        0.20364822447299957,
+        0.21570749580860138,
+        0.015427879989147186,
+        0.013696132227778435,
+        0.03587508201599121
+      ],
+      "sampled_plans": 39,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_02_rng102/episode_summary.json",
+      "steps": 39,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 15,
+      "actual_cost_components": [
+        23.39083010184588,
+        1.5841661070479156,
+        2.296179459441957,
+        0.0,
+        150.0,
+        0.0,
+        0.0005279514226292401,
+        0.05168043177770322,
+        0.21008398928317984,
+        0.0
+      ],
+      "actual_operational_cost": 177.5334680408193,
+      "base_layout_id": 0,
+      "case_id": "condition_02",
+      "checked_observations": 26,
+      "checker_seconds": 0.0008904781425371766,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        8,
+        10,
+        7,
+        0
+      ],
+      "environment_seconds": 0.017239222885109484,
+      "evaluation_rng_seed": 103,
+      "executed_plan_age_counts": [
+        26,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9492358418204898,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.210605842992663,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20038371099508367,
+      "model_checker_seconds_per_action": 0.2004421661975077,
+      "repredicted_executed_observation_rmse": [
+        0.011302514001727104,
+        0.010701856575906277,
+        0.18617454171180725,
+        0.2064739465713501,
+        0.008923846296966076,
+        0.007496202830225229,
+        0.022889601066708565
+      ],
+      "sampled_plans": 26,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_02_rng103/episode_summary.json",
+      "steps": 26,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 24,
+      "actual_cost_components": [
+        14.741415486359319,
+        1.249620672191413,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        4.308425865136932e-06,
+        0.036012472288047825,
+        0.13435860126625745,
+        0.0
+      ],
+      "actual_operational_cost": 166.1614115405309,
+      "base_layout_id": 0,
+      "case_id": "condition_02",
+      "checked_observations": 31,
+      "checker_seconds": 0.001024492084980011,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        3,
+        7,
+        3,
+        1
+      ],
+      "environment_seconds": 0.019809905847068876,
+      "evaluation_rng_seed": 104,
+      "executed_plan_age_counts": [
+        31,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.2284512905299432,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.218413137074094,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.2005579310352914,
+      "model_checker_seconds_per_action": 0.200627020295454,
+      "repredicted_executed_observation_rmse": [
+        0.004773118067532778,
+        0.009090373292565346,
+        0.15541069209575653,
+        0.15961238741874695,
+        0.0033351166639477015,
+        0.003986812196671963,
+        0.023774083703756332
+      ],
+      "sampled_plans": 31,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_02_rng104/episode_summary.json",
+      "steps": 31,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 15,
+      "actual_cost_components": [
+        22.711371919095242,
+        1.537130007076431,
+        2.0130718832958596,
+        0.0,
+        150.0,
+        0.0,
+        7.051140357816621e-06,
+        0.0590886741694856,
+        0.28186758027322684,
+        0.0
+      ],
+      "actual_operational_cost": 176.6025371150506,
+      "base_layout_id": 0,
+      "case_id": "condition_02",
+      "checked_observations": 26,
+      "checker_seconds": 0.0006845259922556579,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        4,
+        9,
+        8,
+        0
+      ],
+      "environment_seconds": 0.01395524200052023,
+      "evaluation_rng_seed": 105,
+      "executed_plan_age_counts": [
+        26,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.8926143265912703,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.191328280896414,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19945728598395362,
+      "model_checker_seconds_per_action": 0.19969280026494884,
+      "repredicted_executed_observation_rmse": [
+        0.01050668302923441,
+        0.00978784542530775,
+        0.179604172706604,
+        0.20923937857151031,
+        0.009359248913824558,
+        0.009907575324177742,
+        0.027636751532554626
+      ],
+      "sampled_plans": 26,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_02_rng105/episode_summary.json",
+      "steps": 26,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 23,
+      "actual_cost_components": [
+        16.117903179819713,
+        1.2918309328771076,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        8.065285351055192e-05,
+        0.0496436955693451,
+        0.17909625319456715,
+        0.0
+      ],
+      "actual_operational_cost": 167.6385547143142,
+      "base_layout_id": 0,
+      "case_id": "condition_02",
+      "checked_observations": 30,
+      "checker_seconds": 0.0008559519774280488,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        3,
+        7,
+        2,
+        0
+      ],
+      "environment_seconds": 0.017505600000731647,
+      "evaluation_rng_seed": 106,
+      "executed_plan_age_counts": [
+        30,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.3431585983183094,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.9900588420568965,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19954574800794944,
+      "model_checker_seconds_per_action": 0.19969715980114416,
+      "repredicted_executed_observation_rmse": [
+        0.007907644845545292,
+        0.010340035893023014,
+        0.2185666561126709,
+        0.27311062812805176,
+        0.0024516915436834097,
+        0.003942402079701424,
+        0.018193593248724937
+      ],
+      "sampled_plans": 30,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_02_rng106/episode_summary.json",
+      "steps": 30,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 15,
+      "actual_cost_components": [
+        23.170063425451684,
+        1.5593906870149865,
+        2.2041933442777095,
+        0.0,
+        150.0,
+        0.0,
+        0.00011519327455971506,
+        0.0933768052571169,
+        0.31915927600982175,
+        0.0
+      ],
+      "actual_operational_cost": 177.34629873128588,
+      "base_layout_id": 0,
+      "case_id": "condition_02",
+      "checked_observations": 25,
+      "checker_seconds": 0.0007441790075972676,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        7,
+        9,
+        5,
+        2
+      ],
+      "environment_seconds": 0.014714113029185683,
+      "evaluation_rng_seed": 107,
+      "executed_plan_age_counts": [
+        25,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9308386187876403,
+      "first_goal_entry_step": null,
+      "generation_seconds": 4.990420023910701,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.1996921709505841,
+      "model_checker_seconds_per_action": 0.19964656811673195,
+      "repredicted_executed_observation_rmse": [
+        0.015578629449009895,
+        0.012342720292508602,
+        0.24779964983463287,
+        0.2282896190881729,
+        0.007356290239840746,
+        0.008522320538759232,
+        0.04494643956422806
+      ],
+      "sampled_plans": 25,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_02_rng107/episode_summary.json",
+      "steps": 25,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 25,
+      "actual_cost_components": [
+        22.753980569959275,
+        1.450122468056775,
+        2.03082548782254,
+        0.0,
+        150.0,
+        0.0,
+        1.4294284168903644e-06,
+        0.03370728152079522,
+        0.18260536346339823,
+        0.0
+      ],
+      "actual_operational_cost": 176.45124260025122,
+      "base_layout_id": 0,
+      "case_id": "condition_02",
+      "checked_observations": 45,
+      "checker_seconds": 0.0015394101501442492,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        9,
+        19,
+        12,
+        1
+      ],
+      "environment_seconds": 0.028939126001205295,
+      "evaluation_rng_seed": 108,
+      "executed_plan_age_counts": [
+        45,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.8961650474966063,
+      "first_goal_entry_step": null,
+      "generation_seconds": 8.986219503858592,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19977173197548836,
+      "model_checker_seconds_per_action": 0.1997279758668608,
+      "repredicted_executed_observation_rmse": [
+        0.011573899537324905,
+        0.01097551453858614,
+        0.19179515540599823,
+        0.1845017820596695,
+        0.006117474753409624,
+        0.008746872656047344,
+        0.03303530067205429
+      ],
+      "sampled_plans": 45,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_02_rng108/episode_summary.json",
+      "steps": 45,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 15,
+      "actual_cost_components": [
+        22.612909031560104,
+        1.5571248206547816,
+        1.972045680156218,
+        0.0,
+        150.0,
+        0.0,
+        1.986381903407164e-10,
+        0.03790840696125726,
+        0.2037159207566074,
+        0.0
+      ],
+      "actual_operational_cost": 176.3837038602876,
+      "base_layout_id": 0,
+      "case_id": "condition_02",
+      "checked_observations": 25,
+      "checker_seconds": 0.00092165800742805,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        8,
+        8,
+        7,
+        0
+      ],
+      "environment_seconds": 0.016758483950980008,
+      "evaluation_rng_seed": 109,
+      "executed_plan_age_counts": [
+        25,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.884409085963342,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.002723236917518,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.1999963769922033,
+      "model_checker_seconds_per_action": 0.20014579579699784,
+      "repredicted_executed_observation_rmse": [
+        0.012129798531532288,
+        0.009295158088207245,
+        0.21647873520851135,
+        0.20558153092861176,
+        0.006289144046604633,
+        0.01124150212854147,
+        0.024027708917856216
+      ],
+      "sampled_plans": 25,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_02_rng109/episode_summary.json",
+      "steps": 25,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 20,
+      "actual_cost_components": [
+        18.427290374732912,
+        1.345970976968628,
+        0.2280379064782223,
+        0.0,
+        150.0,
+        0.0,
+        1.1678677402154886e-05,
+        0.052955254240206806,
+        0.24731079660554733,
+        0.0
+      ],
+      "actual_operational_cost": 170.3015769877029,
+      "base_layout_id": 0,
+      "case_id": "condition_02",
+      "checked_observations": 28,
+      "checker_seconds": 0.0008262440678663552,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        5,
+        7,
+        5,
+        2
+      ],
+      "environment_seconds": 0.01672963029704988,
+      "evaluation_rng_seed": 110,
+      "executed_plan_age_counts": [
+        28,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.5356075312277429,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.600054658018053,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20011608852655627,
+      "model_checker_seconds_per_action": 0.2000314607887828,
+      "repredicted_executed_observation_rmse": [
+        0.004334285855293274,
+        0.015209808945655823,
+        0.11524184048175812,
+        0.20499077439308167,
+        0.006260714028030634,
+        0.009884567931294441,
+        0.04084767401218414
+      ],
+      "sampled_plans": 28,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_02_rng110/episode_summary.json",
+      "steps": 28,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 87,
+      "actual_cost_components": [
+        1.3494275728266287,
+        0.7264232394091515,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.007898767622443638,
+        0.14644662207459136,
+        0.0
+      ],
+      "actual_operational_cost": 2.2301962019328156,
+      "base_layout_id": 1,
+      "case_id": "condition_03",
+      "checked_observations": 87,
+      "checker_seconds": 0.002750051789917052,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.053338380937930197,
+      "evaluation_rng_seed": 101,
+      "executed_plan_age_counts": [
+        87,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.1124522977355524,
+      "first_goal_entry_step": 81,
+      "generation_seconds": 17.411541361303534,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.2001816779957153,
+      "model_checker_seconds_per_action": 0.20016426911601667,
+      "repredicted_executed_observation_rmse": [
+        0.0014297085581347346,
+        0.001464077620767057,
+        0.02786877192556858,
+        0.025827735662460327,
+        0.0007438171305693686,
+        0.0006545413052663207,
+        0.003546404652297497
+      ],
+      "sampled_plans": 87,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_03_rng101/episode_summary.json",
+      "steps": 87,
+      "steps_to_success": 87,
+      "success": true,
+      "success_criterion_version": 2,
+      "success_step": 87,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "success",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 19,
+      "actual_cost_components": [
+        23.052194501657404,
+        1.5992835709542719,
+        2.15508129269676,
+        0.0,
+        150.0,
+        0.0,
+        3.692297497998938e-07,
+        0.060157450157197145,
+        0.22244034854647743,
+        0.0
+      ],
+      "actual_operational_cost": 177.08915753324186,
+      "base_layout_id": 1,
+      "case_id": "condition_03",
+      "checked_observations": 31,
+      "checker_seconds": 0.0009746129508130252,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        5,
+        6,
+        10,
+        0
+      ],
+      "environment_seconds": 0.018687836942262948,
+      "evaluation_rng_seed": 102,
+      "executed_plan_age_counts": [
+        31,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9210162084714504,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.209354632301256,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20033163204789162,
+      "model_checker_seconds_per_action": 0.20033320145974418,
+      "repredicted_executed_observation_rmse": [
+        0.011908457614481449,
+        0.009306608699262142,
+        0.21336624026298523,
+        0.17128142714500427,
+        0.005088680889457464,
+        0.007610773667693138,
+        0.02134491689503193
+      ],
+      "sampled_plans": 31,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_03_rng102/episode_summary.json",
+      "steps": 31,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 23,
+      "actual_cost_components": [
+        24.54165642307011,
+        1.4796826287619445,
+        2.77569042661872,
+        0.0,
+        150.0,
+        0.0,
+        0.00046833399431177113,
+        0.031753113462988716,
+        0.18105720862020047,
+        0.0
+      ],
+      "actual_operational_cost": 179.01030813452826,
+      "base_layout_id": 1,
+      "case_id": "condition_03",
+      "checked_observations": 42,
+      "checker_seconds": 0.0013617711374536157,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        5,
+        16,
+        14,
+        0
+      ],
+      "environment_seconds": 0.026095766224898398,
+      "evaluation_rng_seed": 103,
+      "executed_plan_age_counts": [
+        42,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 2.0451380352558424,
+      "first_goal_entry_step": null,
+      "generation_seconds": 8.418463516805787,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20049367946921848,
+      "model_checker_seconds_per_action": 0.20047203066531524,
+      "repredicted_executed_observation_rmse": [
+        0.00802647229284048,
+        0.01164924819022417,
+        0.16146329045295715,
+        0.21663331985473633,
+        0.006736055947840214,
+        0.010316318832337856,
+        0.023162662982940674
+      ],
+      "sampled_plans": 42,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_03_rng103/episode_summary.json",
+      "steps": 42,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 15,
+      "actual_cost_components": [
+        23.465208713761136,
+        1.6060686027423343,
+        2.3271705477399807,
+        0.0,
+        150.0,
+        0.0,
+        0.0004693337287032288,
+        0.09655797035416638,
+        0.19295956837305825,
+        0.0
+      ],
+      "actual_operational_cost": 177.68843473669938,
+      "base_layout_id": 1,
+      "case_id": "condition_03",
+      "checked_observations": 30,
+      "checker_seconds": 0.000927588960621506,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        6,
+        14,
+        9,
+        0
+      ],
+      "environment_seconds": 0.01877098303521052,
+      "evaluation_rng_seed": 104,
+      "executed_plan_age_counts": [
+        30,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9554340594800945,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.008249099075329,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20040683500701562,
+      "model_checker_seconds_per_action": 0.20030588960119833,
+      "repredicted_executed_observation_rmse": [
+        0.012097076512873173,
+        0.010323134250938892,
+        0.23881153762340546,
+        0.19695864617824554,
+        0.007957253605127335,
+        0.010640007443726063,
+        0.028450848534703255
+      ],
+      "sampled_plans": 30,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_03_rng104/episode_summary.json",
+      "steps": 30,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 22,
+      "actual_cost_components": [
+        21.207876303145138,
+        1.490271651199489,
+        1.3866153766499822,
+        0.0,
+        150.0,
+        0.0,
+        6.89870364150397e-05,
+        0.02655334106568917,
+        0.19122894099390056,
+        0.0
+      ],
+      "actual_operational_cost": 174.3026146000906,
+      "base_layout_id": 1,
+      "case_id": "condition_03",
+      "checked_observations": 35,
+      "checker_seconds": 0.0009624228696338832,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        4,
+        9,
+        4,
+        0
+      ],
+      "environment_seconds": 0.01977876794990152,
+      "evaluation_rng_seed": 105,
+      "executed_plan_age_counts": [
+        35,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.7673230252620948,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.985807790944818,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19931831199210137,
+      "model_checker_seconds_per_action": 0.19962200610898434,
+      "repredicted_executed_observation_rmse": [
+        0.006059005856513977,
+        0.010486493818461895,
+        0.13086679577827454,
+        0.19870975613594055,
+        0.003512288210913539,
+        0.005201190710067749,
+        0.014120603911578655
+      ],
+      "sampled_plans": 35,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_03_rng105/episode_summary.json",
+      "steps": 35,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 16,
+      "actual_cost_components": [
+        23.532591343759833,
+        1.5628453139197713,
+        2.3552466435727712,
+        0.0,
+        150.0,
+        0.0,
+        0.0006862180799203088,
+        0.07194573489398028,
+        0.19322067635042758,
+        0.0
+      ],
+      "actual_operational_cost": 177.7165359305767,
+      "base_layout_id": 1,
+      "case_id": "condition_03",
+      "checked_observations": 32,
+      "checker_seconds": 0.0009935220004990697,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        8,
+        13,
+        9,
+        2
+      ],
+      "environment_seconds": 0.018816792173311114,
+      "evaluation_rng_seed": 106,
+      "executed_plan_age_counts": [
+        32,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9610492786466527,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.404912871075794,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20019730750937015,
+      "model_checker_seconds_per_action": 0.20018457478363416,
+      "repredicted_executed_observation_rmse": [
+        0.010190107859671116,
+        0.014015612192451954,
+        0.1532246172428131,
+        0.22970491647720337,
+        0.010054761543869972,
+        0.011534965597093105,
+        0.041842829436063766
+      ],
+      "sampled_plans": 32,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_03_rng106/episode_summary.json",
+      "steps": 32,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 22,
+      "actual_cost_components": [
+        24.09979242915785,
+        1.5532753337993692,
+        2.59158042915528,
+        0.0,
+        150.0,
+        0.0,
+        0.0005770779728237585,
+        0.04503994804199923,
+        0.15073203657316112,
+        0.0
+      ],
+      "actual_operational_cost": 178.44099725470048,
+      "base_layout_id": 1,
+      "case_id": "condition_03",
+      "checked_observations": 40,
+      "checker_seconds": 0.001293302106205374,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        7,
+        12,
+        10,
+        0
+      ],
+      "environment_seconds": 0.024756291939411312,
+      "evaluation_rng_seed": 107,
+      "executed_plan_age_counts": [
+        40,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 2.0083160357631544,
+      "first_goal_entry_step": null,
+      "generation_seconds": 8.009898909076583,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20031497499439865,
+      "model_checker_seconds_per_action": 0.2002798052795697,
+      "repredicted_executed_observation_rmse": [
+        0.008503066375851631,
+        0.011096331290900707,
+        0.18007947504520416,
+        0.2021440714597702,
+        0.005756409373134375,
+        0.006943204440176487,
+        0.02380327321588993
+      ],
+      "sampled_plans": 40,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_03_rng107/episode_summary.json",
+      "steps": 40,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 14,
+      "actual_cost_components": [
+        22.528987276158194,
+        1.5736079741080486,
+        1.9370782820720889,
+        0.0,
+        150.0,
+        0.0,
+        2.8569042537388408e-06,
+        0.07963232487090538,
+        0.21970872514129552,
+        0.0
+      ],
+      "actual_operational_cost": 176.33901743925477,
+      "base_layout_id": 1,
+      "case_id": "condition_03",
+      "checked_observations": 28,
+      "checker_seconds": 0.0008765892125666142,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        7,
+        10,
+        9,
+        1
+      ],
+      "environment_seconds": 0.017553741112351418,
+      "evaluation_rng_seed": 108,
+      "executed_plan_age_counts": [
+        28,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.8774156063465162,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.608001373941079,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20034911500988528,
+      "model_checker_seconds_per_action": 0.2003170701126302,
+      "repredicted_executed_observation_rmse": [
+        0.012637210078537464,
+        0.013939032331109047,
+        0.17079292237758636,
+        0.18756628036499023,
+        0.014332210645079613,
+        0.009353354573249817,
+        0.03392539918422699
+      ],
+      "sampled_plans": 28,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_03_rng108/episode_summary.json",
+      "steps": 28,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 24,
+      "actual_cost_components": [
+        22.888112594684102,
+        1.4975552396609366,
+        2.086713831457885,
+        0.0,
+        150.0,
+        0.0,
+        0.000180593951153042,
+        0.03158470352522178,
+        0.14825781064989088,
+        0.0
+      ],
+      "actual_operational_cost": 176.65240477392916,
+      "base_layout_id": 1,
+      "case_id": "condition_03",
+      "checked_observations": 40,
+      "checker_seconds": 0.0014218779397197068,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        4,
+        10,
+        12,
+        0
+      ],
+      "environment_seconds": 0.026055498921778053,
+      "evaluation_rng_seed": 109,
+      "executed_plan_age_counts": [
+        40,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9073427162236753,
+      "first_goal_entry_step": null,
+      "generation_seconds": 7.991886718955357,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19975255551980808,
+      "model_checker_seconds_per_action": 0.19983271492237692,
+      "repredicted_executed_observation_rmse": [
+        0.008556979708373547,
+        0.010642188601195812,
+        0.15286679565906525,
+        0.18281607329845428,
+        0.006415665149688721,
+        0.007560734637081623,
+        0.01995163783431053
+      ],
+      "sampled_plans": 40,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_03_rng109/episode_summary.json",
+      "steps": 40,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 15,
+      "actual_cost_components": [
+        22.82410548103436,
+        1.5916855322414503,
+        2.0600442007704913,
+        0.0,
+        150.0,
+        0.0,
+        1.3564156887468926e-05,
+        0.07431624095617485,
+        0.1792241725266045,
+        0.0
+      ],
+      "actual_operational_cost": 176.72938919168595,
+      "base_layout_id": 1,
+      "case_id": "condition_03",
+      "checked_observations": 28,
+      "checker_seconds": 0.0009189931442961097,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        7,
+        11,
+        9,
+        0
+      ],
+      "environment_seconds": 0.017703860998153687,
+      "evaluation_rng_seed": 110,
+      "executed_plan_age_counts": [
+        28,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9020087900861966,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.5911980999517255,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19970067200483754,
+      "model_checker_seconds_per_action": 0.1997184676105722,
+      "repredicted_executed_observation_rmse": [
+        0.011721986345946789,
+        0.00974651426076889,
+        0.19908878207206726,
+        0.18895158171653748,
+        0.00780071597546339,
+        0.010142908431589603,
+        0.026234859600663185
+      ],
+      "sampled_plans": 28,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_03_rng110/episode_summary.json",
+      "steps": 28,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 88,
+      "actual_cost_components": [
+        0.9848770551978578,
+        0.7759432247946543,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0178706022280787,
+        0.07607821912016244,
+        0.0
+      ],
+      "actual_operational_cost": 1.8547691013407532,
+      "base_layout_id": 1,
+      "case_id": "condition_04",
+      "checked_observations": 88,
+      "checker_seconds": 0.002742011973168701,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.05328979983460158,
+      "evaluation_rng_seed": 101,
+      "executed_plan_age_counts": [
+        88,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.08207308793315482,
+      "first_goal_entry_step": 77,
+      "generation_seconds": 17.59129716968164,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.19986160649568774,
+      "model_checker_seconds_per_action": 0.19993226342789552,
+      "repredicted_executed_observation_rmse": [
+        0.0012958085862919688,
+        0.0009557362063787878,
+        0.021455371752381325,
+        0.017086142674088478,
+        0.0007485110545530915,
+        0.00098802603315562,
+        0.0030754280742257833
+      ],
+      "sampled_plans": 88,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_04_rng101/episode_summary.json",
+      "steps": 88,
+      "steps_to_success": 88,
+      "success": true,
+      "success_criterion_version": 2,
+      "success_step": 88,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "success",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 100,
+      "actual_cost_components": [
+        2.1967755929653956,
+        0.707331120646277,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.008533266747830425,
+        0.08806593607791953,
+        25.0
+      ],
+      "actual_operational_cost": 28.000705916437422,
+      "base_layout_id": 1,
+      "case_id": "condition_04",
+      "checked_observations": 100,
+      "checker_seconds": 0.003125387884210795,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.0617056445335038,
+      "evaluation_rng_seed": 102,
+      "executed_plan_age_counts": [
+        100,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.18306463274711632,
+      "first_goal_entry_step": 70,
+      "generation_seconds": 19.995708469185047,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.2000259580090642,
+      "model_checker_seconds_per_action": 0.19998833857069256,
+      "repredicted_executed_observation_rmse": [
+        0.0012308891164138913,
+        0.0012848867336288095,
+        0.023128192871809006,
+        0.02316799946129322,
+        0.0009394973167218268,
+        0.0008198556606657803,
+        0.0035524372942745686
+      ],
+      "sampled_plans": 100,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_04_rng102/episode_summary.json",
+      "steps": 100,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "timeout",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 86,
+      "actual_cost_components": [
+        1.0073241723920285,
+        0.7425277261504654,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.03195162428097373,
+        0.10482055709040675,
+        0.0
+      ],
+      "actual_operational_cost": 1.8866240799138743,
+      "base_layout_id": 1,
+      "case_id": "condition_04",
+      "checked_observations": 86,
+      "checker_seconds": 0.0027845230069942772,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.05428365513216704,
+      "evaluation_rng_seed": 103,
+      "executed_plan_age_counts": [
+        86,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.08394368103266904,
+      "first_goal_entry_step": 76,
+      "generation_seconds": 17.210509925265796,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.2001808414934203,
+      "model_checker_seconds_per_action": 0.20015458660782315,
+      "repredicted_executed_observation_rmse": [
+        0.0011477636871859431,
+        0.0008832879830151796,
+        0.017414726316928864,
+        0.01723361946642399,
+        0.0006152049754746258,
+        0.0007766734925098717,
+        0.0028578282799571753
+      ],
+      "sampled_plans": 86,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_04_rng103/episode_summary.json",
+      "steps": 86,
+      "steps_to_success": 86,
+      "success": true,
+      "success_criterion_version": 2,
+      "success_step": 86,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "success",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 30,
+      "actual_cost_components": [
+        17.419442953911712,
+        1.3988130265810463,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        0.00019053162381229955,
+        0.029761734512949962,
+        0.16513840472474617,
+        0.0
+      ],
+      "actual_operational_cost": 169.01334665135428,
+      "base_layout_id": 1,
+      "case_id": "condition_04",
+      "checked_observations": 30,
+      "checker_seconds": 0.0009448229684494436,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.018080913927406073,
+      "evaluation_rng_seed": 104,
+      "executed_plan_age_counts": [
+        30,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.4516202461593095,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.011151492013596,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20034381048753858,
+      "model_checker_seconds_per_action": 0.20040321049940152,
+      "repredicted_executed_observation_rmse": [
+        0.00134036666713655,
+        0.001989800250157714,
+        0.02794797345995903,
+        0.03138032555580139,
+        0.0013219635002315044,
+        0.0013733163941651583,
+        0.0044669765047729015
+      ],
+      "sampled_plans": 30,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_04_rng104/episode_summary.json",
+      "steps": 30,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 98,
+      "actual_cost_components": [
+        1.6753259689077649,
+        0.6464419032181112,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.018080239119416776,
+        0.20698440452087963,
+        25.0
+      ],
+      "actual_operational_cost": 27.546832515766173,
+      "base_layout_id": 1,
+      "case_id": "condition_04",
+      "checked_observations": 100,
+      "checker_seconds": 0.002970748348161578,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "environment_seconds": 0.05920692934887484,
+      "evaluation_rng_seed": 105,
+      "executed_plan_age_counts": [
+        100,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.1396104974089804,
+      "first_goal_entry_step": 83,
+      "generation_seconds": 19.997944752394687,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.20009037500130944,
+      "model_checker_seconds_per_action": 0.2000091550074285,
+      "repredicted_executed_observation_rmse": [
+        0.0019293001387268305,
+        0.0019436231814324856,
+        0.031023560091853142,
+        0.046820804476737976,
+        0.001153871533460915,
+        0.0012149302056059241,
+        0.0049465917982161045
+      ],
+      "sampled_plans": 100,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_04_rng105/episode_summary.json",
+      "steps": 100,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "timeout",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 29,
+      "actual_cost_components": [
+        17.916439039725514,
+        1.4293646533754796,
+        0.01518318355847259,
+        0.0,
+        150.0,
+        0.0,
+        0.00011051581852280658,
+        0.030408809488324525,
+        0.17829475065036404,
+        0.0
+      ],
+      "actual_operational_cost": 169.56980095261667,
+      "base_layout_id": 1,
+      "case_id": "condition_04",
+      "checked_observations": 29,
+      "checker_seconds": 0.0009247127454727888,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.017453350825235248,
+      "evaluation_rng_seed": 106,
+      "executed_plan_age_counts": [
+        29,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.493036586643793,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.795745648967568,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.1999733630218543,
+      "model_checker_seconds_per_action": 0.19988518488665658,
+      "repredicted_executed_observation_rmse": [
+        0.000984352664090693,
+        0.0020615612156689167,
+        0.02523244544863701,
+        0.04157833382487297,
+        0.0011243723565712571,
+        0.0014029614394530654,
+        0.004157653544098139
+      ],
+      "sampled_plans": 29,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_04_rng106/episode_summary.json",
+      "steps": 29,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 100,
+      "actual_cost_components": [
+        1.7480733086503366,
+        0.7120419332785353,
+        0.0,
+        0.0,
+        0.0,
+        0.013220771572575812,
+        0.0,
+        0.05365196021356331,
+        0.13469301094236008,
+        25.0
+      ],
+      "actual_operational_cost": 27.661680984657373,
+      "base_layout_id": 1,
+      "case_id": "condition_04",
+      "checked_observations": 100,
+      "checker_seconds": 0.003407300333492458,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.06316468177828938,
+      "evaluation_rng_seed": 107,
+      "executed_plan_age_counts": [
+        100,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.14567277572086137,
+      "first_goal_entry_step": 84,
+      "generation_seconds": 19.997285828751046,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.19997833750676364,
+      "model_checker_seconds_per_action": 0.20000693129084537,
+      "repredicted_executed_observation_rmse": [
+        0.001180164748802781,
+        0.0011388090206310153,
+        0.024326303973793983,
+        0.02142959274351597,
+        0.0006070865783840418,
+        0.0008596196421422064,
+        0.0031137641053646803
+      ],
+      "sampled_plans": 100,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_04_rng107/episode_summary.json",
+      "steps": 100,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "timeout",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 91,
+      "actual_cost_components": [
+        2.1624711562070282,
+        0.7077807210709133,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        3.756358037807641e-09,
+        0.013768868497336717,
+        0.09191252392140045,
+        0.0
+      ],
+      "actual_operational_cost": 152.97593327345305,
+      "base_layout_id": 1,
+      "case_id": "condition_04",
+      "checked_observations": 91,
+      "checker_seconds": 0.0026104548014700413,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.052639210887718946,
+      "evaluation_rng_seed": 108,
+      "executed_plan_age_counts": [
+        91,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.18020592968391902,
+      "first_goal_entry_step": 68,
+      "generation_seconds": 18.160327597812284,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.19947488902835175,
+      "model_checker_seconds_per_action": 0.1995927258528984,
+      "repredicted_executed_observation_rmse": [
+        0.0011448010336607695,
+        0.0013546118279919028,
+        0.01658032089471817,
+        0.016157636418938637,
+        0.0008719139150343835,
+        0.0009704962139949203,
+        0.0034123521763831377
+      ],
+      "sampled_plans": 91,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_04_rng108/episode_summary.json",
+      "steps": 91,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 98,
+      "actual_cost_components": [
+        1.0135726240964409,
+        0.7499966549914864,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.02649498742716179,
+        0.16080670528163246,
+        25.0
+      ],
+      "actual_operational_cost": 26.95087097179672,
+      "base_layout_id": 1,
+      "case_id": "condition_04",
+      "checked_observations": 100,
+      "checker_seconds": 0.003290001826826483,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "environment_seconds": 0.06229991588043049,
+      "evaluation_rng_seed": 109,
+      "executed_plan_age_counts": [
+        100,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.08446438534137007,
+      "first_goal_entry_step": 81,
+      "generation_seconds": 19.99171357555315,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.19996851900941692,
+      "model_checker_seconds_per_action": 0.19995003577379974,
+      "repredicted_executed_observation_rmse": [
+        0.0014483537524938583,
+        0.001156195648945868,
+        0.028190067037940025,
+        0.03456234559416771,
+        0.0009552548290230334,
+        0.0009402335854247212,
+        0.003217441961169243
+      ],
+      "sampled_plans": 100,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_04_rng109/episode_summary.json",
+      "steps": 100,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "timeout",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 27,
+      "actual_cost_components": [
+        18.737631104245857,
+        1.4243573818151551,
+        0.35734654377528097,
+        0.0,
+        150.0,
+        0.0,
+        0.0012743242100818138,
+        0.02673053949987796,
+        0.17840948148928296,
+        0.0
+      ],
+      "actual_operational_cost": 170.72574937503555,
+      "base_layout_id": 1,
+      "case_id": "condition_04",
+      "checked_observations": 29,
+      "checker_seconds": 0.000964498845860362,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "environment_seconds": 0.019037580932490528,
+      "evaluation_rng_seed": 110,
+      "executed_plan_age_counts": [
+        29,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.5614692586871546,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.8019875742611475,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20017900300445035,
+      "model_checker_seconds_per_action": 0.20010179562437957,
+      "repredicted_executed_observation_rmse": [
+        0.00485272565856576,
+        0.005373120307922363,
+        0.25753363966941833,
+        0.1144019365310669,
+        0.0023899576626718044,
+        0.001356811379082501,
+        0.008174780756235123
+      ],
+      "sampled_plans": 29,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_04_rng110/episode_summary.json",
+      "steps": 29,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 15,
+      "actual_cost_components": [
+        23.040775423307405,
+        1.5601631776615992,
+        2.150323343384261,
+        0.0,
+        150.0,
+        0.0,
+        9.605529263418637e-05,
+        0.057715428774182634,
+        0.17856805464086126,
+        0.0
+      ],
+      "actual_operational_cost": 176.98764148306094,
+      "base_layout_id": 1,
+      "case_id": "condition_05",
+      "checked_observations": 28,
+      "checker_seconds": 0.0008165738545358181,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        8,
+        13,
+        11,
+        0
+      ],
+      "environment_seconds": 0.015867302019614726,
+      "evaluation_rng_seed": 101,
+      "executed_plan_age_counts": [
+        28,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9200646186089505,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.596205995767377,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.1997723725216929,
+      "model_checker_seconds_per_action": 0.1998936632007826,
+      "repredicted_executed_observation_rmse": [
+        0.011974426917731762,
+        0.010124926455318928,
+        0.19204890727996826,
+        0.21779316663742065,
+        0.008318503387272358,
+        0.009999283589422703,
+        0.027645496651530266
+      ],
+      "sampled_plans": 28,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_05_rng101/episode_summary.json",
+      "steps": 28,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 18,
+      "actual_cost_components": [
+        24.271943923338057,
+        1.518737912286913,
+        2.6633102183970325,
+        0.0,
+        150.0,
+        0.0,
+        0.00047273988599272343,
+        0.044435108169274706,
+        0.2510873601501976,
+        0.0
+      ],
+      "actual_operational_cost": 178.74998726222745,
+      "base_layout_id": 1,
+      "case_id": "condition_05",
+      "checked_observations": 32,
+      "checker_seconds": 0.0008761301287449896,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        6,
+        14,
+        10,
+        0
+      ],
+      "environment_seconds": 0.018031691084615886,
+      "evaluation_rng_seed": 102,
+      "executed_plan_age_counts": [
+        32,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 2.022661993611505,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.403217632090673,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20002654500422068,
+      "model_checker_seconds_per_action": 0.2001279300693568,
+      "repredicted_executed_observation_rmse": [
+        0.011313173919916153,
+        0.012523924000561237,
+        0.19560609757900238,
+        0.2535584270954132,
+        0.006439547520130873,
+        0.010526699014008045,
+        0.03999972715973854
+      ],
+      "sampled_plans": 32,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_05_rng102/episode_summary.json",
+      "steps": 32,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 14,
+      "actual_cost_components": [
+        23.10174620556411,
+        1.5969598134034726,
+        2.1757278359912204,
+        0.0,
+        150.0,
+        0.0,
+        0.0005707950806580535,
+        0.07510356756429463,
+        0.30804127136090176,
+        0.0
+      ],
+      "actual_operational_cost": 177.25814948896465,
+      "base_layout_id": 1,
+      "case_id": "condition_05",
+      "checked_observations": 23,
+      "checker_seconds": 0.000705757993273437,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        7,
+        9,
+        7,
+        0
+      ],
+      "environment_seconds": 0.01436862297123298,
+      "evaluation_rng_seed": 103,
+      "executed_plan_age_counts": [
+        23,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9251455171303424,
+      "first_goal_entry_step": null,
+      "generation_seconds": 4.6155867000925355,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.2007197780185379,
+      "model_checker_seconds_per_action": 0.20070836774286124,
+      "repredicted_executed_observation_rmse": [
+        0.012608451768755913,
+        0.010694081895053387,
+        0.2101445198059082,
+        0.230399951338768,
+        0.009767407551407814,
+        0.00764882005751133,
+        0.016889309510588646
+      ],
+      "sampled_plans": 23,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_05_rng103/episode_summary.json",
+      "steps": 23,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 21,
+      "actual_cost_components": [
+        17.60016781824856,
+        1.3547950774723359,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        0.000881962217370397,
+        0.05245113244262267,
+        0.2049824868285472,
+        0.0
+      ],
+      "actual_operational_cost": 169.21327847720943,
+      "base_layout_id": 1,
+      "case_id": "condition_05",
+      "checked_observations": 28,
+      "checker_seconds": 0.0008659259765408933,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        1,
+        7,
+        3,
+        0
+      ],
+      "environment_seconds": 0.016951868135947734,
+      "evaluation_rng_seed": 104,
+      "executed_plan_age_counts": [
+        28,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.4666806515207134,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.62401870515896,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20092473100521602,
+      "model_checker_seconds_per_action": 0.2008887368262679,
+      "repredicted_executed_observation_rmse": [
+        0.005909539759159088,
+        0.005436019506305456,
+        0.3589950203895569,
+        0.14056041836738586,
+        0.00512939365580678,
+        0.004154032561928034,
+        0.01708032190799713
+      ],
+      "sampled_plans": 28,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_05_rng104/episode_summary.json",
+      "steps": 28,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 15,
+      "actual_cost_components": [
+        22.968661004214805,
+        1.539551776691451,
+        2.1202756687623436,
+        0.0,
+        150.0,
+        0.0,
+        0.0001333346684807187,
+        0.06618769666641207,
+        0.328945661236856,
+        0.0
+      ],
+      "actual_operational_cost": 177.02375514224033,
+      "base_layout_id": 1,
+      "case_id": "condition_05",
+      "checked_observations": 24,
+      "checker_seconds": 0.0007128818542696536,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        7,
+        9,
+        8,
+        2
+      ],
+      "environment_seconds": 0.014422095147892833,
+      "evaluation_rng_seed": 105,
+      "executed_plan_age_counts": [
+        24,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9140550836845671,
+      "first_goal_entry_step": null,
+      "generation_seconds": 4.816564502951223,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20077810800285079,
+      "model_checker_seconds_per_action": 0.20071989103356222,
+      "repredicted_executed_observation_rmse": [
+        0.014301973395049572,
+        0.012474552728235722,
+        0.1816115528345108,
+        0.23706157505512238,
+        0.012447582557797432,
+        0.01567806489765644,
+        0.03911914303898811
+      ],
+      "sampled_plans": 24,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_05_rng105/episode_summary.json",
+      "steps": 24,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 20,
+      "actual_cost_components": [
+        17.006837988519607,
+        1.3307070299798445,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        1.8645149086918954e-06,
+        0.06968452886467845,
+        0.19336221000154918,
+        0.0
+      ],
+      "actual_operational_cost": 168.60059362188056,
+      "base_layout_id": 1,
+      "case_id": "condition_05",
+      "checked_observations": 27,
+      "checker_seconds": 0.0007213469361886382,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        2,
+        5,
+        4,
+        1
+      ],
+      "environment_seconds": 0.01477386086480692,
+      "evaluation_rng_seed": 106,
+      "executed_plan_age_counts": [
+        27,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.4172364990433004,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.421951591852121,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20007548696594313,
+      "model_checker_seconds_per_action": 0.2008397384736411,
+      "repredicted_executed_observation_rmse": [
+        0.0052116019651293755,
+        0.008121398277580738,
+        0.110700823366642,
+        0.15643830597400665,
+        0.004263332579284906,
+        0.004946276545524597,
+        0.02958066761493683
+      ],
+      "sampled_plans": 27,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_05_rng106/episode_summary.json",
+      "steps": 27,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 15,
+      "actual_cost_components": [
+        22.694381523495338,
+        1.5559517996771461,
+        2.0059925517958987,
+        0.0,
+        150.0,
+        0.0,
+        0.00010622951326083169,
+        0.07440046490497083,
+        0.31430621745112153,
+        0.0
+      ],
+      "actual_operational_cost": 176.64513878683775,
+      "base_layout_id": 1,
+      "case_id": "condition_05",
+      "checked_observations": 26,
+      "checker_seconds": 0.0007918638293631375,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        6,
+        8,
+        9,
+        0
+      ],
+      "environment_seconds": 0.015581268642563373,
+      "evaluation_rng_seed": 107,
+      "executed_plan_age_counts": [
+        26,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.8911984602912781,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.204932722146623,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20021752596949227,
+      "model_checker_seconds_per_action": 0.20022017638369177,
+      "repredicted_executed_observation_rmse": [
+        0.013079598546028137,
+        0.00986083596944809,
+        0.16204214096069336,
+        0.19654451310634613,
+        0.008007158525288105,
+        0.014737711288034916,
+        0.03118051029741764
+      ],
+      "sampled_plans": 26,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_05_rng107/episode_summary.json",
+      "steps": 26,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 17,
+      "actual_cost_components": [
+        23.0331899032385,
+        1.5066557366823476,
+        2.147162710022217,
+        0.0,
+        150.0,
+        0.0,
+        0.00030349583548814414,
+        0.037866917035743616,
+        0.2870494542370117,
+        0.0
+      ],
+      "actual_operational_cost": 177.0122282170513,
+      "base_layout_id": 1,
+      "case_id": "condition_05",
+      "checked_observations": 31,
+      "checker_seconds": 0.0009603390353731811,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        6,
+        11,
+        10,
+        3
+      ],
+      "environment_seconds": 0.018909149104729295,
+      "evaluation_rng_seed": 108,
+      "executed_plan_age_counts": [
+        31,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9194324919365418,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.215260144032072,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.2006242559873499,
+      "model_checker_seconds_per_action": 0.20052324138927244,
+      "repredicted_executed_observation_rmse": [
+        0.01159629039466381,
+        0.01185828447341919,
+        0.12478233128786087,
+        0.25218603014945984,
+        0.008397967554628849,
+        0.011136562563478947,
+        0.05614335834980011
+      ],
+      "sampled_plans": 31,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_05_rng108/episode_summary.json",
+      "steps": 31,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 13,
+      "actual_cost_components": [
+        22.861943220571728,
+        1.5885389459347325,
+        2.0758099255777287,
+        0.0,
+        150.0,
+        0.0,
+        0.00016339792921865845,
+        0.11168584633168177,
+        0.347630828824844,
+        0.0
+      ],
+      "actual_operational_cost": 176.98577216516992,
+      "base_layout_id": 1,
+      "case_id": "condition_05",
+      "checked_observations": 23,
+      "checker_seconds": 0.0007100439979694784,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        5,
+        9,
+        9,
+        1
+      ],
+      "environment_seconds": 0.013887844979763031,
+      "evaluation_rng_seed": 109,
+      "executed_plan_age_counts": [
+        23,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.905161935047644,
+      "first_goal_entry_step": null,
+      "generation_seconds": 4.602697744034231,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20024166099028662,
+      "model_checker_seconds_per_action": 0.20014816469705218,
+      "repredicted_executed_observation_rmse": [
+        0.01248004287481308,
+        0.011208578012883663,
+        0.21243391931056976,
+        0.20704984664916992,
+        0.011214925907552242,
+        0.009299307130277157,
+        0.041800420731306076
+      ],
+      "sampled_plans": 23,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_05_rng109/episode_summary.json",
+      "steps": 23,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 17,
+      "actual_cost_components": [
+        23.12207193571961,
+        1.5432819862130527,
+        2.1841968902226796,
+        0.0,
+        150.0,
+        0.0,
+        4.143885234952904e-05,
+        0.048677055900506506,
+        0.1842851109122254,
+        0.0
+      ],
+      "actual_operational_cost": 177.0825544178204,
+      "base_layout_id": 1,
+      "case_id": "condition_05",
+      "checked_observations": 32,
+      "checker_seconds": 0.0009445991017855704,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        6,
+        11,
+        10,
+        2
+      ],
+      "environment_seconds": 0.018699632200878114,
+      "evaluation_rng_seed": 110,
+      "executed_plan_age_counts": [
+        32,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9268393279766343,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.384531610121485,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19967187696602196,
+      "model_checker_seconds_per_action": 0.1995461315382272,
+      "repredicted_executed_observation_rmse": [
+        0.008723975159227848,
+        0.0107357706874609,
+        0.18855467438697815,
+        0.23066845536231995,
+        0.007707409095019102,
+        0.009855400770902634,
+        0.044831253588199615
+      ],
+      "sampled_plans": 32,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_05_rng110/episode_summary.json",
+      "steps": 32,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 18,
+      "actual_cost_components": [
+        23.16622930633303,
+        1.5289497312432587,
+        2.202595794644937,
+        0.0,
+        150.0,
+        0.0,
+        9.679134122312201e-06,
+        0.04172921214051526,
+        0.19894392970813526,
+        0.0
+      ],
+      "actual_operational_cost": 177.13845765320397,
+      "base_layout_id": 2,
+      "case_id": "condition_06",
+      "checked_observations": 35,
+      "checker_seconds": 0.0011129710474051535,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        8,
+        12,
+        11,
+        1
+      ],
+      "environment_seconds": 0.021155607071705163,
+      "evaluation_rng_seed": 101,
+      "executed_plan_age_counts": [
+        35,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9305191088610858,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.973759813059587,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.1994508330244571,
+      "model_checker_seconds_per_action": 0.19928207954591406,
+      "repredicted_executed_observation_rmse": [
+        0.009283107705414295,
+        0.012018420733511448,
+        0.09903324395418167,
+        0.24245314300060272,
+        0.006769473664462566,
+        0.008217795751988888,
+        0.03351766988635063
+      ],
+      "sampled_plans": 35,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_06_rng101/episode_summary.json",
+      "steps": 35,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 16,
+      "actual_cost_components": [
+        23.369941563160634,
+        1.5935962437473965,
+        2.287475901656438,
+        0.0,
+        150.0,
+        0.0,
+        0.00040377845312656474,
+        0.08087336110383288,
+        0.1888676065775079,
+        0.0
+      ],
+      "actual_operational_cost": 177.52115845469893,
+      "base_layout_id": 2,
+      "case_id": "condition_06",
+      "checked_observations": 31,
+      "checker_seconds": 0.0010684338631108403,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        6,
+        13,
+        7,
+        1
+      ],
+      "environment_seconds": 0.01965664711315185,
+      "evaluation_rng_seed": 102,
+      "executed_plan_age_counts": [
+        31,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.947495130263386,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.184931730909739,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19949207099853083,
+      "model_checker_seconds_per_action": 0.1995483924120274,
+      "repredicted_executed_observation_rmse": [
+        0.012466924265027046,
+        0.012316371314227581,
+        0.1990056186914444,
+        0.21409843862056732,
+        0.009742490015923977,
+        0.009546992368996143,
+        0.03520655632019043
+      ],
+      "sampled_plans": 31,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_06_rng102/episode_summary.json",
+      "steps": 31,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 94,
+      "actual_cost_components": [
+        1.2130947898535305,
+        0.6812988509590465,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01292453545244052,
+        0.09921037928315682,
+        0.0
+      ],
+      "actual_operational_cost": 2.0065285555481744,
+      "base_layout_id": 2,
+      "case_id": "condition_06",
+      "checked_observations": 94,
+      "checker_seconds": 0.002730359323322773,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.05364093912066892,
+      "evaluation_rng_seed": 103,
+      "executed_plan_age_counts": [
+        94,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.10109123248779421,
+      "first_goal_entry_step": 81,
+      "generation_seconds": 18.76096267014509,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.1994765124982223,
+      "model_checker_seconds_per_action": 0.1996137556326427,
+      "repredicted_executed_observation_rmse": [
+        0.0011820205254480243,
+        0.001183686894364655,
+        0.024631984531879425,
+        0.018188215792179108,
+        0.0006913731922395527,
+        0.0007181662367656827,
+        0.002612930489704013
+      ],
+      "sampled_plans": 94,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_06_rng103/episode_summary.json",
+      "steps": 94,
+      "steps_to_success": 94,
+      "success": true,
+      "success_criterion_version": 2,
+      "success_step": 94,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "success",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 17,
+      "actual_cost_components": [
+        22.735996220957045,
+        1.5965099087658148,
+        2.02333200907161,
+        0.0,
+        150.0,
+        0.0,
+        7.19750392856137e-05,
+        0.10004639585674224,
+        0.245148702055106,
+        0.0
+      ],
+      "actual_operational_cost": 176.7011052117456,
+      "base_layout_id": 2,
+      "case_id": "condition_06",
+      "checked_observations": 30,
+      "checker_seconds": 0.0008447579457424581,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        8,
+        10,
+        8,
+        0
+      ],
+      "environment_seconds": 0.01745059300446883,
+      "evaluation_rng_seed": 104,
+      "executed_plan_age_counts": [
+        30,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.8946663517464204,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.993565689015668,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19971521900151856,
+      "model_checker_seconds_per_action": 0.19981368156538035,
+      "repredicted_executed_observation_rmse": [
+        0.009853052906692028,
+        0.012604054063558578,
+        0.20728939771652222,
+        0.19807113707065582,
+        0.009506624191999435,
+        0.008726642467081547,
+        0.02605219930410385
+      ],
+      "sampled_plans": 30,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_06_rng104/episode_summary.json",
+      "steps": 30,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 81,
+      "actual_cost_components": [
+        6.654664041437967,
+        0.690829469282663,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.026546724722285638,
+        0.173325376863813,
+        25.0
+      ],
+      "actual_operational_cost": 32.54536561230673,
+      "base_layout_id": 2,
+      "case_id": "condition_06",
+      "checked_observations": 100,
+      "checker_seconds": 0.002988814958371222,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        5,
+        17,
+        7,
+        0
+      ],
+      "environment_seconds": 0.05964013107586652,
+      "evaluation_rng_seed": 105,
+      "executed_plan_age_counts": [
+        100,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.5545553367864973,
+      "first_goal_entry_step": 73,
+      "generation_seconds": 19.931171016884036,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.19942084650392644,
+      "model_checker_seconds_per_action": 0.19934159831842407,
+      "repredicted_executed_observation_rmse": [
+        0.004765269346535206,
+        0.007207776419818401,
+        0.09189314395189285,
+        0.12528306245803833,
+        0.0034713821951299906,
+        0.002955219242721796,
+        0.013808384537696838
+      ],
+      "sampled_plans": 100,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_06_rng105/episode_summary.json",
+      "steps": 100,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "timeout",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 23,
+      "actual_cost_components": [
+        25.033945584884066,
+        1.4952967367169927,
+        2.9808109107078695,
+        0.0,
+        150.0,
+        0.0,
+        0.0012263764922392907,
+        0.10257763430528236,
+        0.26787477629025563,
+        0.0
+      ],
+      "actual_operational_cost": 179.8817320193967,
+      "base_layout_id": 2,
+      "case_id": "condition_06",
+      "checked_observations": 42,
+      "checker_seconds": 0.0011811530566774309,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        7,
+        15,
+        14,
+        0
+      ],
+      "environment_seconds": 0.02406855922890827,
+      "evaluation_rng_seed": 106,
+      "executed_plan_age_counts": [
+        42,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 2.0861621320736723,
+      "first_goal_entry_step": null,
+      "generation_seconds": 8.393221932987217,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.2000139805022627,
+      "model_checker_seconds_per_action": 0.19986674014390224,
+      "repredicted_executed_observation_rmse": [
+        0.007315904833376408,
+        0.01314757950603962,
+        0.16607853770256042,
+        0.20853470265865326,
+        0.0065977913327515125,
+        0.011819588951766491,
+        0.02601485513150692
+      ],
+      "sampled_plans": 42,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_06_rng106/episode_summary.json",
+      "steps": 42,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 23,
+      "actual_cost_components": [
+        24.397235770704928,
+        1.5274871657248739,
+        2.7155151547998946,
+        0.0,
+        150.0,
+        0.0,
+        0.0002195496793481611,
+        0.03559611970380493,
+        0.17689894251297528,
+        0.0
+      ],
+      "actual_operational_cost": 178.8529527031258,
+      "base_layout_id": 2,
+      "case_id": "condition_06",
+      "checked_observations": 38,
+      "checker_seconds": 0.001293643144890666,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        9,
+        13,
+        10,
+        0
+      ],
+      "environment_seconds": 0.024489408009685576,
+      "evaluation_rng_seed": 107,
+      "executed_plan_age_counts": [
+        38,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 2.0331029808920773,
+      "first_goal_entry_step": null,
+      "generation_seconds": 7.614871932833921,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20029970700852573,
+      "model_checker_seconds_per_action": 0.20042540989417926,
+      "repredicted_executed_observation_rmse": [
+        0.012114565819501877,
+        0.013352878391742706,
+        0.1629895120859146,
+        0.23651231825351715,
+        0.006086352281272411,
+        0.009425030089914799,
+        0.02344147115945816
+      ],
+      "sampled_plans": 38,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_06_rng107/episode_summary.json",
+      "steps": 38,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 23,
+      "actual_cost_components": [
+        24.376365831619694,
+        1.5743005320495498,
+        2.706819346847713,
+        0.0,
+        150.0,
+        0.0,
+        0.00025788521273207644,
+        0.09921962712698384,
+        0.22278714378110362,
+        0.0
+      ],
+      "actual_operational_cost": 178.97975036663777,
+      "base_layout_id": 2,
+      "case_id": "condition_06",
+      "checked_observations": 37,
+      "checker_seconds": 0.0011764230439439416,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        5,
+        11,
+        9,
+        0
+      ],
+      "environment_seconds": 0.021731914835982025,
+      "evaluation_rng_seed": 108,
+      "executed_plan_age_counts": [
+        37,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 2.031363819301641,
+      "first_goal_entry_step": null,
+      "generation_seconds": 7.395568279083818,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20007179997628555,
+      "model_checker_seconds_per_action": 0.199912018976426,
+      "repredicted_executed_observation_rmse": [
+        0.008282020688056946,
+        0.010044721886515617,
+        0.1795179396867752,
+        0.20187163352966309,
+        0.007139148656278849,
+        0.007696750108152628,
+        0.02548847161233425
+      ],
+      "sampled_plans": 37,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_06_rng108/episode_summary.json",
+      "steps": 37,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 25,
+      "actual_cost_components": [
+        21.713936085150156,
+        1.4356334506462758,
+        1.5974736191520733,
+        0.0,
+        150.0,
+        0.0,
+        0.00011336804901501453,
+        0.060664408045453734,
+        0.2031225306185275,
+        0.0
+      ],
+      "actual_operational_cost": 175.0109434616615,
+      "base_layout_id": 2,
+      "case_id": "condition_06",
+      "checked_observations": 39,
+      "checker_seconds": 0.0013197517837397754,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        4,
+        13,
+        6,
+        2
+      ],
+      "environment_seconds": 0.024158502114005387,
+      "evaluation_rng_seed": 109,
+      "executed_plan_age_counts": [
+        39,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.809494673762513,
+      "first_goal_entry_step": null,
+      "generation_seconds": 7.7924122787080705,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19988005695631728,
+      "model_checker_seconds_per_action": 0.19983928283312333,
+      "repredicted_executed_observation_rmse": [
+        0.009484171867370605,
+        0.011045644991099834,
+        0.18859107792377472,
+        0.22625574469566345,
+        0.005622081458568573,
+        0.0054101222194731236,
+        0.03449153155088425
+      ],
+      "sampled_plans": 39,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_06_rng109/episode_summary.json",
+      "steps": 39,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 23,
+      "actual_cost_components": [
+        23.332465614334957,
+        1.6062827642705908,
+        2.271860922979073,
+        0.0,
+        150.0,
+        0.0,
+        0.00013020730948807926,
+        0.07644226006297,
+        0.17946733191720385,
+        0.0
+      ],
+      "actual_operational_cost": 177.4666491008743,
+      "base_layout_id": 2,
+      "case_id": "condition_06",
+      "checked_observations": 35,
+      "checker_seconds": 0.0011209750082343817,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        3,
+        9,
+        8,
+        0
+      ],
+      "environment_seconds": 0.021663163090124726,
+      "evaluation_rng_seed": 110,
+      "executed_plan_age_counts": [
+        35,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.944372134527913,
+      "first_goal_entry_step": null,
+      "generation_seconds": 7.01159594010096,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20018226804677397,
+      "model_checker_seconds_per_action": 0.20036334043169127,
+      "repredicted_executed_observation_rmse": [
+        0.008508850820362568,
+        0.008509066887199879,
+        0.21651920676231384,
+        0.16455678641796112,
+        0.004825780633836985,
+        0.009154521860182285,
+        0.014760571531951427
+      ],
+      "sampled_plans": 35,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_06_rng110/episode_summary.json",
+      "steps": 35,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        -15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 100,
+      "actual_cost_components": [
+        0.9526139465602573,
+        0.6819035769530011,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.005986699435502488,
+        0.02973371976282757,
+        25.0
+      ],
+      "actual_operational_cost": 26.670237942711587,
+      "base_layout_id": 2,
+      "case_id": "condition_07",
+      "checked_observations": 100,
+      "checker_seconds": 0.003186556976288557,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.0611172309727408,
+      "evaluation_rng_seed": 101,
+      "executed_plan_age_counts": [
+        100,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.07938449554668811,
+      "first_goal_entry_step": 87,
+      "generation_seconds": 19.963972085155547,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.19970189948799089,
+      "model_checker_seconds_per_action": 0.19967158642131835,
+      "repredicted_executed_observation_rmse": [
+        0.001017542090266943,
+        0.0008600021246820688,
+        0.015018385834991932,
+        0.013263986445963383,
+        0.0007172695477493107,
+        0.0008415211923420429,
+        0.0028760831337422132
+      ],
+      "sampled_plans": 100,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_07_rng101/episode_summary.json",
+      "steps": 100,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "timeout",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 25,
+      "actual_cost_components": [
+        20.141030975997797,
+        1.43567818816201,
+        0.9420964903385898,
+        0.0,
+        150.0,
+        0.0,
+        0.0024842680080492843,
+        0.02542978408470021,
+        0.15562532604277918,
+        0.0
+      ],
+      "actual_operational_cost": 172.70234503263393,
+      "base_layout_id": 2,
+      "case_id": "condition_07",
+      "checked_observations": 29,
+      "checker_seconds": 0.000863738008774817,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        3,
+        4,
+        2,
+        0
+      ],
+      "environment_seconds": 0.017040296748746186,
+      "evaluation_rng_seed": 102,
+      "executed_plan_age_counts": [
+        29,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.6784192479998163,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.783897414861713,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19945524097420275,
+      "model_checker_seconds_per_action": 0.19947452251277542,
+      "repredicted_executed_observation_rmse": [
+        0.01087238546460867,
+        0.006882584188133478,
+        0.2871832847595215,
+        0.15452437102794647,
+        0.005917052738368511,
+        0.0038168616592884064,
+        0.0069271354004740715
+      ],
+      "sampled_plans": 29,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_07_rng102/episode_summary.json",
+      "steps": 29,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 88,
+      "actual_cost_components": [
+        1.0749517019852974,
+        0.6558253517652747,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.030640308410985112,
+        0.08648988957917225,
+        0.0
+      ],
+      "actual_operational_cost": 1.8479072517407298,
+      "base_layout_id": 2,
+      "case_id": "condition_07",
+      "checked_observations": 88,
+      "checker_seconds": 0.0027774301124736667,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.05424810608383268,
+      "evaluation_rng_seed": 103,
+      "executed_plan_age_counts": [
+        88,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.08957930849877478,
+      "first_goal_entry_step": 70,
+      "generation_seconds": 17.57779742864659,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.19980722846230492,
+      "model_checker_seconds_per_action": 0.19977925975862573,
+      "repredicted_executed_observation_rmse": [
+        0.0007647390011698008,
+        0.0007512577576562762,
+        0.016121620312333107,
+        0.014035439118742943,
+        0.0007063705124892294,
+        0.0008472246117889881,
+        0.002792537910863757
+      ],
+      "sampled_plans": 88,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_07_rng103/episode_summary.json",
+      "steps": 88,
+      "steps_to_success": 88,
+      "success": true,
+      "success_criterion_version": 2,
+      "success_step": 88,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "success",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 29,
+      "actual_cost_components": [
+        17.139295090828085,
+        1.3692864600337378,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        0.00022098355718894796,
+        0.028327735432232576,
+        0.15686063272357328,
+        0.0
+      ],
+      "actual_operational_cost": 168.69399090257482,
+      "base_layout_id": 2,
+      "case_id": "condition_07",
+      "checked_observations": 29,
+      "checker_seconds": 0.0009383289725519717,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.01790981210069731,
+      "evaluation_rng_seed": 104,
+      "executed_plan_age_counts": [
+        29,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.4282745909023404,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.79998093895847,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.1999431459698826,
+      "model_checker_seconds_per_action": 0.20003169889417316,
+      "repredicted_executed_observation_rmse": [
+        0.0014367317780852318,
+        0.0016038194298744202,
+        0.03126617893576622,
+        0.0248052179813385,
+        0.0010339084547013044,
+        0.00170901941601187,
+        0.004532229155302048
+      ],
+      "sampled_plans": 29,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_07_rng104/episode_summary.json",
+      "steps": 29,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 99,
+      "actual_cost_components": [
+        1.3720219251919268,
+        0.648229401876245,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.011994791714273704,
+        0.1090122570326083,
+        0.0
+      ],
+      "actual_operational_cost": 2.141258375815054,
+      "base_layout_id": 2,
+      "case_id": "condition_07",
+      "checked_observations": 99,
+      "checker_seconds": 0.0034247676958329976,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.06315429578535259,
+      "evaluation_rng_seed": 105,
+      "executed_plan_age_counts": [
+        99,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.11433516043266057,
+      "first_goal_entry_step": 81,
+      "generation_seconds": 19.799042095139157,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.19996781199006364,
+      "model_checker_seconds_per_action": 0.20002491780641404,
+      "repredicted_executed_observation_rmse": [
+        0.0012677960330620408,
+        0.0009449757635593414,
+        0.015696166083216667,
+        0.020162591710686684,
+        0.0008015518542379141,
+        0.0009563395869918168,
+        0.0035803711507469416
+      ],
+      "sampled_plans": 99,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_07_rng105/episode_summary.json",
+      "steps": 99,
+      "steps_to_success": 99,
+      "success": true,
+      "success_criterion_version": 2,
+      "success_step": 99,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "success",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 27,
+      "actual_cost_components": [
+        18.74098250711599,
+        1.4439191398447073,
+        0.3587429616378379,
+        0.0,
+        150.0,
+        0.0,
+        0.00023476957516099342,
+        0.03632600357282068,
+        0.16079972343397905,
+        0.0
+      ],
+      "actual_operational_cost": 170.74100510518048,
+      "base_layout_id": 2,
+      "case_id": "condition_07",
+      "checked_observations": 28,
+      "checker_seconds": 0.0008094821241684258,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "environment_seconds": 0.01621802692534402,
+      "evaluation_rng_seed": 106,
+      "executed_plan_age_counts": [
+        28,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.561748542259666,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.5750464007142,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19904941250570118,
+      "model_checker_seconds_per_action": 0.1991377101013703,
+      "repredicted_executed_observation_rmse": [
+        0.0019318903796374798,
+        0.0014376809122040868,
+        0.16131176054477692,
+        0.03426946699619293,
+        0.0011748053366318345,
+        0.0017848387360572815,
+        0.004715784452855587
+      ],
+      "sampled_plans": 28,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_07_rng106/episode_summary.json",
+      "steps": 28,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 92,
+      "actual_cost_components": [
+        2.591677263752394,
+        0.7255605753018682,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        1.0500156369506959e-07,
+        0.024420294388419837,
+        0.13177485572769115,
+        0.0
+      ],
+      "actual_operational_cost": 153.47343309417192,
+      "base_layout_id": 2,
+      "case_id": "condition_07",
+      "checked_observations": 92,
+      "checker_seconds": 0.0030625018989667296,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.05740046675782651,
+      "evaluation_rng_seed": 107,
+      "executed_plan_age_counts": [
+        92,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.2159731053126995,
+      "first_goal_entry_step": 79,
+      "generation_seconds": 18.365354619454592,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.19964495548629202,
+      "model_checker_seconds_per_action": 0.19965670784079956,
+      "repredicted_executed_observation_rmse": [
+        0.0015126217622309923,
+        0.0012931781820952892,
+        0.023520885035395622,
+        0.02535354718565941,
+        0.0008691507391631603,
+        0.0009188305120915174,
+        0.003699615364894271
+      ],
+      "sampled_plans": 92,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_07_rng107/episode_summary.json",
+      "steps": 92,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 33,
+      "actual_cost_components": [
+        15.980055510679037,
+        1.3393893610651952,
+        0.0,
+        0.0,
+        150.0,
+        0.0,
+        0.00012049476303993488,
+        0.017944500205109567,
+        0.12641421482521967,
+        0.0
+      ],
+      "actual_operational_cost": 167.46392408153758,
+      "base_layout_id": 2,
+      "case_id": "condition_07",
+      "checked_observations": 33,
+      "checker_seconds": 0.0010438592289574444,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.020312921842560172,
+      "evaluation_rng_seed": 108,
+      "executed_plan_age_counts": [
+        33,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.3316712925565863,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.592863257857971,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.1997763899853453,
+      "model_checker_seconds_per_action": 0.19981536718445236,
+      "repredicted_executed_observation_rmse": [
+        0.0014996620593592525,
+        0.0016306235920637846,
+        0.02911711484193802,
+        0.02281738445162773,
+        0.0010554007021710277,
+        0.0011471480829641223,
+        0.004648298490792513
+      ],
+      "sampled_plans": 33,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_07_rng108/episode_summary.json",
+      "steps": 33,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 77,
+      "actual_cost_components": [
+        0.43268913770734346,
+        0.7563085539665982,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.03038675917951147,
+        0.12047760588480964,
+        0.0
+      ],
+      "actual_operational_cost": 1.3398620567382629,
+      "base_layout_id": 2,
+      "case_id": "condition_07",
+      "checked_observations": 77,
+      "checker_seconds": 0.002267157775349915,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "environment_seconds": 0.04495500127086416,
+      "evaluation_rng_seed": 109,
+      "executed_plan_age_counts": [
+        77,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 0.03605742814227862,
+      "first_goal_entry_step": 68,
+      "generation_seconds": 15.374342405004427,
+      "goal_entry": true,
+      "median_proposal_seconds": 0.19961314997635782,
+      "model_checker_seconds_per_action": 0.19969622808804904,
+      "repredicted_executed_observation_rmse": [
+        0.0011365636019036174,
+        0.0007627528393641114,
+        0.020635519176721573,
+        0.014304578304290771,
+        0.0008116310345940292,
+        0.0007815091521479189,
+        0.0031435503624379635
+      ],
+      "sampled_plans": 77,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_07_rng109/episode_summary.json",
+      "steps": 77,
+      "steps_to_success": 77,
+      "success": true,
+      "success_criterion_version": 2,
+      "success_step": 77,
+      "supplied_tilt_degrees": [
+        14.999999999999998,
+        20.0
+      ],
+      "terminal": "success",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 26,
+      "actual_cost_components": [
+        18.264516946076903,
+        1.4124128095969726,
+        0.16021564453821746,
+        0.0,
+        150.0,
+        0.0,
+        5.990265029822577e-06,
+        0.043332592281928366,
+        0.1945703463507,
+        0.0
+      ],
+      "actual_operational_cost": 170.07505432910978,
+      "base_layout_id": 2,
+      "case_id": "condition_07",
+      "checked_observations": 27,
+      "checker_seconds": 0.0009430780191905797,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "environment_seconds": 0.01748248399235308,
+      "evaluation_rng_seed": 110,
+      "executed_plan_age_counts": [
+        27,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.5220430788397419,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.423071963072289,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.20014896598877385,
+      "model_checker_seconds_per_action": 0.20088944596635108,
+      "repredicted_executed_observation_rmse": [
+        0.0018566421931609511,
+        0.0034018594305962324,
+        0.07338939607143402,
+        0.11689151078462601,
+        0.0011387508129701018,
+        0.0020164335146546364,
+        0.004080745857208967
+      ],
+      "sampled_plans": 27,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_07_rng110/episode_summary.json",
+      "steps": 27,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        0,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 14,
+      "actual_cost_components": [
+        23.036268135743697,
+        1.57490895828408,
+        2.148445306899381,
+        0.0,
+        150.0,
+        0.0,
+        0.0004137454767537154,
+        0.08297237213817901,
+        0.2847404337306941,
+        0.0
+      ],
+      "actual_operational_cost": 177.12774895227278,
+      "base_layout_id": 2,
+      "case_id": "condition_08",
+      "checked_observations": 23,
+      "checker_seconds": 0.0007804211927577853,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        6,
+        8,
+        8,
+        1
+      ],
+      "environment_seconds": 0.01436569809447974,
+      "evaluation_rng_seed": 101,
+      "executed_plan_age_counts": [
+        23,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9196890113119747,
+      "first_goal_entry_step": null,
+      "generation_seconds": 4.600550598814152,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.2000335469492711,
+      "model_checker_seconds_per_action": 0.20005787043508305,
+      "repredicted_executed_observation_rmse": [
+        0.016183482483029366,
+        0.010328172706067562,
+        0.18903319537639618,
+        0.20620185136795044,
+        0.01116152759641409,
+        0.014248578809201717,
+        0.03978288918733597
+      ],
+      "sampled_plans": 23,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_08_rng101/episode_summary.json",
+      "steps": 23,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 17,
+      "actual_cost_components": [
+        23.431070173418156,
+        1.5496082079571347,
+        2.3129461559304065,
+        0.0,
+        150.0,
+        0.0,
+        0.00036457233122667995,
+        0.04674739643729243,
+        0.2472535619675777,
+        0.0
+      ],
+      "actual_operational_cost": 177.5879900680418,
+      "base_layout_id": 2,
+      "case_id": "condition_08",
+      "checked_observations": 29,
+      "checker_seconds": 0.0009666028781794012,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        5,
+        8,
+        10,
+        4
+      ],
+      "environment_seconds": 0.01784573611803353,
+      "evaluation_rng_seed": 102,
+      "executed_plan_age_counts": [
+        29,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9525891811181797,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.787561778037343,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19960162899224088,
+      "model_checker_seconds_per_action": 0.19960442692812147,
+      "repredicted_executed_observation_rmse": [
+        0.01027264166623354,
+        0.008966713212430477,
+        0.10525687783956528,
+        0.1802961826324463,
+        0.00635738717392087,
+        0.011128736659884453,
+        0.05597582086920738
+      ],
+      "sampled_plans": 29,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_08_rng102/episode_summary.json",
+      "steps": 29,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 14,
+      "actual_cost_components": [
+        22.72140357330548,
+        1.561707519680047,
+        2.017251739216791,
+        0.0,
+        150.0,
+        0.0,
+        4.5404291955966745e-06,
+        0.07584824776367091,
+        0.29926253597121294,
+        0.0
+      ],
+      "actual_operational_cost": 176.6754781563664,
+      "base_layout_id": 2,
+      "case_id": "condition_08",
+      "checked_observations": 23,
+      "checker_seconds": 0.0005868811858817935,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        4,
+        9,
+        7,
+        1
+      ],
+      "environment_seconds": 0.012293625040911138,
+      "evaluation_rng_seed": 103,
+      "executed_plan_age_counts": [
+        23,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.8934502977754566,
+      "first_goal_entry_step": null,
+      "generation_seconds": 4.565576842986047,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19851558096706867,
+      "model_checker_seconds_per_action": 0.19852885757269256,
+      "repredicted_executed_observation_rmse": [
+        0.014413080178201199,
+        0.007687995210289955,
+        0.19559311866760254,
+        0.2343653291463852,
+        0.01044707652181387,
+        0.011678138747811317,
+        0.04232114180922508
+      ],
+      "sampled_plans": 23,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_08_rng103/episode_summary.json",
+      "steps": 23,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 16,
+      "actual_cost_components": [
+        23.043269923745168,
+        1.5483144258652692,
+        2.151362718566662,
+        0.0,
+        150.0,
+        0.0,
+        0.00031273750752900705,
+        0.033373790738483435,
+        0.22127428419955458,
+        0.0
+      ],
+      "actual_operational_cost": 176.99790788062268,
+      "base_layout_id": 2,
+      "case_id": "condition_08",
+      "checked_observations": 29,
+      "checker_seconds": 0.0008104561711661518,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        9,
+        11,
+        9,
+        0
+      ],
+      "environment_seconds": 0.01670801592990756,
+      "evaluation_rng_seed": 104,
+      "executed_plan_age_counts": [
+        29,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9202724936454307,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.78148173505906,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19928622100269422,
+      "model_checker_seconds_per_action": 0.19938938590449057,
+      "repredicted_executed_observation_rmse": [
+        0.01306753046810627,
+        0.012700007297098637,
+        0.11375890672206879,
+        0.24624955654144287,
+        0.013107887469232082,
+        0.011580211110413074,
+        0.03813419118523598
+      ],
+      "sampled_plans": 29,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_08_rng104/episode_summary.json",
+      "steps": 29,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 14,
+      "actual_cost_components": [
+        23.166578346726546,
+        1.5773420841358756,
+        2.2027412281422354,
+        0.0,
+        150.0,
+        0.0,
+        0.0005897123492569666,
+        0.0831680023894863,
+        0.4336607603733416,
+        0.0
+      ],
+      "actual_operational_cost": 177.46408013411673,
+      "base_layout_id": 2,
+      "case_id": "condition_08",
+      "checked_observations": 22,
+      "checker_seconds": 0.0006146548548713326,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        3,
+        8,
+        6,
+        1
+      ],
+      "environment_seconds": 0.012324022012762725,
+      "evaluation_rng_seed": 105,
+      "executed_plan_age_counts": [
+        22,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9305481955605455,
+      "first_goal_entry_step": null,
+      "generation_seconds": 4.386993996798992,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19924523896770552,
+      "model_checker_seconds_per_action": 0.19943675689335744,
+      "repredicted_executed_observation_rmse": [
+        0.01464193593710661,
+        0.007794299628585577,
+        0.20007012784481049,
+        0.2068174034357071,
+        0.008186401799321175,
+        0.012477804906666279,
+        0.049664996564388275
+      ],
+      "sampled_plans": 22,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_08_rng105/episode_summary.json",
+      "steps": 22,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 17,
+      "actual_cost_components": [
+        22.759678734207384,
+        1.561406048659248,
+        2.033199722925918,
+        0.0,
+        150.0,
+        0.0,
+        8.906530821661818e-05,
+        0.0672554229725258,
+        0.2617592299809577,
+        0.0
+      ],
+      "actual_operational_cost": 176.68338822405426,
+      "base_layout_id": 2,
+      "case_id": "condition_08",
+      "checked_observations": 32,
+      "checker_seconds": 0.0008541127317585051,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        8,
+        12,
+        12,
+        1
+      ],
+      "environment_seconds": 0.018181757943239063,
+      "evaluation_rng_seed": 106,
+      "executed_plan_age_counts": [
+        32,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.896639894517282,
+      "first_goal_entry_step": null,
+      "generation_seconds": 6.377759980154224,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19929909051279537,
+      "model_checker_seconds_per_action": 0.19933169040268695,
+      "repredicted_executed_observation_rmse": [
+        0.00925493985414505,
+        0.012484154663980007,
+        0.13540424406528473,
+        0.23795993626117706,
+        0.011465261690318584,
+        0.011529314331710339,
+        0.04471081495285034
+      ],
+      "sampled_plans": 32,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_08_rng106/episode_summary.json",
+      "steps": 32,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 15,
+      "actual_cost_components": [
+        23.00307624243029,
+        1.5943419718261354,
+        2.1346153513521293,
+        0.0,
+        150.0,
+        0.0,
+        0.0003961947560310364,
+        0.0682556648122217,
+        0.295925322093929,
+        0.0
+      ],
+      "actual_operational_cost": 177.09661074727074,
+      "base_layout_id": 2,
+      "case_id": "condition_08",
+      "checked_observations": 25,
+      "checker_seconds": 0.0006826739409007132,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        4,
+        8,
+        8,
+        0
+      ],
+      "environment_seconds": 0.013835564139299095,
+      "evaluation_rng_seed": 107,
+      "executed_plan_age_counts": [
+        25,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9169230202025243,
+      "first_goal_entry_step": null,
+      "generation_seconds": 4.990108751808293,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19946451898431405,
+      "model_checker_seconds_per_action": 0.19963165702996777,
+      "repredicted_executed_observation_rmse": [
+        0.010890213772654533,
+        0.012303263880312443,
+        0.21029189229011536,
+        0.20595407485961914,
+        0.009518817998468876,
+        0.010751534253358841,
+        0.03631557151675224
+      ],
+      "sampled_plans": 25,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_08_rng107/episode_summary.json",
+      "steps": 25,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 15,
+      "actual_cost_components": [
+        23.025276976129696,
+        1.5654871193280744,
+        2.143865657060214,
+        0.0,
+        150.0,
+        0.0,
+        0.0004032205698974524,
+        0.11182825061112592,
+        0.25209688792713364,
+        0.0
+      ],
+      "actual_operational_cost": 177.09895811162613,
+      "base_layout_id": 2,
+      "case_id": "condition_08",
+      "checked_observations": 28,
+      "checker_seconds": 0.0007446470553986728,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        5,
+        12,
+        12,
+        0
+      ],
+      "environment_seconds": 0.015002426924183965,
+      "evaluation_rng_seed": 108,
+      "executed_plan_age_counts": [
+        28,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9187730813441413,
+      "first_goal_entry_step": null,
+      "generation_seconds": 5.5854286211542785,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19949055748293176,
+      "model_checker_seconds_per_action": 0.19950618815034563,
+      "repredicted_executed_observation_rmse": [
+        0.010384123772382736,
+        0.012370215728878975,
+        0.1731099933385849,
+        0.23017573356628418,
+        0.007513990625739098,
+        0.01082904264330864,
+        0.029013942927122116
+      ],
+      "sampled_plans": 28,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_08_rng108/episode_summary.json",
+      "steps": 28,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 13,
+      "actual_cost_components": [
+        22.775509130783696,
+        1.5823873185929103,
+        2.0397957214993823,
+        0.0,
+        150.0,
+        0.0,
+        0.00014007081933248793,
+        0.07249475564182284,
+        0.3062064319085653,
+        0.0
+      ],
+      "actual_operational_cost": 176.77653342924572,
+      "base_layout_id": 2,
+      "case_id": "condition_08",
+      "checked_observations": 22,
+      "checker_seconds": 0.0005786778638139367,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        3,
+        6,
+        7,
+        1
+      ],
+      "environment_seconds": 0.01191841292893514,
+      "evaluation_rng_seed": 109,
+      "executed_plan_age_counts": [
+        22,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.8979590942319748,
+      "first_goal_entry_step": null,
+      "generation_seconds": 4.391142846900038,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19958356450661086,
+      "model_checker_seconds_per_action": 0.1996237056710842,
+      "repredicted_executed_observation_rmse": [
+        0.009693199768662453,
+        0.00607990100979805,
+        0.17881770431995392,
+        0.17516256868839264,
+        0.007436341606080532,
+        0.015114533714950085,
+        0.04028310999274254
+      ],
+      "sampled_plans": 22,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_08_rng109/episode_summary.json",
+      "steps": 22,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        -14.999999999999998,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    },
+    {
+      "accepted_observations": 16,
+      "actual_cost_components": [
+        23.252433753458,
+        1.5463051500899865,
+        2.238514314280342,
+        0.0,
+        150.0,
+        0.0,
+        0.00033774029191135924,
+        0.036099880716033414,
+        0.27740511872060586,
+        0.0
+      ],
+      "actual_operational_cost": 177.35109595755685,
+      "base_layout_id": 2,
+      "case_id": "condition_08",
+      "checked_observations": 25,
+      "checker_seconds": 0.0007093128515407443,
+      "conditioning_correct": false,
+      "disagreement_component_counts": [
+        5,
+        8,
+        9,
+        2
+      ],
+      "environment_seconds": 0.014037073065992445,
+      "evaluation_rng_seed": 110,
+      "executed_plan_age_counts": [
+        25,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_goal_distance": 1.9377028127881668,
+      "first_goal_entry_step": null,
+      "generation_seconds": 4.992984747746959,
+      "goal_entry": false,
+      "median_proposal_seconds": 0.19951887195929885,
+      "model_checker_seconds_per_action": 0.19974776242394,
+      "repredicted_executed_observation_rmse": [
+        0.013625160790979862,
+        0.012799618765711784,
+        0.14014455676078796,
+        0.25742825865745544,
+        0.009367652237415314,
+        0.01190039049834013,
+        0.04768744111061096
+      ],
+      "sampled_plans": 25,
+      "source_episode_summary": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/condition_08_rng110/episode_summary.json",
+      "steps": 25,
+      "steps_to_success": null,
+      "success": false,
+      "success_criterion_version": 2,
+      "success_step": null,
+      "supplied_tilt_degrees": [
+        0.0,
+        20.0
+      ],
+      "terminal": "fall",
+      "true_tilt": [
+        15,
+        20
+      ]
+    }
+  ],
+  "executed_steps": 3910,
+  "fallback_steps": 0,
+  "generation_seconds": 781.7052827191073,
+  "goal_entries": 18,
+  "groups": [
+    "condition_00_rng101",
+    "condition_00_rng102",
+    "condition_00_rng103",
+    "condition_00_rng104",
+    "condition_00_rng105",
+    "condition_00_rng106",
+    "condition_00_rng107",
+    "condition_00_rng108",
+    "condition_00_rng109",
+    "condition_00_rng110",
+    "condition_01_rng101",
+    "condition_01_rng102",
+    "condition_01_rng103",
+    "condition_01_rng104",
+    "condition_01_rng105",
+    "condition_01_rng106",
+    "condition_01_rng107",
+    "condition_01_rng108",
+    "condition_01_rng109",
+    "condition_01_rng110",
+    "condition_02_rng101",
+    "condition_02_rng102",
+    "condition_02_rng103",
+    "condition_02_rng104",
+    "condition_02_rng105",
+    "condition_02_rng106",
+    "condition_02_rng107",
+    "condition_02_rng108",
+    "condition_02_rng109",
+    "condition_02_rng110",
+    "condition_03_rng101",
+    "condition_03_rng102",
+    "condition_03_rng103",
+    "condition_03_rng104",
+    "condition_03_rng105",
+    "condition_03_rng106",
+    "condition_03_rng107",
+    "condition_03_rng108",
+    "condition_03_rng109",
+    "condition_03_rng110",
+    "condition_04_rng101",
+    "condition_04_rng102",
+    "condition_04_rng103",
+    "condition_04_rng104",
+    "condition_04_rng105",
+    "condition_04_rng106",
+    "condition_04_rng107",
+    "condition_04_rng108",
+    "condition_04_rng109",
+    "condition_04_rng110",
+    "condition_05_rng101",
+    "condition_05_rng102",
+    "condition_05_rng103",
+    "condition_05_rng104",
+    "condition_05_rng105",
+    "condition_05_rng106",
+    "condition_05_rng107",
+    "condition_05_rng108",
+    "condition_05_rng109",
+    "condition_05_rng110",
+    "condition_06_rng101",
+    "condition_06_rng102",
+    "condition_06_rng103",
+    "condition_06_rng104",
+    "condition_06_rng105",
+    "condition_06_rng106",
+    "condition_06_rng107",
+    "condition_06_rng108",
+    "condition_06_rng109",
+    "condition_06_rng110",
+    "condition_07_rng101",
+    "condition_07_rng102",
+    "condition_07_rng103",
+    "condition_07_rng104",
+    "condition_07_rng105",
+    "condition_07_rng106",
+    "condition_07_rng107",
+    "condition_07_rng108",
+    "condition_07_rng109",
+    "condition_07_rng110",
+    "condition_08_rng101",
+    "condition_08_rng102",
+    "condition_08_rng103",
+    "condition_08_rng104",
+    "condition_08_rng105",
+    "condition_08_rng106",
+    "condition_08_rng107",
+    "condition_08_rng108",
+    "condition_08_rng109",
+    "condition_08_rng110"
+  ],
+  "guidance_scale": 1.0,
+  "independent_replay_steps": 3910,
+  "inference_work": {
+    "backbone_evaluations": 130,
+    "guidance_scale": 1.0,
+    "imposed_action_reprediction_queries": 1,
+    "sampling_temperature": 0.75
+  },
+  "inputs_sha256": "38a8204eb2934abec8fb493b3e92c13f67c8eddfddff578463cd174955af5327",
+  "internal_simulator_rollouts": 0,
+  "mean_actual_cost": 145.73812833484195,
+  "median_K1_generation_seconds": 0.19997094101563562,
+  "method": "flow_matching",
+  "model_checker_seconds_per_action": 0.19995580656999423,
+  "policy": "every_step",
+  "role": "test",
+  "sampled_plans": 3910,
+  "sampling_temperature": 0.75,
+  "source_report": "outputs/e1_full/fits/flow_matching/seed_13/test/wrong_tilt/every_step/report.json",
+  "source_report_sha256": "a74f3f60a6e900773023e14ff4fd2ae89aef65c0380a4280779cb36adff25830",
+  "started_episodes": 90,
+  "status": "COMPLETE",
+  "success_criterion_version": 2,
+  "success_rate": 0.1,
+  "successes": 9,
+  "terminal_counts": {
+    "collision": 0,
+    "fall": 74,
+    "model_output_failure": 0,
+    "success": 9,
+    "timeout": 7
+  },
+  "tilt_conditioning": "controlled_supplied_label",
+  "timing_scope": "Committed synchronized timings and errors through actual success/failure; original entire-run wall time belongs to historical compute, not per-action latency",
+  "training_seed": 13,
+  "unrun_episodes": 0,
+  "unscored_warmup_K1_queries": 3
+}

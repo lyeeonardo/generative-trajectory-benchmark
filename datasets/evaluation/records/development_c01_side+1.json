@@ -1,0 +1,19 @@
+{
+  "anchors": [
+    0,
+    32,
+    57
+  ],
+  "case_id": "development_c01_side+1",
+  "nominal_strata": [
+    "initial",
+    "obstacle_approach",
+    "late_goal_approach"
+  ],
+  "private_sha256": "0430bddea9cdc846e5975611add1c81ba0413faba262c2879bced4e13543e64c",
+  "public_sha256": "59288c478c96bf0ae3ab9a37150bbe36fd603f6e62b1df5a8519a9de5b9d5939",
+  "role": "development",
+  "selected_rollin_success": true,
+  "source_episode_id": 12100,
+  "source_episode_sha256": "fe2f311ccd81f39502ce681fb5da323558ebd4329e8a80aeaa4074149aa16f6e"
+}
