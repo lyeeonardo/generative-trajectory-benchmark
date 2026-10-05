@@ -46,7 +46,27 @@ def camera_pose(offset):
 def as_xml_numbers(values):
     return " ".join(f"{v:.12g}" for v in values)
 
-def render_panel(case,lateral,view_offset):
+def add_trajectory(renderer, world, rotation, end):
+    """Add the figure's measured path to an already updated render scene."""
+    s = renderer.scene
+    def line(a,b,radius,color,kind=mujoco.mjtGeom.mjGEOM_CAPSULE):
+        g=s.geoms[s.ngeom]
+        mujoco.mjv_initGeom(g,kind,np.zeros(3),np.zeros(3),np.eye(3).ravel(),np.array(color,np.float32))
+        mujoco.mjv_connector(g,kind,radius,np.asarray(a),np.asarray(b))
+        g.segid=s.ngeom
+        g.objid=-1
+        g.objtype=int(mujoco.mjtObj.mjOBJ_UNKNOWN)
+        s.ngeom+=1
+    for a,b in zip(world[:-1],world[1:]):
+        line(a,b,.007,(.161,.616,.561,1))
+    for t in [end//6,2*end//3]:
+        line(world[t-2],world[t+2],.014,(.153,.278,.325,1),mujoco.mjtGeom.mjGEOM_ARROW)
+    theta=np.linspace(0,2*np.pi,33)
+    ring=[world[-1]+rotation@np.array([.026*np.cos(t),.026*np.sin(t),.003]) for t in theta]
+    for a,b in zip(ring[:-1],ring[1:]):line(a,b,.0045,(.153,.278,.325,1))
+
+def render_panel(case,lateral,view_offset,*,frame_callback=None):
+    """Render the still; optionally expose its live renderer for recorded replay."""
     path=ROOT/f"datasets/uphill_push_v1/episodes/train/c{case}_side-1/episode_00.npz"
     before=(path.stat().st_size,path.stat().st_mtime_ns)
     with np.load(path,allow_pickle=False) as z:d={k:z[k] for k in z.files}
@@ -101,27 +121,15 @@ def render_panel(case,lateral,view_offset):
     np.testing.assert_allclose(local[:,:2],d["observations"][:end+1,:2],atol=2e-7)
     with mujoco.Renderer(env.model,RESOLUTION,RESOLUTION,max_geom=1000) as renderer:
         renderer.update_scene(env.data,camera="orbit")
-        s=renderer.scene
-        def line(a,b,radius,color,kind=mujoco.mjtGeom.mjGEOM_CAPSULE):
-            g=s.geoms[s.ngeom]
-            mujoco.mjv_initGeom(g,kind,np.zeros(3),np.zeros(3),np.eye(3).ravel(),np.array(color,np.float32))
-            mujoco.mjv_connector(g,kind,radius,np.asarray(a),np.asarray(b))
-            g.segid=s.ngeom
-            g.objid=-1
-            g.objtype=int(mujoco.mjtObj.mjOBJ_UNKNOWN)
-            s.ngeom+=1
-        for a,b in zip(world[:-1],world[1:]):
-            line(a,b,.007,(.161,.616,.561,1))
-        for t in [end//6,2*end//3]:
-            line(world[t-2],world[t+2],.014,(.153,.278,.325,1),mujoco.mjtGeom.mjGEOM_ARROW)
-        theta=np.linspace(0,2*np.pi,33)
-        ring=[world[-1]+R@np.array([.026*np.cos(t),.026*np.sin(t),.003]) for t in theta]
-        for a,b in zip(ring[:-1],ring[1:]):line(a,b,.0045,(.153,.278,.325,1))
+        add_trajectory(renderer, world, R, end)
         frame=renderer.render().copy()
         renderer.enable_segmentation_rendering()
         segmentation=renderer.render().copy()
         ground_id=mujoco.mj_name2id(env.model,mujoco.mjtObj.mjOBJ_GEOM,"display_ground")
         floor=(segmentation[:,:,0]==ground_id) & (segmentation[:,:,1]==int(mujoco.mjtObj.mjOBJ_GEOM))
+        if frame_callback is not None:
+            renderer.disable_segmentation_rendering()
+            frame_callback(env, renderer, d, end, world, R, floor)
     assert before==(path.stat().st_size,path.stat().st_mtime_ns)
     provenance={
         "panel": ["left","center","right"][case-3],

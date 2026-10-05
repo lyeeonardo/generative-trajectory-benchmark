@@ -5,6 +5,10 @@ Published as a conference paper at **IWAI 2026**.
 
 [Read the final paper (PDF)](paper/main.pdf)
 
+![Successful push–avoid–settle demonstrations at three board tilts](results/paper/media/environment.gif)
+
+*The task in motion. Recorded reference-controller demonstrations at lateral tilts −15°, 0°, and +15° (left to right), all with a 20° uphill slope. In each panel, the pusher guides the ball around the obstacle and settles it inside the goal. The animation uses the same successful runs and camera views as the environment figure.*
+
 The main paper is a **world-model benchmark**. Experiment 1 evaluates four shared trajectory-model families—Diffusion/DiT, autoregressive Transformer, joint CVAE, and flow matching—as action generators, controlled predictors, and observation-likelihood models. Experiment 2 replays identical actions and observations through the frozen models and measures belief adaptation after an unannounced 0° → +15° tilt change.
 
 Appendix A is a separate, earlier **proposal-model benchmark**. It uses exact MuJoCo transitions to score proposed action sequences. That is appropriate for studying proposal quality and finite-budget search, but it is not a learned-world-model experiment and does not demonstrate the complete GenAIF loop. Its code, separate dataset, checkpoints, and measurements are isolated in [appendix_proposal/](appendix_proposal/README.md).
@@ -56,6 +60,12 @@ uv run python scripts/build_benchmark_figures.py
 uv run python scripts/experiment2_switching_plus15.py --output results/paper/experiment2 --plot-only
 uv run python scripts/build_appendix_figure.py
 uv run python scripts/render_environment_figure.py
+```
+
+Regenerate the three-tilt environment animation from its recorded successful states:
+
+```bash
+uv run python scripts/build_environment_gif.py
 ```
 
 Regenerate the animated E2 demo by replaying its retained actions in MuJoCo; this performs no model inference:

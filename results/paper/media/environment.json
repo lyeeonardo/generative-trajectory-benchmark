@@ -1,0 +1,269 @@
+{
+  "source_figure": "results/paper/figures/environment.png",
+  "controller": "Recorded reference feedback controller; illustrative successful replay, not a learned-policy evaluation.",
+  "panels": [
+    {
+      "panel": "left",
+      "condition": 3,
+      "lateral_tilt_degrees": -15,
+      "longitudinal_tilt_degrees": 20,
+      "camera_offset_degrees": 10,
+      "camera_convention": "positive = camera to the right of head-on; negative = to the left",
+      "camera_position": [
+        0.6614358077115968,
+        -3.7511888711189343,
+        2.5671304290323644
+      ],
+      "camera_xyaxes": [
+        0.984807753012208,
+        0.17364817766693033,
+        -0.0,
+        -0.0996005029250512,
+        0.5648625214636234,
+        0.8191520442889918
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        -0.1
+      ],
+      "camera_elevation_degrees": 35.0,
+      "camera_distance": 4.65,
+      "camera_fovy_degrees": 42,
+      "source": "datasets/uphill_push_v1/episodes/train/c3_side-1/episode_00.npz",
+      "parent": 30000,
+      "controller": "recorded reference feedback controller; not a learned-policy result",
+      "route_side": -1,
+      "ordinal": 0,
+      "split": "train",
+      "success": true,
+      "success_step": 73,
+      "original_steps": 86,
+      "final_speed_m_s": 0.14143428206443787,
+      "terminal_board_xy": [
+        -0.016886038705706596,
+        0.8196843862533569
+      ],
+      "rendered_state_index": 24,
+      "rendered_time_seconds": 1.2000000000000008,
+      "pose_selection": "nearest recorded time index to one third of success-truncated trajectory",
+      "trajectory_points": 74,
+      "trajectory_smoothed": false,
+      "rotation_board_to_world": [
+        [
+          0.9659258262890683,
+          -0.08852132690137686,
+          -0.24321034680169396
+        ],
+        [
+          0.0,
+          0.9396926207859084,
+          -0.3420201433256687
+        ],
+        [
+          0.25881904510252074,
+          0.33036608954935215,
+          0.9076733711903687
+        ]
+      ],
+      "board_gravity": [
+        -2.5390148324557287,
+        -3.2408913384791447,
+        -8.904275771377518
+      ],
+      "display_ground": "shared gray display floor; non-contact planes clipped to one common footprint",
+      "new_model_queries": 0,
+      "dynamics_steps": 0,
+      "source_metadata_unchanged": true,
+      "animation_state_indices": [
+        0,
+        73
+      ],
+      "animation_end_seconds": 3.649999999999966,
+      "hold_after_success": true
+    },
+    {
+      "panel": "center",
+      "condition": 4,
+      "lateral_tilt_degrees": 0,
+      "longitudinal_tilt_degrees": 20,
+      "camera_offset_degrees": 0,
+      "camera_convention": "positive = camera to the right of head-on; negative = to the left",
+      "camera_position": [
+        0.0,
+        -3.8090570059438122,
+        2.5671304290323644
+      ],
+      "camera_xyaxes": [
+        1.0,
+        -0.0,
+        0.0,
+        0.0,
+        0.573576436351046,
+        0.8191520442889918
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        -0.1
+      ],
+      "camera_elevation_degrees": 35.0,
+      "camera_distance": 4.65,
+      "camera_fovy_degrees": 42,
+      "source": "datasets/uphill_push_v1/episodes/train/c4_side-1/episode_00.npz",
+      "parent": 40000,
+      "controller": "recorded reference feedback controller; not a learned-policy result",
+      "route_side": -1,
+      "ordinal": 0,
+      "split": "train",
+      "success": true,
+      "success_step": 75,
+      "original_steps": 82,
+      "final_speed_m_s": 0.11569582670927048,
+      "terminal_board_xy": [
+        0.004509985912591219,
+        0.8371191024780273
+      ],
+      "rendered_state_index": 25,
+      "rendered_time_seconds": 1.2500000000000009,
+      "pose_selection": "nearest recorded time index to one third of success-truncated trajectory",
+      "trajectory_points": 76,
+      "trajectory_smoothed": false,
+      "rotation_board_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9396926207859084,
+          -0.3420201433256687
+        ],
+        [
+          0.0,
+          0.3420201433256687,
+          0.9396926207859084
+        ]
+      ],
+      "board_gravity": [
+        0.0,
+        -3.3552176060248105,
+        -9.218384609909762
+      ],
+      "display_ground": "shared gray display floor; non-contact planes clipped to one common footprint",
+      "new_model_queries": 0,
+      "dynamics_steps": 0,
+      "source_metadata_unchanged": true,
+      "animation_state_indices": [
+        0,
+        75
+      ],
+      "animation_end_seconds": 3.749999999999964,
+      "hold_after_success": true
+    },
+    {
+      "panel": "right",
+      "condition": 5,
+      "lateral_tilt_degrees": 15,
+      "longitudinal_tilt_degrees": 20,
+      "camera_offset_degrees": -10,
+      "camera_convention": "positive = camera to the right of head-on; negative = to the left",
+      "camera_position": [
+        -0.6614358077115968,
+        -3.7511888711189343,
+        2.5671304290323644
+      ],
+      "camera_xyaxes": [
+        0.984807753012208,
+        -0.17364817766693033,
+        0.0,
+        0.0996005029250512,
+        0.5648625214636234,
+        0.8191520442889918
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        -0.1
+      ],
+      "camera_elevation_degrees": 35.0,
+      "camera_distance": 4.65,
+      "camera_fovy_degrees": 42,
+      "source": "datasets/uphill_push_v1/episodes/train/c5_side-1/episode_00.npz",
+      "parent": 50000,
+      "controller": "recorded reference feedback controller; not a learned-policy result",
+      "route_side": -1,
+      "ordinal": 0,
+      "split": "train",
+      "success": true,
+      "success_step": 80,
+      "original_steps": 85,
+      "final_speed_m_s": 0.10915042459964752,
+      "terminal_board_xy": [
+        -0.04909465089440346,
+        0.9210704565048218
+      ],
+      "rendered_state_index": 27,
+      "rendered_time_seconds": 1.350000000000001,
+      "pose_selection": "nearest recorded time index to one third of success-truncated trajectory",
+      "trajectory_points": 81,
+      "trajectory_smoothed": false,
+      "rotation_board_to_world": [
+        [
+          0.9659258262890683,
+          0.08852132690137686,
+          0.24321034680169396
+        ],
+        [
+          0.0,
+          0.9396926207859084,
+          -0.3420201433256687
+        ],
+        [
+          -0.25881904510252074,
+          0.33036608954935215,
+          0.9076733711903687
+        ]
+      ],
+      "board_gravity": [
+        2.5390148324557287,
+        -3.2408913384791447,
+        -8.904275771377518
+      ],
+      "display_ground": "shared gray display floor; non-contact planes clipped to one common footprint",
+      "new_model_queries": 0,
+      "dynamics_steps": 0,
+      "source_metadata_unchanged": true,
+      "animation_state_indices": [
+        0,
+        80
+      ],
+      "animation_end_seconds": 3.9999999999999587,
+      "hold_after_success": true
+    }
+  ],
+  "frame_count": 81,
+  "frame_interval_ms": 50,
+  "pixel_size": [
+    2048,
+    727
+  ],
+  "duration_ms": 6400,
+  "start_pause_ms": 600,
+  "final_hold_ms": 1800,
+  "time_alignment": "Shared real simulation time; each panel holds its first successful terminal state.",
+  "interpolation": false,
+  "still_reproduction_mean_absolute_rgb_error": 0.0,
+  "source_sha256": {
+    "datasets/uphill_push_v1/episodes/train/c3_side-1/episode_00.npz": "285772dfec7bec7660251e873870f067b173ef5cff4d8787e2952c399b570d2b",
+    "datasets/uphill_push_v1/episodes/train/c3_side-1/episode_00.json": "7554d63a58034e66e456a03469477bbef56dae5d729b4153fc3560809b3b74cd",
+    "datasets/uphill_push_v1/episodes/train/c4_side-1/episode_00.npz": "1af26939059819409e59ec69db91853a6d647b43d0c386859b17b9bfa11634cd",
+    "datasets/uphill_push_v1/episodes/train/c4_side-1/episode_00.json": "3dcc1daca2e1e6483fd35071b0f8edd4cda769d6737f040545cc6321e5347ad3",
+    "datasets/uphill_push_v1/episodes/train/c5_side-1/episode_00.npz": "a87de4eee21edcbf69b5f756a401573268ec2e28b06507763952b6e5671caf9f",
+    "datasets/uphill_push_v1/episodes/train/c5_side-1/episode_00.json": "13fe7157e557b3ffa212f502189df6dda9eea978e824f4526b014bd09d05bd34"
+  },
+  "dynamics_steps": 0,
+  "model_queries": 0,
+  "output": "/home/leo/Projects/IWAI26/results/paper/media/environment.gif"
+}
