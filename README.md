@@ -21,7 +21,7 @@ Appendix A is a separate, earlier **proposal-model benchmark**. It uses exact Mu
 
 ![Experiment 2 live hidden-tilt belief update beside the matched MuJoCo replay](results/paper/media/e2_belief_demo.gif)
 
-*Experiment 2 demo. The first ten transitions use 0° lateral tilt; the board then switches without announcement to +15°. The left panel updates the hidden-tilt posterior from each new observation while the right panel replays the identical recorded actions in MuJoCo. This is fixed replay: actions do not adapt to the belief. A representative case is used for visual clarity; aggregate results over all 12 switched trials and all four model families are reported in Figure 3 and Table 3.*
+*Experiment 2 demo. The first ten transitions use 0° lateral tilt; the board then switches without announcement to +15°. The left panel updates the hidden-tilt posterior from each new observation while the right panel replays the identical recorded actions in MuJoCo. The visible board rotation is smoothed between observations 10 and 11 for presentation; the recorded experiment uses an instantaneous switch, and the posterior holds at observation 10 during the visual transition. This is fixed replay: actions do not adapt to the belief. A representative case is used for visual clarity; aggregate results over all 12 switched trials and all four model families are reported in Figure 3 and Table 3.*
 
 ## Repository contents
 

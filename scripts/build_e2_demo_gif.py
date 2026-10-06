@@ -24,7 +24,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from environment.task import UphillTask
-from evaluation.switching_dynamics import rebuild_task_preserving_public_state
+from evaluation.switching_dynamics import _rotated_state, rebuild_task_preserving_public_state
+from envs.mujoco_tilted_board import MujocoRigidState
 from mujoco_task.sim.scene import SceneSpec
 from scripts.paper_figure_style import apply_style, PALETTE
 from scripts.render_environment_figure import RESOLUTION, make_display_model
@@ -44,6 +45,8 @@ WIDTH, HEIGHT = 1080, 480
 PLOT_WIDTH = 520
 RENDER_WIDTH = WIDTH - PLOT_WIDTH
 FRAME_MS = 170
+TRANSITION_STEPS = 18
+TRANSITION_FRAME_MS = 50
 
 
 def load_beliefs() -> dict[tuple[str, str], np.ndarray]:
@@ -112,18 +115,56 @@ def replay_states(record: dict) -> list[UphillTask]:
     return states
 
 
-def render_mujoco(env: UphillTask) -> Image.Image:
+def interpolate_display_state(before: UphillTask, after: UphillTask, fraction: float):
+    """Ease the visible attitude and board-local poses between two saved states."""
+    if not 0 <= fraction <= 1:
+        raise ValueError("Display interpolation fraction must be in [0, 1]")
+    if fraction == 0:
+        return before.scene, before.state.copy()
+    if fraction == 1:
+        return after.scene, after.state.copy()
+    weight = fraction * fraction * (3 - 2 * fraction)
+    scene = replace(before.scene, lateral_tilt=(
+        (1 - weight) * before.scene.lateral_tilt + weight * after.scene.lateral_tilt
+    ))
+    first = _rotated_state(before.state, before.scene, scene)
+    last = _rotated_state(after.state, after.scene, scene)
+
+    def blend(a, b):
+        return (1 - weight) * a + weight * b
+
+    def quaternion(a, b):
+        # Match quaternion signs before interpolating along the shortest arc.
+        b = b if np.dot(a, b) >= 0 else -b
+        result = blend(a, b)
+        return result / np.linalg.norm(result)
+
+    qpos = blend(first.qpos, last.qpos)
+    qpos[3:7] = quaternion(first.qpos[3:7], last.qpos[3:7])
+    yaw_delta = (last.rod_yaw - first.rod_yaw + np.pi) % (2 * np.pi) - np.pi
+    state = MujocoRigidState(
+        qpos=qpos, qvel=blend(first.qvel, last.qvel),
+        mocap_pos=blend(first.mocap_pos, last.mocap_pos),
+        mocap_quat=np.asarray([quaternion(a, b) for a, b in zip(first.mocap_quat, last.mocap_quat)]),
+        rod_yaw=first.rod_yaw + weight * yaw_delta,
+        step=first.step, time=blend(first.time, last.time),
+    )
+    return scene, state
+
+
+def render_mujoco(env: UphillTask, *, display_scene=None, display_state=None) -> Image.Image:
     # Restore into a separate display model so styling cannot affect the replay.
-    model = make_display_model(env.scene, env.config, env.physics_config)
+    scene = env.scene if display_scene is None else display_scene
+    state = env.state if display_state is None else display_state
+    model = make_display_model(scene, env.config, env.physics_config)
     data = mujoco.MjData(model)
-    state = env.state
     data.qpos[:] = state.qpos
     data.qvel[:] = state.qvel
     data.mocap_pos[:] = state.mocap_pos
     data.mocap_quat[:] = state.mocap_quat
     data.time = state.time
     mujoco.mj_forward(model, data)
-    np.testing.assert_array_equal(data.qpos, env.data.qpos)
+    np.testing.assert_array_equal(data.qpos, state.qpos)
     with mujoco.Renderer(model, height=RESOLUTION, width=RESOLUTION) as renderer:
         renderer.update_scene(data, camera="orbit")
         frame = renderer.render().copy()
@@ -149,7 +190,7 @@ def render_mujoco(env: UphillTask) -> Image.Image:
     return canvas
 
 
-def render_belief(posterior: np.ndarray, observation: int) -> Image.Image:
+def render_belief(posterior: np.ndarray, observation: int, *, transitioning: bool = False) -> Image.Image:
     apply_style()
     fig, ax = plt.subplots(figsize=(PLOT_WIDTH / 100, HEIGHT / 100), dpi=100)
     fig.subplots_adjust(left=.14, right=.97, bottom=.16, top=.83)
@@ -166,6 +207,8 @@ def render_belief(posterior: np.ndarray, observation: int) -> Image.Image:
     ax.set_axisbelow(True)
     ax.legend(loc="upper center", bbox_to_anchor=(.5, 1.18), ncol=3, frameon=False, fontsize=10)
     phase = "physical tilt: 0°" if observation <= SWITCH_STEP else "physical tilt: +15°"
+    if transitioning:
+        phase = "tilt transition"
     ax.set_title(f"Live hidden-tilt belief  ·  {phase}", fontsize=12, pad=10)
     buffer = io.BytesIO()
     fig.savefig(buffer, format="png", dpi=100, facecolor="white")
@@ -174,7 +217,7 @@ def render_belief(posterior: np.ndarray, observation: int) -> Image.Image:
     return Image.open(buffer).convert("RGB")
 
 
-def annotate(frame: Image.Image, observation: int, probability: float) -> Image.Image:
+def annotate(frame: Image.Image, observation: int, probability: float, *, transition_tilt=None) -> Image.Image:
     canvas = Image.new("RGB", (WIDTH, HEIGHT), "white")
     canvas.paste(frame, (PLOT_WIDTH, 0))
     draw = ImageDraw.Draw(canvas)
@@ -182,10 +225,10 @@ def annotate(frame: Image.Image, observation: int, probability: float) -> Image.
     small = ImageFont.load_default(size=15)
     draw.rectangle((PLOT_WIDTH, 0, WIDTH, 64), fill="white")
     draw.text((PLOT_WIDTH + 18, 12), "Matched MuJoCo replay", fill=PALETTE["ink"], font=font)
-    draw.text((PLOT_WIDTH + 18, 38), f"observation {observation:02d}/30   p(+15°)={probability:.3f}", fill=PALETTE["ink"], font=small)
-    if observation == SWITCH_STEP:
-        draw.rectangle((PLOT_WIDTH + 12, HEIGHT - 48, WIDTH - 12, HEIGHT - 12), fill=PALETTE["ink"])
-        draw.text((PLOT_WIDTH + 25, HEIGHT - 40), "UNANNOUNCED 0° → +15° TILT SWITCH", fill="white", font=small)
+    detail = f"observation {observation:02d}/30   p(+15°)={probability:.3f}"
+    if transition_tilt is not None:
+        detail = f"0° → +15°  ·  visual transition ({transition_tilt:+.1f}°)"
+    draw.text((PLOT_WIDTH + 18, 38), detail, fill=PALETTE["ink"], font=small)
     return canvas
 
 
@@ -227,16 +270,35 @@ def main() -> None:
     if len(states) != len(posterior):
         raise AssertionError("Replay-state and belief lengths differ")
     frames = []
+    durations = []
+    transition_frame_indices = []
+    transition_angles = []
     for observation, (env, probability) in enumerate(zip(states, posterior[:, 2])):
         plot = render_belief(posterior, observation)
         rendered = render_mujoco(env)
         frame = annotate(rendered, observation, float(probability))
         frame.paste(plot, (0, 0))
         frames.append(frame)
+        durations.append(FRAME_MS)
+        if observation == SWITCH_STEP:
+            durations[-1] = TRANSITION_FRAME_MS
+            transition_frame_indices.append(len(frames) - 1)
+            transition_angles.append(float(np.rad2deg(env.scene.lateral_tilt)))
+            plot = render_belief(posterior, observation, transitioning=True)
+            for step in range(1, TRANSITION_STEPS):
+                scene, state = interpolate_display_state(env, states[observation + 1], step / TRANSITION_STEPS)
+                angle = float(np.rad2deg(scene.lateral_tilt))
+                rendered = render_mujoco(env, display_scene=scene, display_state=state)
+                frame = annotate(rendered, observation, float(probability), transition_tilt=angle)
+                frame.paste(plot, (0, 0))
+                transition_frame_indices.append(len(frames))
+                transition_angles.append(angle)
+                frames.append(frame)
+                durations.append(TRANSITION_FRAME_MS)
+            transition_frame_indices.append(len(frames))
+            transition_angles.append(float(np.rad2deg(states[observation + 1].scene.lateral_tilt)))
     frames = quantize_frames(frames)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    durations = [FRAME_MS] * len(frames)
-    durations[SWITCH_STEP] = 850
     durations[-1] = 1200
     frames[0].save(OUTPUT, save_all=True, append_images=frames[1:], duration=durations, loop=0, optimize=True, disposal=2)
     selection.update({
@@ -247,6 +309,18 @@ def main() -> None:
         "replay_camera": "Fixed head-on paper environment camera, 35 degree elevation.",
         "style_changes_affect_dynamics": False,
         "gif_palette": "One shared 256-color palette with reserved paper and object colors.",
+        "source_observations": len(states),
+        "frame_durations_ms": durations,
+        "tilt_transition": {
+            "kind": "Display-only smoothstep interpolation between recorded observations 10 and 11.",
+            "duration_ms": TRANSITION_STEPS * TRANSITION_FRAME_MS,
+            "frame_interval_ms": TRANSITION_FRAME_MS,
+            "frame_indices": transition_frame_indices,
+            "display_tilt_degrees": transition_angles,
+            "switch_pause_ms": 0,
+            "belief_handling": "Hold the last measured posterior during interpolation; update at observation 11.",
+            "experiment_switch": "The recorded physical experiment still uses an instantaneous 0° to +15° switch.",
+        },
     })
     OUTPUT.with_suffix(".json").write_text(json.dumps(selection, indent=2) + "\n")
     print(json.dumps(selection, indent=2))
