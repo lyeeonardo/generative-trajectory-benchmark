@@ -46,6 +46,34 @@ def camera_pose(offset):
 def as_xml_numbers(values):
     return " ".join(f"{v:.12g}" for v in values)
 
+def make_display_model(spec, config, physics_config, view_offset=0):
+    """Build the paper's visual scene without changing a simulation model."""
+    position, axes = camera_pose(view_offset)
+    xml = _xml_for_scene(spec, config, physics_config)
+    xml = xml.replace("<worldbody>", '<asset><texture name="white_background" type="skybox" builtin="flat" width="32" height="32" rgb1="1 1 1" rgb2="1 1 1"/></asset><worldbody>', 1)
+    xml = xml.replace("<worldbody>", '<worldbody><geom name="display_ground" type="plane" pos="0 0 -0.62" size="0 0 0.025" rgba="0.72 0.72 0.72 1" contype="0" conaffinity="0"/>', 1)
+    camera = f'<camera name="orbit" mode="fixed" pos="{as_xml_numbers(position)}" xyaxes="{as_xml_numbers(axes)}" fovy="42"/>'
+    xml = re.sub(r'<camera name="orbit"[^>]*/>', camera, xml)
+    xml = xml.replace('<light name="key_light"', '<light name="key_light" directional="true"')
+    model = mujoco.MjModel.from_xml_string(xml)
+    colors = {
+        "board_geom": (.965, .949, .910, 1),
+        "obstacle_geom": (.16, .17, .16, 1),
+        "ball_geom": (.94, .51, .07, 1),
+        "rod_geom": (.10, .28, .72, 1),
+        "goal_geom": (.54, .69, .49, .55),
+    }
+    for name, color in colors.items():
+        index = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_GEOM, name)
+        model.geom_rgba[index] = color
+    model.light_diffuse[:] = .70
+    model.vis.headlight.diffuse[:] = .20
+    model.vis.headlight.ambient[:] = .20
+    model.vis.headlight.specular[:] = .08
+    model.vis.global_.offwidth = RESOLUTION
+    model.vis.global_.offheight = RESOLUTION
+    return model
+
 def add_trajectory(renderer, world, rotation, end):
     """Add the figure's measured path to an already updated render scene."""
     s = renderer.scene
@@ -84,15 +112,7 @@ def render_panel(case,lateral,view_offset,*,frame_callback=None):
     env=UphillTask();env.reset(spec)
     R=board_rotation(spec)
     position,axes=camera_pose(view_offset)
-    xml=_xml_for_scene(spec,env.config,env.physics_config)
-    xml=xml.replace("<worldbody>",'<asset><texture name="white_background" type="skybox" builtin="flat" width="32" height="32" rgb1="1 1 1" rgb2="1 1 1"/></asset><worldbody>',1)
-    # An identical gray plane supplies the shared display floor and real shadows.
-    # The plane is non-contact geometry added only to the rendering model.
-    xml=xml.replace("<worldbody>",'<worldbody><geom name="display_ground" type="plane" pos="0 0 -0.62" size="0 0 0.025" rgba="0.72 0.72 0.72 1" contype="0" conaffinity="0"/>',1)
-    camera=f'<camera name="orbit" mode="fixed" pos="{as_xml_numbers(position)}" xyaxes="{as_xml_numbers(axes)}" fovy="42"/>'
-    xml=re.sub(r'<camera name="orbit"[^>]*/>',camera,xml)
-    xml=xml.replace('<light name="key_light"','<light name="key_light" directional="true"')
-    env.model=mujoco.MjModel.from_xml_string(xml)
+    env.model=make_display_model(spec, env.config, env.physics_config, view_offset)
     env.data=mujoco.MjData(env.model);env._cache_ids()
     pose_index = round(end / 3)
     env.set_state(MujocoRigidState(
@@ -100,22 +120,6 @@ def render_panel(case,lateral,view_offset,*,frame_callback=None):
         mocap_quat=d["mocap_quat"][pose_index],rod_yaw=float(d["rod_yaw"][pose_index]),
         step=int(d["step"][pose_index]),time=float(d["time"][pose_index]),
         integration_state=d["integration_state"][pose_index],integration_spec=int(d["integration_spec"])))
-    colors={
-        "board_geom":(.965,.949,.910,1),
-        "obstacle_geom":(.16,.17,.16,1),
-        "ball_geom":(.94,.51,.07,1),
-        "rod_geom":(.10,.28,.72,1),
-        "goal_geom":(.54,.69,.49,.55),
-    }
-    for name,color in colors.items():
-        idx=mujoco.mj_name2id(env.model,mujoco.mjtObj.mjOBJ_GEOM,name)
-        env.model.geom_rgba[idx]=color
-    env.model.light_diffuse[:] = .70
-    env.model.vis.headlight.diffuse[:] = .20
-    env.model.vis.headlight.ambient[:] = .20
-    env.model.vis.headlight.specular[:] = .08
-    env.model.vis.global_.offwidth=RESOLUTION
-    env.model.vis.global_.offheight=RESOLUTION
     world=d["qpos"][:end+1,:3].copy()
     local=(R.T@world.T).T
     np.testing.assert_allclose(local[:,:2],d["observations"][:end+1,:2],atol=2e-7)

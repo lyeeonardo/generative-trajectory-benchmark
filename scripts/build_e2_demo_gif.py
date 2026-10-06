@@ -27,6 +27,7 @@ from environment.task import UphillTask
 from evaluation.switching_dynamics import rebuild_task_preserving_public_state
 from mujoco_task.sim.scene import SceneSpec
 from scripts.paper_figure_style import apply_style, PALETTE
+from scripts.render_environment_figure import RESOLUTION, make_display_model
 
 RESULTS = ROOT / "results/paper/experiment2"
 OUTPUT = ROOT / "results/paper/media/e2_belief_demo.gif"
@@ -37,7 +38,7 @@ MODEL_LABELS = {
     "flow_matching": "Flow Matching",
 }
 TILT_LABELS = ("−15°", "0°", "+15°")
-TILT_COLORS = ("#287779", "#8f8a7d", "#d97732")
+TILT_COLORS = (PALETTE["teal"], PALETTE["green"], PALETTE["ink"])
 SWITCH_STEP = 10
 WIDTH, HEIGHT = 1080, 480
 PLOT_WIDTH = 520
@@ -112,13 +113,40 @@ def replay_states(record: dict) -> list[UphillTask]:
 
 
 def render_mujoco(env: UphillTask) -> Image.Image:
-    renderer = mujoco.Renderer(env.model, height=HEIGHT, width=RENDER_WIDTH)
-    try:
-        renderer.update_scene(env.data, camera="orbit")
+    # Restore into a separate display model so styling cannot affect the replay.
+    model = make_display_model(env.scene, env.config, env.physics_config)
+    data = mujoco.MjData(model)
+    state = env.state
+    data.qpos[:] = state.qpos
+    data.qvel[:] = state.qvel
+    data.mocap_pos[:] = state.mocap_pos
+    data.mocap_quat[:] = state.mocap_quat
+    data.time = state.time
+    mujoco.mj_forward(model, data)
+    np.testing.assert_array_equal(data.qpos, env.data.qpos)
+    with mujoco.Renderer(model, height=RESOLUTION, width=RESOLUTION) as renderer:
+        renderer.update_scene(data, camera="orbit")
         frame = renderer.render().copy()
-    finally:
-        renderer.close()
-    return Image.fromarray(frame)
+        renderer.enable_segmentation_rendering()
+        segmentation = renderer.render().copy()
+    ground_id = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_GEOM, "display_ground")
+    floor = ((segmentation[:, :, 0] == ground_id)
+             & (segmentation[:, :, 1] == int(mujoco.mjtObj.mjOBJ_GEOM)))
+    source = ROOT / "results/paper/source/environment/provenance.json"
+    left, top, right, bottom = json.loads(source.read_text())["shared_crop"]
+    frame = frame[top:bottom, left:right].copy()
+    floor = floor[top:bottom, left:right]
+    h, w = floor.shape
+    footprint = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(footprint).polygon(
+        [(33, int(h * .23)), (w - 33, int(h * .23)), (w - 4, h - 24), (4, h - 24)], fill=255,
+    )
+    frame[floor & (np.asarray(footprint) == 0)] = 255
+    image = Image.fromarray(frame)
+    image.thumbnail((RENDER_WIDTH - 24, HEIGHT - 76), Image.Resampling.LANCZOS)
+    canvas = Image.new("RGB", (RENDER_WIDTH, HEIGHT), "white")
+    canvas.paste(image, ((RENDER_WIDTH - image.width) // 2, 64))
+    return canvas
 
 
 def render_belief(posterior: np.ndarray, observation: int) -> Image.Image:
@@ -130,7 +158,7 @@ def render_belief(posterior: np.ndarray, observation: int) -> Image.Image:
         ax.plot(x[: observation + 1], posterior[: observation + 1, index], color=color, linewidth=2.6, label=label)
         ax.scatter([observation], [posterior[observation, index]], color=color, s=30, zorder=5)
     ax.axvline(SWITCH_STEP, color=PALETTE["ink"], linestyle="--", linewidth=1.3)
-    ax.axhline(.9, color="#aaa394", linestyle=(0, (2, 2)), linewidth=1)
+    ax.axhline(.9, color=PALETTE["deep_teal"], alpha=.45, linestyle=(0, (2, 2)), linewidth=1)
     ax.set(xlim=(0, 30), ylim=(0, 1.02), xlabel="Observation", ylabel="Posterior probability")
     ax.set_xticks(np.arange(0, 31, 5))
     ax.set_yticks(np.linspace(0, 1, 6))
@@ -152,13 +180,44 @@ def annotate(frame: Image.Image, observation: int, probability: float) -> Image.
     draw = ImageDraw.Draw(canvas)
     font = ImageFont.load_default(size=18)
     small = ImageFont.load_default(size=15)
-    draw.rectangle((PLOT_WIDTH, 0, WIDTH, 64), fill=(255, 255, 255, 228))
-    draw.text((PLOT_WIDTH + 18, 12), "Matched MuJoCo replay", fill="#274753", font=font)
-    draw.text((PLOT_WIDTH + 18, 38), f"observation {observation:02d}/30   p(+15°)={probability:.3f}", fill="#274753", font=small)
+    draw.rectangle((PLOT_WIDTH, 0, WIDTH, 64), fill="white")
+    draw.text((PLOT_WIDTH + 18, 12), "Matched MuJoCo replay", fill=PALETTE["ink"], font=font)
+    draw.text((PLOT_WIDTH + 18, 38), f"observation {observation:02d}/30   p(+15°)={probability:.3f}", fill=PALETTE["ink"], font=small)
     if observation == SWITCH_STEP:
-        draw.rectangle((PLOT_WIDTH + 12, HEIGHT - 48, WIDTH - 12, HEIGHT - 12), fill="#d97732")
+        draw.rectangle((PLOT_WIDTH + 12, HEIGHT - 48, WIDTH - 12, HEIGHT - 12), fill=PALETTE["ink"])
         draw.text((PLOT_WIDTH + 25, HEIGHT - 40), "UNANNOUNCED 0° → +15° TILT SWITCH", fill="white", font=small)
     return canvas
+
+
+def quantize_frames(frames: list[Image.Image]) -> list[Image.Image]:
+    """Use a stable GIF palette with exact paper colors and visible orange balls."""
+    samples = Image.new("RGB", (WIDTH // 2, HEIGHT // 2 * len(frames)), "white")
+    for index, frame in enumerate(frames):
+        samples.paste(frame.resize((WIDTH // 2, HEIGHT // 2), Image.Resampling.LANCZOS),
+                      (0, index * HEIGHT // 2))
+    palette = samples.quantize(colors=240, method=Image.Quantize.MEDIANCUT)
+    reserved = [
+        "#ffffff", *PALETTE.values(), "#f08212", "#c46a0f", "#974f0b",
+        "#1a47b8", "#292b29", "#8ab07d", "#b8b8b8", "#999999",
+    ]
+    rgb = palette.getpalette()[:720]
+    for color in reserved[:16]:
+        rgb.extend(int(color[1 + i:3 + i], 16) for i in (0, 2, 4))
+    palette.putpalette((rgb + [255] * 768)[:768])
+    quantized = []
+    for frame in frames:
+        mapped = frame.quantize(palette=palette, dither=Image.Dither.NONE)
+        source = np.asarray(frame)
+        indices = np.asarray(mapped).copy()
+        # Pillow's palette lookup can round white to near-white; preserve exact
+        # background and paper colors wherever they occur in the source image.
+        for offset, color in enumerate(reserved[:16]):
+            rgb_color = tuple(int(color[1 + i:3 + i], 16) for i in (0, 2, 4))
+            indices[np.all(source == rgb_color, axis=-1)] = 240 + offset
+        encoded = Image.fromarray(indices)
+        encoded.putpalette(palette.getpalette())
+        quantized.append(encoded)
+    return quantized
 
 
 def main() -> None:
@@ -173,13 +232,22 @@ def main() -> None:
         rendered = render_mujoco(env)
         frame = annotate(rendered, observation, float(probability))
         frame.paste(plot, (0, 0))
-        frames.append(frame.quantize(colors=128, method=Image.Quantize.MEDIANCUT))
+        frames.append(frame)
+    frames = quantize_frames(frames)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     durations = [FRAME_MS] * len(frames)
     durations[SWITCH_STEP] = 850
     durations[-1] = 1200
     frames[0].save(OUTPUT, save_all=True, append_images=frames[1:], duration=durations, loop=0, optimize=True, disposal=2)
-    selection.update({"frames": len(frames), "frame_duration_ms": FRAME_MS, "output": str(OUTPUT.relative_to(ROOT))})
+    selection.update({
+        "frames": len(frames), "frame_duration_ms": FRAME_MS, "output": str(OUTPUT.relative_to(ROOT)),
+        "tilt_colors": dict(zip(TILT_LABELS, TILT_COLORS)),
+        "plot_style": "Shared paper palette and chart background.",
+        "replay_style": "Shared environment-figure display model: gray floor, white background, orange ball, blue pusher.",
+        "replay_camera": "Fixed head-on paper environment camera, 35 degree elevation.",
+        "style_changes_affect_dynamics": False,
+        "gif_palette": "One shared 256-color palette with reserved paper and object colors.",
+    })
     OUTPUT.with_suffix(".json").write_text(json.dumps(selection, indent=2) + "\n")
     print(json.dumps(selection, indent=2))
 

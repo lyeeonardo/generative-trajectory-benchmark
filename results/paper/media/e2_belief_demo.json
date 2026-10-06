@@ -10,5 +10,15 @@
   "switch_step": 10,
   "frames": 31,
   "frame_duration_ms": 170,
-  "output": "results/paper/media/e2_belief_demo.gif"
+  "output": "results/paper/media/e2_belief_demo.gif",
+  "tilt_colors": {
+    "\u221215\u00b0": "#299d8f",
+    "0\u00b0": "#8ab07c",
+    "+15\u00b0": "#274753"
+  },
+  "plot_style": "Shared paper palette and chart background.",
+  "replay_style": "Shared environment-figure display model: gray floor, white background, orange ball, blue pusher.",
+  "replay_camera": "Fixed head-on paper environment camera, 35 degree elevation.",
+  "style_changes_affect_dynamics": false,
+  "gif_palette": "One shared 256-color palette with reserved paper and object colors."
 }
