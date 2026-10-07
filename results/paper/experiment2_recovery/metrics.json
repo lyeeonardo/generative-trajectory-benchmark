@@ -1,0 +1,13 @@
+{
+  "switched_trajectories": 12,
+  "unchanged_trajectories": 12,
+  "delay_median": 1.0,
+  "delay_min": 1,
+  "delay_max": 2,
+  "correct_final_tilt": 12,
+  "identified_within_six": 12,
+  "maintained_p90_observations16_30": 12,
+  "mean_p_plus15_observation30": 0.9995915443247839,
+  "unchanged_false_alarms": 0,
+  "minimum_individual_late_probability": 0.9297580461345865
+}

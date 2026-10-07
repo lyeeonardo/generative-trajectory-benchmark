@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "contract": "445bd6f2457793fe52ac5dd826d841dda989bc7fbfde1283382e7017f87aa945",
+  "inference_sha256": "d2f040a186bea5aef8f3b44ae27790093c3a70831d95afa34b64e6d0500b136a",
+  "elapsed_seconds": 11.483324125991203,
+  "hardware": {
+    "nvidia_smi": "NVIDIA GeForce RTX 5090, GPU-fbe29421-0dbe-81f6-9faa-b81fd21be220, 595.91.07, 490.00 W",
+    "torch": "2.7.0+cu128",
+    "cuda": "12.8",
+    "device_name": "NVIDIA GeForce RTX 5090",
+    "capability": [
+      12,
+      0
+    ]
+  },
+  "mean_variance_shape": [
+    24,
+    30,
+    3,
+    7
+  ],
+  "physical_queries": 0,
+  "model_queries": 90,
+  "predictive_draws": 34560,
+  "max_numpy_vs_torch_likelihood_error": 1.677710136505084e-05,
+  "original_filter_matches_stable_log_filter": true
+}

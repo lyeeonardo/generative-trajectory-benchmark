@@ -23,6 +23,35 @@ Appendix A is a separate, earlier **proposal-model benchmark**. It uses exact Mu
 
 *Experiment 2 demo. The first ten transitions use 0° lateral tilt; the board then switches without announcement to +15°. The left panel updates the hidden-tilt posterior from each new observation while the right panel replays the identical recorded actions in MuJoCo. The visible board rotation is smoothed between observations 10 and 11 for presentation; the recorded experiment uses an instantaneous switch, and the posterior holds at observation 10 during the visual transition. This is fixed replay: actions do not adapt to the belief. A representative case is used for visual clarity; aggregate results over all 12 switched trials and all four model families are reported in Figure 3 and Table 3.*
 
+### Recovery-data extension
+
+The additional orange curve below uses a reconstructed Diffusion model continued
+with recovery data. The original four curves are unchanged. On the same 12
+previously inspected switched trajectories, the recovery-trained model identifies
+the new tilt within two observations and maintains p(+15°) ≥ 0.9 throughout
+observations 16–30 in every trial.
+
+![E2 belief tracking with recovery-trained Diffusion added](results/paper/figures/figure3_belief_tracking_with_recovery.png)
+
+| Model | Identification delay: median [min, max] | Identified by six | Correct at observation 30 |
+| --- | ---: | ---: | ---: |
+| Diffusion | 3 [2, 4] | 12/12 | 5/12 |
+| Autoregressive | 5 [5, 8] | 10/12 | 7/12 |
+| CVAE | 4 [3, 10] | 10/12 | 0/12 |
+| Flow matching | 4 [3, 4] | 12/12 | 0/12 |
+| Diffusion + recovery data | 1 [1, 2] | 12/12 | 12/12 |
+
+This is an exploratory extension, not a change to the frozen paper results. The
+added model uses one reconstructed seed and its own calibration; the comparison
+does not isolate recovery data as the cause of improvement or establish performance
+on unseen cases. Actions remain fixed, so this figure does not demonstrate
+successful ball control or EFE-based action selection.
+
+[Details and retained source data](results/paper/experiment2_recovery/README.md) ·
+[PDF](results/paper/figures/figure3_belief_tracking_with_recovery.pdf) ·
+[SVG](results/paper/figures/figure3_belief_tracking_with_recovery.svg) ·
+[Reproduction code](scripts/build_e2_recovery_figure.py)
+
 ## Repository contents
 
 - `aif/`, `data/`, `environment/`, `envs/`, `evaluation/`, `generators/`, `mujoco_task/`, `training/`: main-paper implementation.
@@ -72,6 +101,13 @@ Regenerate the animated E2 demo by replaying its retained actions in MuJoCo; thi
 
 ```bash
 uv run python scripts/build_e2_demo_gif.py
+```
+
+Regenerate the recovery-data figure extension and extended Table 3 from the bundled
+predictions, without training, model checkpoints, or access to the local experiments:
+
+```bash
+uv run python scripts/build_e2_recovery_figure.py
 ```
 
 ## Reproduce the main experiments
