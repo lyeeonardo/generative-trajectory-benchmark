@@ -1,12 +1,31 @@
 # Reproducibility map
 
-The final paper contains two deliberately different tracks.
+The [paper](https://arxiv.org/abs/2610.05692) contains two deliberately different
+tracks. The E2 description here follows the recovery-inclusive revised manuscript.
 
 ## Main paper: learned world models
 
 Experiment 1 uses one joint trajectory model per family. The same model provides goal-conditioned action proposals, predictions under imposed action sequences, and likelihoods for hidden-tilt inference. The primary control setting is `K=1`, horizon `H=6`, with correct-tilt, wrong-tilt, and agreement-reuse arms. The fixed seed is 13. The complete protocol is in `configs/experiment1_full.json`; compact completed reports are in `results/paper/experiment1/`.
 
-Experiment 2 is the replayed 0° → +15° switch study in `configs/experiment2_switching_plus15.json`. Twelve switched trajectories and twelve matched no-switch trajectories use the same recorded actions and public observations for every model. The posterior transition hazard is fixed at `0.06`. This is belief tracking under replay, not an action-selection experiment. Its trial-level posteriors and likelihood arrays are in `results/paper/experiment2/`.
+Experiment 2 is the replayed 0° → +15° switch study. It compares the original four
+pretrained models with a recovery-fine-tuned Diffusion variant; all weights stay
+fixed during evaluation. Twelve switched trajectories and twelve matched no-switch
+trajectories use the same recorded actions and public observations for every arm.
+The posterior transition hazard is fixed at `0.06`. This is belief tracking under
+replay, not an action-selection experiment. The original four-model protocol is in
+`configs/experiment2_switching_plus15.json`; its trial-level posteriors and likelihood
+arrays remain unchanged in `results/paper/experiment2/`.
+
+The recovery-inclusive Figure 3 and Table 3 are reproduced by
+`scripts/build_e2_recovery_figure.py` from the compact prediction archive in
+`results/paper/experiment2_recovery/source/`. The script checks source hashes,
+recomputes observation likelihoods and Bayesian updates, and rebuilds the fifth
+curve, bootstrap intervals, and table row without checkpoints or new model inference.
+The recovery arm used one reconstructed seed-13 fit, an additional 1,048,576 sampled
+windows mixing original data with 10,080 unique recovery examples, and its own
+calibration. This comparison is not a recovery-data-only ablation or an unseen-case
+evaluation. Reproducing the saved predictions' analysis is distinct from reproducing
+the training run, whose weights and training data additions are not bundled here.
 
 ## Appendix A: proposal models with simulator planning
 

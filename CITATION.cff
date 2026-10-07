@@ -5,6 +5,7 @@ type: software
 version: 0.1.0
 date-released: 2026-09-19
 repository-code: "https://github.com/lyeeonardo/generative-trajectory-benchmark"
+url: "https://arxiv.org/abs/2610.05692"
 authors:
   - family-names: Li
     given-names: Yulin

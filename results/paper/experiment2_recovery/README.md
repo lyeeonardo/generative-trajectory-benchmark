@@ -1,5 +1,10 @@
 # Recovery-data augmentation for E2 belief tracking
 
+This is the recovery-trained arm of E2 in the revised manuscript. Together with
+the four original models it supplies the five-curve Figure 3 and five-row Table 3.
+The paper is available through [arXiv:2610.05692](https://arxiv.org/abs/2610.05692);
+the earlier four-model artifacts remain unchanged for version comparison.
+
 ![Original E2 curves with recovery-trained Diffusion](../figures/figure3_belief_tracking_with_recovery.png)
 
 This figure is reproduced from saved measured predictions in the dissertation's
@@ -14,7 +19,7 @@ The continuation exposure comprised 786,432 native windows and 262,144 recovery
 draws. These training counts describe the archived experiment; this figure rebuild
 does not perform training or new model inference.
 
-Everything needed to rebuild the figure and extended table is retained here or in
+Everything needed to rebuild the recovery-inclusive figure and table is retained here or in
 the original paper artifacts. The source experiment's local folder and checkpoints
 are not needed for that rebuild. This package reproduces saved predictions, not
 the original training process or a fresh checkpoint evaluation.

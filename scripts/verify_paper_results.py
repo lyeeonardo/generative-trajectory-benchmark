@@ -19,6 +19,7 @@ DISPLAY = {
     "autoregressive": "Autoregressive",
     "cvae": "Joint CVAE",
     "flow_matching": "Flow matching",
+    "diffusion_recovery": "Diffusion + recovery data",
 }
 APPENDIX_DISPLAY = {
     "bc_mdn_aif": "BC-MDN",
@@ -97,10 +98,13 @@ def table3() -> list[dict]:
         "autoregressive": (5, 5, 8, 10, 7),
         "cvae": (4, 3, 10, 10, 0),
         "flow_matching": (4, 3, 4, 12, 0),
+        "diffusion_recovery": (1, 1, 2, 12, 12),
     }
     rows = read_csv(RESULTS / "experiment2" / "trial_beliefs.csv")
+    rows.extend(dict(row, model="diffusion_recovery") for row in
+                read_csv(RESULTS / "experiment2_recovery" / "recovery_trial_beliefs.csv"))
     output = []
-    for model in MODELS:
+    for model in (*MODELS, "diffusion_recovery"):
         trials = defaultdict(list)
         for row in rows:
             if row["model"] == model and row["switched"].lower() == "true":
@@ -126,7 +130,8 @@ def table3() -> list[dict]:
             final_correct,
         )
         assert_equal(f"Table 3/{model}", values, expected[model])
-        assert_equal(f"Table 3/{model}/sustained observations 16-30", sustained, 0)
+        assert_equal(f"Table 3/{model}/sustained observations 16-30", sustained,
+                     12 if model == "diffusion_recovery" else 0)
         output.append(dict(model=DISPLAY[model], delay_median=values[0],
                            delay_range=[values[1], values[2]],
                            identified_by_six=f"{values[3]}/12",
